@@ -19,15 +19,15 @@ export const copyWebfonts = () => {
 export const copyFonts = () => {
 	let glob = JSON.parse(readFileSync("config.json"));
 	return src(glob.font, {
-		allowEmpty: true
-	})
+			allowEmpty: true
+		})
 		.pipe(dest("dist/fonts"));
 }
 
 export const copyFavicon = () => {
 	return src("src/favicon.ico", {
-		allowEmpty: true
-	})
+			allowEmpty: true
+		})
 		.pipe(dest("dist"));
 }
 

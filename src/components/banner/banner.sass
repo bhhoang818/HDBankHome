@@ -1,1 +1,34 @@
-
+.ui-slider
+	width: 500px
+	margin-top: 30px
+	height: 3.18px
+	background: #eaeaea
+	&.ui-widget.ui-widget-content
+		border: solid 1px transparent !important
+	.ui-slider-range
+		background: $main
+	.ui-slider-handle
+		position: relative
+		&.ui-corner-all
+			width: 10px
+			height: 10px
+			display: block
+			border-radius: 50%
+			background: $main
+			&:focus
+				outline: none
+		.tooltip
+			position: absolute
+			display: block
+			top: -23px
+			width: 100px
+			height: 29px
+			color: $main
+			font-size: r(14px)
+			&:focus
+				outline: none
+// .card-switcher-wraper
+// 	position: absolute
+// 	z-index: 1000
+// 	top: 50%
+// 	left: 200px

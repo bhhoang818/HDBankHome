@@ -1,58 +1,38 @@
 const mainBanner = () => {
-	let names = []
-	$(".swiper-wrapper .swiper-slide").each(function (i) {
-		names.push($(this).data("name"));
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		parallax: true,
+		speed: 600,
+
 	});
-	let swiper = new Swiper('.swiper-container', {
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '">'
-					+ '<div class="bullet-inner">'
-					+ '<p class="number">' + "0" + ([index + 1]) + '</p>'
-					+ '<p class="name">' + (names[index]) + '</p>'
-					+ '</div>'
-					+ '</span>';
-			},
-		},
-		watchSlidesProgress: true,
-		autoplay: {
-			delay: 2580,
-			disableOnInteraction: false,
-		},
-		loop: true,
-	});
-
-	document.addEventListener('mouseenter', event => {
-		const el = event.target;
-		if (el && el.matches && el.matches('.swiper-container')) {
-			el.swiper.autoplay.stop();
-			el.classList.add('swiper-paused');
-
-			const activeNavItem = el.querySelector('.swiper-pagination-bullet-active');
-			// activeNavItem.style.animationPlayState = "paused";
-		}
-	}, true);
-
-	document.addEventListener('mouseleave', event => {
-		const el = event.target;
-		if (el && el.matches && el.matches('.swiper-container')) {
-			el.swiper.autoplay.start();
-			el.classList.remove('swiper-paused');
-
-			const activeNavItem = el.querySelector('.swiper-pagination-bullet-active');
-
-			activeNavItem.classList.remove('swiper-pagination-bullet-active');
-
-			setTimeout(() => {
-				activeNavItem.classList.add('swiper-pagination-bullet-active');
-			}, 10);
-		}
-	}, true);
 }
 
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
+	$(function () {
+		$("#slider").slider({
+			value: 500,
+			min: 50,
+			max: 1000,
+			step: 10,
+			slide: function (event, ui) {
+				$(ui.handle)
+					.find(".tooltip")
+					.text(ui.value + " Triệu");
+				$("#amount").val(ui.value + " Triệu");
+				if ($("#amount").val() == 1000 + " Triệu") {
+					$("#amount").val(1 + " Tỷ");
+				}
+			},
+			// create: function (event, ui) {
+			// 	var tooltip = $('<div class="tooltip" />');
+			// 	$(event.target).find(".ui-slider-handle").append(tooltip);
+			// },
+			change: function (event, ui) {
+				$("#hidden").attr("value", ui.value);
+			},
+		});
+	});
 });
