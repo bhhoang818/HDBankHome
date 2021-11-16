@@ -1,13 +1,12 @@
-section.section.card-hdbank 
+section.section.card-hdbank(setBackground="./images/bg-1.png")
 	.container 
 		h2.title.title_small.title_small-white Thoải mái mua sắm cùng thẻ HDBank
-		.slider-card.desktop 
+		.single-swiper.desktop 
 			.swiper-container 
 				.swiper-wrapper 
 					-for(i=1; i<4; i++)
 						.swiper-slide 
 							.slide-inner 
-								a(href="") Thẻ tín dụng 
 								.img-card 
 									img(src="./images/card-"+i+".png", alt="")
 								.title-card 

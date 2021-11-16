@@ -3,7 +3,7 @@ import {
 	dest
 } from "gulp";
 import concat from "gulp-concat";
-import uglify from "gulp-uglify";
+import uglify from "gulp-uglify-es";
 import plumber from "gulp-plumber";
 import {
 	readFileSync

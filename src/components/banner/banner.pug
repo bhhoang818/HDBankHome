@@ -96,71 +96,59 @@ section.home-banner
 	.card-tool-box 
 		.card-switcher 
 			ul.header-switcher.d-flex.align-center 
-				li.active
-					a(href="") Ước tính khoản vay
-				li 
-					a(href="") Quy đổi tỷ giá
-			#panel-1.panel
+				li.active(rel="panel-1")
+					| Ước tính khoản vay
+				li(rel="panel-2")
+					| Quy đổi tỷ giá
+			#panel-1.panel.active
 				.from-slide-loan
-					.slider-wraper
-						.slide-title 
-							p Số tiền vay
-							input#amount(type='text', readonly='' value="500 Triệu")
-						#slider
-						.label 
-							label(for="") 50 Triệu 
-							label(for="") 1 Tỷ
+					form(action="", method="post") 
+						.form-group 
+							label(for='amount') Số tiền vay
+							input#amount(type='text' readonly='' value="500 Triệu")
+					#slider-range-min
+					.range-slider__label
+						.range-slider__label__min
+							span 50 triệu
+						.range-slider__label__max
+							span 1 tỷ
 					.period-wraper 
-						form(action="") 
-							.form-group 
-								label(for="") Kỳ hạn vay 
-								input.form-control(type="number" name="year" placeholder="5" value='5')
-								span.input-group-addon năm
-							.form-group 
-								label(for="") Trả hàng tháng 
-								input.form-control(type='text' disabled='' value='8.601.944')
-								span.input-suffix đ
-					.btn.btn-continue
-						|Tiếp tục
+						table 
+							tr 
+								td Kỳ hạn vay 
+								td Trả hàng tháng 
+							tr 
+								td 
+									.qty-minus
+										em.material-icons remove
+									input.form-control(type="text" name="year" placeholder="5" value='5')
+									span.input-group-addon năm
+									.qty-plus 
+										em.material-icons add
+								td 
+									input.form-control(type='text' disabled='' value='8.601.944')
+									span.input-suffix đ
+					.btn.btn-login
+						span Tiếp tục
 					.desc 
 						p Ví dụ: Số tiền vay 500 triệu - chu kỳ trả trong 60 tháng - lãi suất vay 7%/năm - Tổng tiền phải trả 602.476.200đ - Tổng lãi phải trả 102.476.200đ.
-			#panel-2.panel.hidden
-				.form-group
-					.group-input
-						.drop-down-menu 
-							.input-active
-								a(href="") 
-									img(src="./images/icons/jp.png", alt="")
-									span USD
-							.dropdown 
-								ul
-									li
-										a(href="") 
-											img(src="./images/icons/vn.png", alt="")
-											span VND
-									li
-										a(href="") 
-											img(src="./images/icons/en.png", alt="")
-											span USD
-						.input-value 
+			#panel-2.panel
+				form(action="") 
+					.form-group.d-flex
+						.input-slect
+							img(src="./images/icons/jp.png", alt="") 
+							select#money(name="money") 
+								option(value="vn") VN
+								option(value="usd" selected) USD
+						.input-value
 							input(type="text" placeholder="Nhập số tiền")
-					.group-input
-						.drop-down-menu 
-							.input-active
-								a(href="") 
-									img(src="./images/icons/vn.png", alt="")
-									span VND
-							.dropdown 
-								ul
-									li
-										a(href="") 
-											img(src="./images/icons/vn.png", alt="")
-											span VND
-									li
-										a(href="") 
-											img(src="./images/icons/en.png", alt="")
-											span USD
-						.input-value 
+					.form-group.d-flex
+						.input-slect
+							img(src="./images/icons/vn.png", alt="") 
+							select#money(name="money") 
+								option(value="vn" selected) VN
+								option(value="usd") USD
+						.input-value
 							input(type="text" placeholder="Nhập số tiền")
 				.table-box 
 					table 
@@ -180,34 +168,34 @@ section.home-banner
 								span VND 
 							td --
 							td --
-				.desc 
-					p Cập nhật lúc 13:54 ngày 01/11/2021
-			.from-slide-advise.hidden
-				ul.header-advise.d-flex.align-center 
-					li 
-						span.lnr.lnr-arrow-left
-					li 
-						p Đăng ký tư vấn
-				ul.nav-list.d-flex.align-center
-					li 
-						p Số tiền 
-						p 500 triệu 
-					li 
-						p Kỳ hạn vay 
-						p 5 năm
-					li 
-						p Trả mỗi tháng 
-						p 8.601.944
-				form(action="", method="post") 
-					.form-group 
-						span.fas.fa-user
-						input.form-control(type="text" placeholder="Họ và tên")
-					.form-group 
-						span.fas.fa-phone-alt
-						input.form-control(type="text" placeholder="Số điện thoại")
-					.form-group 
-						span.fas.fa-envelope
-						input.form-control(type="text" placeholder="Email")
-					button.btn.btn-sign-in(type="submit") 
-						|Đăng ký
+					.desc 
+						p Cập nhật lúc 13:54 ngày 01/11/2021
+		#from-slide-advise.from-slide-advise
+			ul.header-advise.d-flex.align-center 
+				li 
+					em.lnr.lnr-arrow-left
+				li 
+					p Đăng ký tư vấn
+			ul.nav-list.d-flex.align-center
+				li 
+					p Số tiền 
+					p 500 triệu 
+				li 
+					p Kỳ hạn vay 
+					p 5 năm
+				li 
+					p Trả mỗi tháng 
+					p 8.601.944
+			form(action="", method="post") 
+				.form-group 
+					span.fas.fa-user
+					input.form-control(type="text" placeholder="Họ và tên")
+				.form-group 
+					span.fas.fa-phone-alt
+					input.form-control(type="text" placeholder="Số điện thoại")
+				.form-group 
+					span.fas.fa-envelope
+					input.form-control(type="text" placeholder="Email")
+				button.btn.btn-login(type="submit") 
+					span Đăng ký
 

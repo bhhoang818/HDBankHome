@@ -50,24 +50,27 @@ header
 			background: #F9FAFC
 			border-radius: 42px
 			flex-grow: 1
-			.form-group
-				position: relative
-				input
+			form
+				width: 100%
+				.form-group
 					width: 100%
-					height: 100%
-					border: none
-					background: none
-					&:placeholder
-						font-size: r(14px)
-						font-weight: 500
-						color: $black
-				button
-					position: absolute
-					top: 50%
-					right: 0
-					transform: translateY(-50%)
-					border: none
-					background: none
+					position: relative
+					input
+						width: 100%
+						height: 100%
+						border: none
+						background: none
+						&:placeholder
+							font-size: r(14px)
+							font-weight: 500
+							color: $black
+					button
+						position: absolute
+						top: 50%
+						right: 0
+						transform: translateY(-50%)
+						border: none
+						background: none
 		.srcoll-bar
 			max-height: 80%
 			overflow-y: auto
@@ -91,32 +94,17 @@ header
 						font-weight: bold
 						line-height: 23px
 						color: $black
-				.btn-login-bar
-					padding: r(8px) r(24px)
-					width: 100%
-					background: $yellow
-					border-radius: 50px
-					align-self: stretch
-					font-weight: 500
-					font-size: r(18px)
-					line-height: 26px
-					color: $black
-					transition: all ease-in-out .5s
-					display: block
-					margin-bottom: 20px
-					&:hover
-						color: $white
-						background: $main
 				.sign-in
 					display: flex
 					justify-content: center
 					font-weight: normal
 					line-height: 23px
-					text-decoration-line: underline
+					text-decoration-line: underline !important
 					color: $black
 			.side-navigation-wrap
 				margin-top: 36px
 				.side-navigation
+					padding-left: 0
 					li
 						padding: r(15px) 0
 						.accordion-title
@@ -128,7 +116,7 @@ header
 								font-weight: bold
 								font-size: 1rem
 								line-height: 23px
-								color: $black
+								color: $black !important
 							span
 								&::after
 									content: '\e145'
@@ -140,9 +128,11 @@ header
 									&::after
 										content: '\e15b'
 						.nav-sub
+							padding-left: 0
 							li
 								padding: 17px 0
 								a
+									color: $black
 									display: flex
 									align-items: center
 									.icon
