@@ -1,42 +1,25 @@
-section.section.work-sec 
-	.wrapper-container 
-		.sec-title 
-			p.small-title We work with
-			h3.big-title Amazing Services
-		.list-work.d-flex
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/ALARM.png", alt="")
-				.content 
-					p.title Photography
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/LINEGRAPH.png", alt="")
-				.content 
-					p.title Web Design
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/COMPUTER.png", alt="")
-				.content 
-					p.title Creativity
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/BOOK.png", alt="")
-				.content 
-					p.title SEO
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/HOME.png", alt="")
-				.content 
-					p.title CSS/HTML
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/IMAGE.png", alt="")
-				.content 
-					p.title DIGITAL
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+section.section.customer
+	.container 
+		h2.title.title_small.title_small-white Khách hàng cá nhân
+		.big-image 
+			.img-inner 
+				img(src="./images/customer-1.png", alt="")
+			.wrapper-content 
+				.desc 
+					a(href="") Bảo hiểm chăm sóc sức khoẻ toàn cầu - GHC
+					p Bảo vệ sức khoẻ thể chất và tinh thần các thành viên gia đình.
+				a.btn.btn-buy-now(href="") Mua gói
+		.small-image 
+			.swiper-container 
+				.swiper-wrapper
+					-for(i=2; i<6; i++)
+						.swiper-slide
+							.img 
+								img(src="./images/customer-"+i+".png", alt="")
+							.wrapper-content 
+								.desc 
+									a(href="") Tài khoản thanh toán trực tuyến
+									p Gửi và rút tiền mặt tiện lợi. Nhận chuyển khoản 24/7.
+								a.btn.btn-small(href="") Mở tài khoản
+			.swiper-button-next 
+			.swiper-button-prev

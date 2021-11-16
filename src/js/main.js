@@ -1,16 +1,39 @@
 const mainBanner = () => {
-	var swiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.home-banner .swiper-container', {
 		pagination: '.swiper-pagination',
 		paginationClickable: true,
 		parallax: true,
-		speed: 600,
-
+		speed: 2000,
+		effect: "fade",
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
+		// },
+		fadeEffect: {
+			crossFade: true,
+		},
+		loop: true
 	});
 }
 
+const headerActive = () => {
+	let butonToggle = $('#toggle');
+	let header = $('#nav-toggle');
+	let section = $('section');
+	butonToggle.on('click', (e) => {
+		e.preventDefault();
+		header.addClass('active');
+	});
+	section.on('click', (e) => {
+		e.preventDefault();
+		header.removeClass('active');
+	})
+
+}
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
+	headerActive();
 	$(function () {
 		$("#slider").slider({
 			value: 500,

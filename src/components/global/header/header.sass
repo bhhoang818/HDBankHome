@@ -1,4 +1,4 @@
-header
+.nav-top
 	width: 100%
 	position: relative
 	padding-top: 15/16*1rem
@@ -18,5 +18,183 @@ header
 					display: none
 			.btn-login
 				margin-left: 50px
-		.nav-toggle
-			display: none
+header
+	position: fixed
+	top: 0
+	left: -100%
+	visibility: hidden
+	opacity: 0
+	height: 100vh
+	z-index: 999
+	transition: all ease-in-out .5s
+
+	.nav-toggle
+		padding: r(48px) r(24px)
+		max-width: 310px
+		height: 100%
+		background: $white
+		.logo
+			width: 100%
+			margin-bottom: 28px
+			display: block
+			text-align: center
+		.search-box
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			padding: 4px 12px 4px 16px
+			margin-bottom: 20px
+			width: 100%
+			height: 40px
+			background: #F9FAFC
+			border-radius: 42px
+			flex-grow: 1
+			.form-group
+				position: relative
+				input
+					width: 100%
+					height: 100%
+					border: none
+					background: none
+					&:placeholder
+						font-size: r(14px)
+						font-weight: 500
+						color: $black
+				button
+					position: absolute
+					top: 50%
+					right: 0
+					transform: translateY(-50%)
+					border: none
+					background: none
+		.srcoll-bar
+			max-height: 80%
+			overflow-y: auto
+			&::-webkit-scrollbar-track
+				box-shadow: inset 0 0 6px rgba(255, 255, 255, 0)
+				background-color: #f5f5f5
+				border-radius: 20px
+				display: none
+			&::-webkit-scrollbar
+				width: 5px
+				height: 90px
+			&::-webkit-scrollbar-thumb
+				border-radius: 3px
+				box-shadow: inset 0 0 6px rgba(255, 255, 255, 0)
+				background-color: $yellow
+				display: none
+			.login
+				.title
+					p
+						text-align: center
+						font-weight: bold
+						line-height: 23px
+						color: $black
+				.btn-login-bar
+					padding: r(8px) r(24px)
+					width: 100%
+					background: $yellow
+					border-radius: 50px
+					align-self: stretch
+					font-weight: 500
+					font-size: r(18px)
+					line-height: 26px
+					color: $black
+					transition: all ease-in-out .5s
+					display: block
+					margin-bottom: 20px
+					&:hover
+						color: $white
+						background: $main
+				.sign-in
+					display: flex
+					justify-content: center
+					font-weight: normal
+					line-height: 23px
+					text-decoration-line: underline
+					color: $black
+			.side-navigation-wrap
+				margin-top: 36px
+				.side-navigation
+					li
+						padding: r(15px) 0
+						.accordion-title
+							display: flex
+							align-items: center
+							justify-content: space-between
+							a
+								font-style: normal
+								font-weight: bold
+								font-size: 1rem
+								line-height: 23px
+								color: $black
+							span
+								&::after
+									content: '\e145'
+									font-family: 'Material Icons'
+									font-size: r(18px)
+									font-weight: 500
+							&.active
+								span
+									&::after
+										content: '\e15b'
+						.nav-sub
+							li
+								padding: 17px 0
+								a
+									display: flex
+									align-items: center
+									.icon
+										margin-right: 10px
+							&.suport
+								li
+									a
+										img
+											margin-right: 10px
+											display: block
+											font-size:
+			.download-app
+				margin-bottom: 24px
+				p
+					font-weight: bold
+					font-size: 16px
+					line-height: 23px
+					color: $black
+					margin-bottom: 32px
+				.icon
+					a
+						display: flex
+						width: 128px
+						img
+							width: 100%
+						&:first-child
+							padding-right: 8px
+						&:last-child
+							padding-left: 8px
+			.socail-list
+				p
+					font-weight: 700
+					font-size: r(14px)
+					line-height: 23px
+					color: $black
+					margin-bottom: 32px
+				ul
+					li
+						padding: 0 5px
+						&:first-child
+							padding-left: 0
+						&:last-child
+							padding-right: 0
+				.copy-right
+					font-weight: 400
+					font-size: r(12px)
+					line-height: 18px
+					text-align: center
+					color: $black
+					align-self: stretch
+					margin: 32px 0px
+	&.active
+		left: 0
+		visibility: visible
+		opacity: 1
