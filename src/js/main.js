@@ -7,10 +7,10 @@ const mainBanner = () => {
 		parallax: true,
 		speed: 2000,
 		effect: "fade",
-		// autoplay: {
-		// 	delay: 3000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
 		fadeEffect: {
 			crossFade: true,
 		},
@@ -56,6 +56,9 @@ const headerActive = () => {
 	section.on('click', (e) => {
 		e.preventDefault();
 		header.removeClass('active');
+	})
+	$('#click-toggle').on('click', () => {
+		$('.language').toggleClass('active');
 	})
 }
 
@@ -110,16 +113,45 @@ const setBackgroundElement = () => {
 		});
 	});
 };
+
 const scrollSection = () => {
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-				scrollTop: $("#sec-4").offset().top,
-			},
+			scrollTop: $("#sec-4").offset().top,
+		},
 			"slow"
 		);
 	});
 };
+const accordianList = () => {
+	$(".accordion-title em").on("click", function (e) {
+		let $this = $(this);
+		e.preventDefault();
+		if ($this.parent().next().hasClass("show")) {
+			$this.parent().next().removeClass("show");
+			$this.parent().next().slideUp(350);
+			$this.closest('li').removeClass("active");
+		} else {
+			$this.parent().parents().find(".nav-sub").removeClass("show");
+			$this.parent().parents().find(".nav-sub").slideUp(350);
+			$this.parent().parents('.side-navigation').find("li").removeClass("active");
+			$this.parent().next().toggleClass("show");
+			$this.parent().next().slideDown(350);
+			$this.parents("li").addClass("active");
+		}
+	});
+	if ($(".side-navigation li").hasClass("active")) {
+		$(".side-navigation li.active").find(".nav-sub").slideDown(350);
+	}
+	$(".btn-dropdown").on("click", function () {
+		$(this).toggleClass("active");
+		$(this).parent().next().slideToggle();
+		$(".btn-dropdown").not(this).parent().next().slideUp();
+		$(".btn-dropdown").not(this).removeClass("active");
+	});
+};
+
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
@@ -128,4 +160,5 @@ $(document).ready(function () {
 	tabPanel();
 	setBackgroundElement();
 	scrollSection();
+	accordianList();
 });

@@ -14,12 +14,11 @@
 				<div class="container">
 					<div class="nav-full d-flex align-center">
 						<div class="btn btn-toggle" id="toggle"> <span> </span><span> </span><span> </span><span></span><span></span></div><a class="logo" href=""><img src="./images/Logo.png" alt=""></a>
-						<div class="language"> 
+						<div class="language">
 							<div class="lang-active d-flex align-center"><a href=""> <img src="./images/icons/vn.png" alt=""></a>
-								<div class="button-click"> <img src="./images/icons/down.png" alt=""></div>
+								<div class="button-click" id="click-toggle"> <img src="./images/icons/down.png" alt=""></div>
 							</div>
 							<ul class="drop-down">
-								<li> <a href=""> <img src="./images/icons/vn.png" alt=""><span>vn</span></a></li>
 								<li> <a href=""> <img src="./images/icons/en.png" alt=""><span>EN </span></a></li>
 								<li> <a href=""> <img src="./images/icons/jp.png" alt=""><span>日本 </span></a></li>
 							</ul>
@@ -47,8 +46,25 @@
 					</div>
 					<div class="side-navigation-wrap">
 						<ul class="side-navigation">
+							<li class="active">
+								<div class="accordion-title"><a href="">Khách hàng cá nhân </a><em></em></div>
+								<ul class="nav-sub show">
+									<li><a href=""> 
+											<div class="icon"> <img src="./images/icons/money.svg" alt=""></div>Tiền gửi</a></li>
+									<li><a href=""> 
+											<div class="icon"> <img src="./images/icons/card-1.svg" alt=""></div>Thẻ thanh toán</a></li>
+									<li><a href=""> 
+											<div class="icon"> <img src="./images/icons/card-2.svg" alt=""></div>Thẻ tín dụng</a></li>
+									<li><a href=""> 
+											<div class="icon"> <img src="./images/icons/money.svg" alt=""></div>Sản phẩm vay</a></li>
+									<li><a href=""> 
+											<div class="icon"> <img src="./images/icons/save.svg" alt=""></div>Tiết kiệm</a></li>
+									<li><a href=""> 
+											<div class="icon"> <img src="./images/icons/bh.svg" alt=""></div>Bảo hiểm</a></li>
+								</ul>
+							</li>
 							<li>
-								<div class="accordion-title active"><a href="">Khách hàng cá nhân </a><span></span></div>
+								<div class="accordion-title"><a href="">Khách hàng doanh nghiệp</a><em></em></div>
 								<ul class="nav-sub">
 									<li><a href=""> 
 											<div class="icon"> <img src="./images/icons/money.svg" alt=""></div>Tiền gửi</a></li>
@@ -65,13 +81,10 @@
 								</ul>
 							</li>
 							<li>
-								<div class="accordion-title"><a href="">Khách hàng doanh nghiệp</a><span></span></div>
+								<div class="accordion-title"><a href="">Khách hàng ưu tiên </a><em></em></div>
 							</li>
 							<li>
-								<div class="accordion-title"><a href="">Khách hàng ưu tiên </a><span></span></div>
-							</li>
-							<li>
-								<div class="accordion-title"><a href="">Nhà đầu tư</a><span></span></div>
+								<div class="accordion-title"><a href="">Nhà đầu tư</a><em></em></div>
 							</li>
 							<li>
 								<div class="accordion-title"><a href="">Cơ hội nghề nghiệp</a></div>
@@ -128,11 +141,12 @@
 								<div class="product-list-slide"> 
 									<ul>
 										<li><a href=""> 
-												<p>TK thanh toán<br><span>eKYC</span></p><em class="lnr lnr-chevron-right"></em></a></li>
+												<p> <span>Tài khoản </span><br>doanh nghiệp</p><em class="lnr lnr-chevron-right"></em></a></li>
 										<li><a href=""> 
-												<p> <span>Mở thẻ </span>NAPAS <br>VISA/Master</p><em class="lnr lnr-chevron-right"></em></a></li>
+												<p> <span>Tín dụng </span><br>doanh nghiệp</p><em class="lnr lnr-chevron-right"></em></a></li>
 										<li><a href=""> 
-												<p> <span>Vay</span><br>trực tuyến</p><em class="lnr lnr-chevron-right"></em></a></li>
+												<p>
+													 Công cụ<br><span>eCMB</span></p><em class="lnr lnr-chevron-right"></em></a></li>
 									</ul>
 								</div>
 							</div>
@@ -142,11 +156,11 @@
 								<div class="product-list-slide"> 
 									<ul>
 										<li><a href=""> 
-												<p>TK thanh toán<br><span>eKYC</span></p><em class="lnr lnr-chevron-right"></em></a></li>
+												<p>Dịch vụ<br><span>Trái phiếu</span></p><em class="lnr lnr-chevron-right"></em></a></li>
 										<li><a href=""> 
-												<p> <span>Mở thẻ </span>NAPAS <br>VISA/Master</p><em class="lnr lnr-chevron-right"></em></a></li>
+												<p>Mua bán<br><span>Vàng/ngoại tệ</span></p><em class="lnr lnr-chevron-right"></em></a></li>
 										<li><a href=""> 
-												<p> <span>Vay</span><br>trực tuyến</p><em class="lnr lnr-chevron-right"></em></a></li>
+												<p>Mua gói<br><span>Bảo hiểm</span></p><em class="lnr lnr-chevron-right"></em></a></li>
 									</ul>
 								</div>
 							</div>
@@ -154,18 +168,12 @@
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
-				<div class="shoutout-slide">
-					<ul>
-						<li>
-							<p>🔥 Miễn phí thường niên khi đăng ký thẻ VISA HDBank</p>
-						</li>
-						<li>
-							<p>🛍 Hoàn tiền lên đến 500K khi thanh toán qua thẻ Vietjet VISA</p>
-						</li>
-						<li>
-							<p>⭐️ Đăng ký hôm nay - trúng ngay táo xịn. Mở tài khoản 5 phút nhanh chóng</p>
-						</li>
-					</ul>
+				<div class="ticker-wrap">
+					<div class="ticker">
+						<div class="ticker__item">🔥 Miễn phí thường niên khi đăng ký thẻ VISA HDBank</div>
+						<div class="ticker__item">🛍 Hoàn tiền lên đến 500K khi thanh toán qua thẻ Vietjet VISA</div>
+						<div class="ticker__item">⭐️ Đăng ký hôm nay - trúng ngay táo xịn. Mở tài khoản 5 phút nhanh chóng</div>
+					</div>
 				</div>
 				<div class="card-tool-box"> 
 					<div class="card-switcher"> 
@@ -211,7 +219,7 @@
 							</div>
 						</div>
 						<div class="panel" id="panel-2">
-							<form action=""> 
+							<form class="calculator" action=""> 
 								<div class="form-group d-flex">
 									<div class="input-slect"><img src="./images/icons/jp.png" alt="">
 										<select name=""> 
@@ -259,7 +267,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="from-slide-advise" id="from-slide-advise">
+					<div class="from-slide-advise" id="from-slide">
 						<ul class="header-advise d-flex align-center"> 
 							<li> <em class="lnr lnr-arrow-left"></em></li>
 							<li> 
@@ -280,7 +288,7 @@
 								<p>8.601.944</p>
 							</li>
 						</ul>
-						<form action="" method="post"> 
+						<form class="from-slide" action="" method="post"> 
 							<div class="form-group"> <span class="fas fa-user"></span>
 								<input class="form-control" type="text" placeholder="Họ và tên">
 							</div>
@@ -363,27 +371,29 @@
 						<div class="swiper-container"> 
 							<div class="swiper-wrapper"> 
 								<div class="swiper-slide"> 
-									<div class="slide-inner"> 
+									<div class="slide-inner small-img">
 										<div class="img-card"> <img src="./images/card-1.png" alt=""></div>
-										<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+										<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href=""> <span>Mở thẻ</span></a></div>
 									</div>
 								</div>
 								<div class="swiper-slide"> 
 									<div class="slide-inner"> 
-										<div class="img-card"> <img src="./images/card-2.png" alt=""></div>
-										<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+										<div class="img-card"> <img src="./images/card-2.png" alt="">
+											<div class="icon"> <img src="./images/repay.png" alt=""></div>
+										</div>
+										<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href=""> <span>Mở thẻ</span></a></div>
 									</div>
 								</div>
 								<div class="swiper-slide"> 
 									<div class="slide-inner"> 
 										<div class="img-card"> <img src="./images/card-3.png" alt=""></div>
-										<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+										<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href=""> <span>Mở thẻ</span></a></div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="swiper-button-next"> </div>
-						<div class="swiper-button-prev"></div><a class="btn btn-view-all" href="">Xem tất cả thẻ</a>
+						<div class="swiper-button-prev"></div><a class="btn-view-all" href="">Xem tất cả thẻ</a>
 					</div>
 					<div class="slider-card hidden">
 						<div class="single-slide"><a href="">Thẻ tín dụng </a>
@@ -392,19 +402,19 @@
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-1.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href=""><span>Mở thẻ</span></a></div>
 										</div>
 									</div>
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-2.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href=""><span>Mở thẻ</span></a></div>
 										</div>
 									</div>
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-3.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href=""><span>Mở thẻ</span></a></div>
 										</div>
 									</div>
 								</div>
@@ -416,19 +426,19 @@
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-1.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href="">Mở thẻ</a></div>
 										</div>
 									</div>
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-2.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href="">Mở thẻ</a></div>
 										</div>
 									</div>
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-3.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a class="title" href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a><a class="btn btn-login" href="">Mở thẻ</a></div>
 										</div>
 									</div>
 								</div>
@@ -440,19 +450,19 @@
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-1.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-login" href="">Mở thẻ</a>
 										</div>
 									</div>
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-2.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-login" href="">Mở thẻ</a>
 										</div>
 									</div>
 									<div class="swiper-slide"> 
 										<div class="slide-inner"> 
 											<div class="img-card"> <img src="./images/card-3.png" alt=""></div>
-											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-open-card" href="">Mở thẻ</a>
+											<div class="title-card"> <a href="">Petrolimex ID 4in1 Tín dụng | Ghi nợ | Trả trước </a></div><a class="btn btn-login" href="">Mở thẻ</a>
 										</div>
 									</div>
 								</div>
@@ -937,88 +947,80 @@
 		</main>
 		<footer> 
 			<div class="container"> 
-				<div class="footer-container d-flex">
-					<div class="infor-box"><a class="logo-footer" href=""> <img src="./images/Logo.png" alt=""></a>
-						<ul>
-							<li> <img src="./images/icons/location.svg" alt="">25Bis Nguyễn Thị Minh Khai, P. Bến Nghé, Quận 1, TP. Hồ Chí Minh</li>
-							<li> <img src="./images/icons/phone.svg" alt="">19006060</li>
-							<li> <img src="./images/icons/email.svg" alt="">info.@hdbank.com.vn</li>
-							<li>
-								 Fax: (028) 62 915 900</li>
-							<li>
-								 SWIFT code: HDBCVNVX </li>
-						</ul>
+				<div class="row"> 
+					<div class="col-lg-3">
+						<div class="infor-box"><a class="logo-footer" href=""> <img src="./images/Logo.png" alt=""></a>
+							<ul>
+								<li> <img src="./images/icons/location.svg" alt="">25Bis Nguyễn Thị Minh Khai, P. Bến Nghé, Quận 1, TP. Hồ Chí Minh</li>
+								<li> <img src="./images/icons/phone.svg" alt="">19006060</li>
+								<li> <img src="./images/icons/email.svg" alt="">info.@hdbank.com.vn</li>
+								<li>
+									 Fax: (028) 62 915 900</li>
+								<li>
+									 SWIFT code: HDBCVNVX </li>
+							</ul>
+						</div>
 					</div>
-					<div class="menu-box d-flex">
-						<div class="menu-list"> 
-							<div class="title"> 
-								<p>Vì sao chọn HDBank?</p>
+					<div class="col-lg-9">
+						<div class="menu-box d-flex">
+							<div class="menu-list"> 
+								<div class="footer-infor_tile"><span>Vì sao chọn HDBank?</span></div>
+								<ul>
+									<li><a href="">Về chúng tôi</a></li>
+									<li><a href="">Tuyển dụng</a></li>
+									<li><a href="">Ưu đãi</a></li>
+									<li><a href="">Tin tức và sự kiện</a></li>
+									<li><a href="">Thư viện</a></li>
+								</ul>
 							</div>
-							<ul>
-								<li><a href="">Về chúng tôi</a></li>
-								<li><a href="">Tuyển dụng</a></li>
-								<li><a href="">Ưu đãi</a></li>
-								<li><a href="">Tin tức và sự kiện</a></li>
-								<li><a href="">Thư viện</a></li>
-							</ul>
-						</div>
-						<div class="menu-list"> 
-							<div class="title"> 
-								<p>Khách hàng cá nhân</p>
+							<div class="menu-list"> 
+								<div class="footer-infor_tile"><span>Khách hàng cá nhân</span></div>
+								<ul>
+									<li><a href="">Sản phẩm tiền gửi</a></li>
+									<li><a href="">Sản phẩm Vay</a></li>
+									<li><a href="">Thẻ</a></li>
+									<li><a href="">Bảo hiểm</a></li>
+									<li><a href="">Ngân hàng điện tử</a></li>
+								</ul>
 							</div>
-							<ul>
-								<li><a href="">Sản phẩm tiền gửi</a></li>
-								<li><a href="">Sản phẩm Vay</a></li>
-								<li><a href="">Thẻ</a></li>
-								<li><a href="">Bảo hiểm</a></li>
-								<li><a href="">Ngân hàng điện tử</a></li>
-							</ul>
-						</div>
-						<div class="menu-list"> 
-							<div class="title"> 
-								<p>Khách hàng doanh nghiệp</p>
+							<div class="menu-list"> 
+								<div class="footer-infor_tile"><span>Khách hàng doanh nghiệp</span></div>
+								<ul>
+									<li><a href="">Tín dụng</a></li>
+									<li><a href="">Thẻ doanh nghiệp</a></li>
+									<li><a href="">Quản lý dòng tiền</a></li>
+									<li><a href="">Tài trợ thương mại</a></li>
+									<li><a href="">Thanh toán quốc tế</a></li>
+								</ul>
 							</div>
-							<ul>
-								<li><a href="">Tín dụng</a></li>
-								<li><a href="">Thẻ doanh nghiệp</a></li>
-								<li><a href="">Quản lý dòng tiền</a></li>
-								<li><a href="">Tài trợ thương mại</a></li>
-								<li><a href="">Thanh toán quốc tế</a></li>
-							</ul>
-						</div>
-						<div class="menu-list"> 
-							<div class="title"> 
-								<p>Hỗ trợ</p>
+							<div class="menu-list"> 
+								<div class="footer-infor_tile"><span>Hỗ trợ</span></div>
+								<ul>
+									<li><a href="">Hotline</a></li>
+									<li><a href="">Chat trực tuyến</a></li>
+									<li><a href="">Trung tâm trợ giúp</a></li>
+									<li><a href="">Bảo mật</a></li>
+								</ul>
 							</div>
-							<ul>
-								<li><a href="">Hotline</a></li>
-								<li><a href="">Chat trực tuyến</a></li>
-								<li><a href="">Trung tâm trợ giúp</a></li>
-								<li><a href="">Bảo mật</a></li>
-							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="footer-coppyright"> 
 					<ul class="coppyright d-flex">
-						<li>
-							<p>Bản quyền ©2021 thuộc về HDBank  </p>
-						</li>
+						<li><span>Bản quyền ©2021 thuộc về HDBank  </span></li>
 						<li><a href="">Điều khoản sử dụng</a></li>
 						<li><a href="">An toàn và bảo mật</a></li>
 						<li><a href="">Sơ đồ trang</a></li>
 					</ul>
 				</div>
 				<div class="footer-bottom d-flex justify-between">
-					<div class="download-app"> 
-						<p>Tải app HDBank</p>
+					<div class="download-app"> <span>Tải app HDBank</span>
 						<ul class="d-flex">
 							<li><a href=""> <img src="./images/chplay.png" alt=""></a></li>
 							<li><a href=""> <img src="./images/appstore.png" alt=""></a></li>
 						</ul>
 					</div>
-					<div class="socail-box"> 
-						<p>Kết nối với HDBank</p>
+					<div class="socail-box"> <span>Kết nối với HDBank</span>
 						<ul class="d-flex">
 							<li><a href=""> <img src="./images/icons/face.png" alt=""></a></li>
 							<li><a href=""> <img src="./images/icons/instagram.png" alt=""></a></li>

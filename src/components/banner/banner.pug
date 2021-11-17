@@ -37,24 +37,25 @@ section.home-banner
 						ul
 							li
 								a(href="") 
-									p TK thanh toán
-										br 
-										span eKYC
+									p 
+										span Tài khoản 
+										br
+										|doanh nghiệp
 									em.lnr.lnr-chevron-right
 							li
 								a(href="") 
 									p 
-										span Mở thẻ 
-										|NAPAS 
+										span Tín dụng 
 										br
-										|VISA/Master
+										|doanh nghiệp
 									em.lnr.lnr-chevron-right
 							li
 								a(href="") 
 									p 
-										span Vay
+										|Công cụ
 										br
-										|trực tuyến
+										span eCMB
+										
 									em.lnr.lnr-chevron-right
 			.swiper-slide
 				.hero-image
@@ -64,35 +65,28 @@ section.home-banner
 						ul
 							li
 								a(href="") 
-									p TK thanh toán
-										br 
-										span eKYC
+									p Dịch vụ
+										br
+										span Trái phiếu
 									em.lnr.lnr-chevron-right
 							li
 								a(href="") 
-									p 
-										span Mở thẻ 
-										|NAPAS 
+									p Mua bán
 										br
-										|VISA/Master
+										span Vàng/ngoại tệ
 									em.lnr.lnr-chevron-right
 							li
 								a(href="") 
-									p 
-										span Vay
+									p Mua gói
 										br
-										|trực tuyến
+										span Bảo hiểm
 									em.lnr.lnr-chevron-right
 		.swiper-pagination
-	.shoutout-slide
-		ul
-			li
-				p 🔥 Miễn phí thường niên khi đăng ký thẻ VISA HDBank
-			li
-				p 🛍 Hoàn tiền lên đến 500K khi thanh toán qua thẻ Vietjet VISA
-			li
-				p ⭐️ Đăng ký hôm nay - trúng ngay táo xịn. Mở tài khoản 5 phút nhanh chóng
-		
+	.ticker-wrap
+		.ticker
+			.ticker__item 🔥 Miễn phí thường niên khi đăng ký thẻ VISA HDBank
+			.ticker__item 🛍 Hoàn tiền lên đến 500K khi thanh toán qua thẻ Vietjet VISA
+			.ticker__item ⭐️ Đăng ký hôm nay - trúng ngay táo xịn. Mở tài khoản 5 phút nhanh chóng
 	.card-tool-box 
 		.card-switcher 
 			ul.header-switcher.d-flex.align-center 
@@ -133,7 +127,7 @@ section.home-banner
 					.desc 
 						p Ví dụ: Số tiền vay 500 triệu - chu kỳ trả trong 60 tháng - lãi suất vay 7%/năm - Tổng tiền phải trả 602.476.200đ - Tổng lãi phải trả 102.476.200đ.
 			#panel-2.panel
-				form(action="") 
+				form.calculator(action="") 
 					.form-group.d-flex
 						.input-slect
 							img(src="./images/icons/jp.png", alt="") 
@@ -170,7 +164,7 @@ section.home-banner
 							td --
 					.desc 
 						p Cập nhật lúc 13:54 ngày 01/11/2021
-		#from-slide-advise.from-slide-advise
+		#from-slide.from-slide-advise
 			ul.header-advise.d-flex.align-center 
 				li 
 					em.lnr.lnr-arrow-left
@@ -186,7 +180,7 @@ section.home-banner
 				li 
 					p Trả mỗi tháng 
 					p 8.601.944
-			form(action="", method="post") 
+			form.from-slide(action="", method="post") 
 				.form-group 
 					span.fas.fa-user
 					input.form-control(type="text" placeholder="Họ và tên")
