@@ -28,20 +28,44 @@ const mainBanner = () => {
 			observeParents: true,
 			lazy: true,
 			breakpointsInverse: true,
-			spaceBetween: 30,
-			slidesPerView: 3,
 			loop: false,
 			navigation: {
 				nextEl: ".swiper-button-next-" + index,
 				prevEl: ".swiper-button-prev-" + index
 			},
-			// breakpoints: {
-			// 	375: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 10,
-			// 	},
-			// },
+			breakpoints: {
+				1366: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+				1400: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+			},
 		});
+	});
+	var swiper = new Swiper(".slide-single .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".slide-single .swiper-button-next",
+			prevEl: ".slide-single .swiper-button-prev"
+		},
+		breakpoints: {
+			1366: {
+				slidesPerView: 4,
+				spaceBetween: 10,
+			},
+			1400: {
+				slidesPerView: 5,
+				spaceBetween: 10,
+			},
+		},
 	});
 }
 
@@ -118,8 +142,8 @@ const scrollSection = () => {
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-			scrollTop: $("#sec-4").offset().top,
-		},
+				scrollTop: $("#sec-4").offset().top,
+			},
 			"slow"
 		);
 	});

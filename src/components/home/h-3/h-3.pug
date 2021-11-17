@@ -1,25 +1,28 @@
-section.section.customer
+section.section.customer(setBackground="./images/bg-2.png")
 	.container 
 		h2.title.title_small.title_small-white Khách hàng cá nhân
 		.big-image 
 			.img-inner 
-				img(src="./images/customer-1.png", alt="")
+				a(href="") 
+					img(src="./images/customer-1.png", alt="")
 			.wrapper-content 
 				.desc 
 					a(href="") Bảo hiểm chăm sóc sức khoẻ toàn cầu - GHC
 					p Bảo vệ sức khoẻ thể chất và tinh thần các thành viên gia đình.
-				a.btn.btn-buy-now(href="") Mua gói
-		.small-image 
+				a.btn-buy-now(href="") Mua gói
+		.slide-single
 			.swiper-container 
 				.swiper-wrapper
-					-for(i=2; i<6; i++)
+					-for(i=2; i<7; i++)
 						.swiper-slide
-							.img 
-								img(src="./images/customer-"+i+".png", alt="")
-							.wrapper-content 
-								.desc 
-									a(href="") Tài khoản thanh toán trực tuyến
-									p Gửi và rút tiền mặt tiện lợi. Nhận chuyển khoản 24/7.
-								a.btn.btn-small(href="") Mở tài khoản
+							.slide-inner
+								.img
+									a(href="") 
+										img(src="./images/customer-"+i+".png", alt="")
+								.wrapper-content 
+									.desc 
+										a(href="") Tài khoản thanh toán trực tuyến
+										p Gửi và rút tiền mặt tiện lợi. Nhận chuyển khoản 24/7.
+									a.btn-small(href="") Mở tài khoản
 			.swiper-button-next 
 			.swiper-button-prev

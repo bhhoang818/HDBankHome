@@ -1,11 +1,12 @@
 .card-hdbank
 	.single-swiper
 		position: relative
+		max-width: 1198px
+		margin: 0 auto
 		.slide-inner
 			padding: 24px
-			max-width: 394px
 			min-height: 570px
-			background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15))
+			background: rgba(255, 255, 255, 0.2)
 			border: 1px solid rgba(255, 255, 255, 0.35)
 			box-sizing: border-box
 			backdrop-filter: blur(20px)
@@ -14,12 +15,21 @@
 			flex-direction: column
 			justify-content: center
 			align-items: center
+			transition: background 0.3s ease-out
+			@media screen and ( min-width: 1400px )
+				max-width: 100%
+			@media screen and ( max-width: 1366px )
+				max-width: 100%
 			.img-card
 				position: relative
 				.icon
 					position: absolute
 					top: -16px
 					right: -16px
+				a,
+				.icon
+					img
+						transition: all ease-in-out .3s
 			.title-card
 				display: flex
 				flex-direction: column
@@ -54,6 +64,15 @@
 			&.small-img
 				justify-content: space-between
 				padding-top: 30%
+			&:hover
+				background: rgba(255, 255, 255, .4)
+				.img-card
+					a,
+					.icon
+						img
+							transform: scale(1.05)
+		@media screen and ( min-width: 1366px )
+			max-width: 80vw
 	.btn-view-all
 		display: flex
 		flex-direction: row

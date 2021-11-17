@@ -16,7 +16,6 @@
 		pointer-events: visible
 .overflow
 	overflow: hidden
-
 .lcl
 	overflow: hidden
 	display: -webkit-box
@@ -34,3 +33,30 @@
 
 	&-4
 		-webkit-line-clamp: 4
+.swiper-button-next,
+.swiper-button-prev
+	position: absolute
+	width: 44px !important
+	height: 44px !important
+	border-radius: 50%
+	border: solid 1px $white
+	background-image: unset !important
+	opacity: 1 !important
+	cursor: pointer !important
+	&::before
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-family: Material Icons
+		font-size: r(30px) !important
+		color: $white
+.swiper-button-next
+	right: -80px !important
+	&::before
+		content: '\f1df'
+
+.swiper-button-prev
+	left: -80px !important
+	&::before
+		content: '\e317'
