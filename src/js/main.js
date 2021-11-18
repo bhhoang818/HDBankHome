@@ -313,4 +313,5 @@ $(document).ready(function () {
 	setBackgroundElement();
 	scrollSection();
 	accordianList();
+	$('.carouselTicker').carouselTicker();
 });

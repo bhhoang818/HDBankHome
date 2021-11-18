@@ -8,7 +8,8 @@
 		"src/_plugins/swiper-bundle.js",
 		"src/_plugins/mapping-listener.js",
 		"src/_plugins/mapping.js",
-		"node_modules/lazysizes/lazysizes.js"
+		"node_modules/lazysizes/lazysizes.js",
+		"src/_plugins/jquery.carouselTicker.js"
 	],
 	"css": [
 		"src/_plugins/bootstrap.min.css",
