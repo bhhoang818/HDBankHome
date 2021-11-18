@@ -1,86 +1,112 @@
 section.section.banner-innerhome 
-	.swiper-container
+	.swiper-container.big-banner
 		.swiper-wrapper 
 			.swiper-slide
-				.image
-					img(src="./images/watch.png", alt="")
 				.swiper-inner
-					.slide-title 
-						p.small-text Đăng ký hôm nay
-						p.big-text Rước ngay táo xịn
-					ul.list
-						li 
-							p 
-								span Thời gian: 
-								span 01/11/2021 - 31/12/2021
-						li 
-							p 
-								span Đối tượng: 
-								span Khách hàng mới tại HDBank
-						li 
-							p Tổng giá trị giải thưởng lên đến 
-								span 700 triệu 
-					a.btn.btn-detail(href="") Chi tiết
+					.image
+						img(src="./images/watch.jpg", alt="")
+					.wrap-content
+						.slide-title 
+							p.small-text Đăng ký hôm nay
+							p.big-text Rước ngay
+								br
+								| táo xịn
+						ul.list
+							li 
+								span.fas.fa-check-circle
+								p 
+									span Thời gian: 
+									| 01/11/2021 - 31/12/2021
+							li 
+								span.fas.fa-check-circle
+								p 
+									span Đối tượng: 
+									| Khách hàng mới tại HDBank
+							li 
+								span.fas.fa-check-circle
+								p Tổng giá trị giải thưởng lên đến 
+									span 700 triệu 
+						a.btn-detail(href="") 
+							span Chi tiết
 			.swiper-slide
-				.image
-					img(src="./images/bike.png", alt="")
 				.swiper-inner
-					.slide-title 
-						p.small-text Gửi tiết kiệm online
-						p.big-text Trúng ngay xế xịn
-					ul.list
-						li 
-							p 
-								span Thời gian: 
-								span 01/11/2021 - 31/12/2021
-						li 
-							p 
-								span Đối tượng: 
-								span Khách hàng mới tại HDBank
-						li 
-							p Tổng giá trị giải thưởng lên đến 
-								span 500 triệu 
-					a.btn.btn-detail(href="") Chi tiết
-		.swiper-button-next 
+					.image
+						img(src="./images/bike.jpg", alt="")
+					.wrap-content
+						.slide-title 
+							p.small-text Gửi tiết kiệm online
+							p.big-text Trúng ngay
+								br
+								| xế xịn
+						ul.list
+							li 
+								span.fas.fa-check-circle
+								p 
+									span Thời gian: 
+									span 01/11/2021 - 31/12/2021
+							li 
+								span.fas.fa-check-circle
+								p 
+									span Đối tượng: 
+									span Khách hàng mới tại HDBank
+							li 
+								span.fas.fa-check-circle
+								p Tổng giá trị giải thưởng lên đến 
+									span 500 triệu 
+						a.btn.btn-detail(href="") Chi tiết
+		.swiper-pagination
+		.swiper-button-next
 		.swiper-button-prev
-
 	.endo-wrap 
-		.title-wrap
-			h2 Ưu đãi cho bạn
-			a.btn.btn-all(href="") Xem tất cả
-		.swiper-container
-			.swiper-wrapper
-				.swiper-slide
-					.slide-inner
-						.brand.red 
-							span shopee
-						.wrap-content 
-							p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
-						.date-time 
-							span 07/03/2021 15:32
-				.swiper-slide
-					.slide-inner
-						.brand.blue 
-							span TIKI
-						.wrap-content 
-							p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
-						.date-time 
-							span 07/03/2021 15:32
-				.swiper-slide
-					.slide-inner
-						.brand.yellow 
-							span LAZADA
-						.wrap-content 
-							p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
-						.date-time 
-							span 07/03/2021 15:32
-				.swiper-slide
-					.slide-inner
-						.brand.red 
-							span sendo
-						.wrap-content 
-							p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
-						.date-time 
-							span 07/03/2021 15:32
-			.swiper-button-next
-			.swiper-button-prev
+		.container
+			.title-wrap
+				h2 Ưu đãi cho bạn
+				a.btn-all(href="") Xem tất cả
+			.slide-endo
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							.slide-inner
+								a(href="") 
+									.brand.red 
+										span shopee
+									.wrap-content 
+										p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
+									.date-time 
+										span 07/03/2021 15:32
+						.swiper-slide
+							.slide-inner
+								a(href="") 
+									.brand.blue 
+										span TIKI
+									.wrap-content 
+										p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
+									.date-time 
+										span 07/03/2021 15:32
+						.swiper-slide
+							.slide-inner
+								a(href="") 
+									.brand.yellow 
+										span LAZADA
+									.wrap-content 
+										p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
+									.date-time 
+										span 07/03/2021 15:32
+						.swiper-slide
+							.slide-inner
+								a(href="") 
+									.brand.red 
+										span sendo
+									.wrap-content 
+										p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
+									.date-time 
+										span 07/03/2021 15:32
+						.swiper-slide
+							.slide-inner
+								a(href="") 
+									.brand.red 
+										span sendo
+									.wrap-content 
+										p Miễn phí TIKINOW trong ngày 8/3 khi mua hàng cùng HDBank VISA
+									.date-time 
+										span 07/03/2021 15:32

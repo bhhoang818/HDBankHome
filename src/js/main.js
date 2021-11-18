@@ -5,6 +5,8 @@ const mainBanner = () => {
 			paginationClickable: true,
 			clickable: true
 		},
+		observer: true,
+		observeParents: true,
 		parallax: true,
 		speed: 2000,
 		effect: "fade",
@@ -76,11 +78,123 @@ const mainBanner = () => {
 			paginationClickable: true,
 			clickable: true
 		},
+		observer: true,
+		observeParents: true,
 		parallax: true,
 		speed: 2000,
 		loop: true
 	});
+	var swiper = new Swiper('.banner-innerhome .big-banner', {
+		pagination: {
+			el: ".banner-innerhome .big-banner .swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		navigation: {
+			nextEl: ".banner-innerhome .big-banner .swiper-button-next",
+			prevEl: ".banner-innerhome .big-banner .swiper-button-prev"
+		},
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		loop: true
+	});
+	var swiper = new Swiper(".slide-endo .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".slide-single .swiper-button-next",
+			prevEl: ".slide-single .swiper-button-prev"
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 24,
+			},
 
+		},
+	});
+	var swiper = new Swiper(".catelog-slide .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".catelog-slide .swiper-button-next",
+			prevEl: ".catelog-slide .swiper-button-prev"
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 9,
+				spaceBetween: 50,
+			},
+		},
+	});
+	var swiper = new Swiper(".pro-flash .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".pro-flash .swiper-button-next",
+			prevEl: ".pro-flash .swiper-button-prev"
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 6,
+				spaceBetween: 8,
+			},
+			1366: {
+				slidesPerView: 8,
+				spaceBetween: 8,
+			},
+		},
+	});
+	var swiper = new Swiper(".pro-hot .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".pro-hot .swiper-button-next",
+			prevEl: ".pro-hot .swiper-button-prev"
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 22,
+			},
+		},
+	});
+	var swiper = new Swiper(".new-slide .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".new-slide .swiper-button-next",
+			prevEl: ".new-slide .swiper-button-prev"
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 34,
+			},
+		},
+	});
 }
 
 const headerActive = () => {

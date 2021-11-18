@@ -1,52 +1,55 @@
-.slide-mess
-	background-color: #f8f8f8
-	padding: r(70px) 0
-	.mySwiper
-		position: relative
-		.slide-inner
-			display: flex
-			.icon-mess
-				min-width: 150px
-				min-height: 150px
+.digital-store
+	.digital-search
+		padding: 48px 0px 0px
+		background: url(.png), linear-gradient(96.95deg, #FFAC41 -30.56%, #E02709 64.19%)
+		height: 147px
+		background-blend-mode: overlay, normal
+		background-image: url('../images/digital-bg.jpg')
+		background-size: 100% 100%
+		.form-search
+			.form-group
+				position: relative
 				display: flex
 				align-items: center
-				justify-content: center
-				border: 3px solid #95e1d3
-			.mess-content
-				margin-left: 60px
-				.desc
-					color: #999999
-					font-size: 24px
-					font-weight: 300
-					font-style: italic
-					line-height: 36px
-					padding-bottom: 23px
-				.sign
-					padding-left: 130px
-					position: relative
-					color: #333333
-					font-family: "Kaushan Script"
-					font-size: 24px
-					font-weight: 500
-					&::after
-						position: absolute
-						content: ''
-						top: 50%
-						left: 0
-						width: 60px
-						height: 3px
-						background-color: #f38181
-						transform: translateY(-50%)
-			@media screen and ( max-width: 1024px )
-				.icon-mess
-					min-width: 75px
-					max-height: 75px
-					min-height: fit-content
-					padding: 10px
-			@media screen and ( max-width: 575px )
-				flex-direction: column
-				.icon-mess
-					width: fit-content
-					margin-bottom: 30px
-				.mess-content
-					margin-left: 0
+				justify-content: space-between
+				h2
+					font-weight: 800
+					font-size: r(32px)
+					line-height: 125%
+					color: #FFFFFF
+					white-space: nowrap
+					text-shadow: 0px 2px 5px rgba(90, 27, 0, 0.6)
+				.form-control
+					margin-left: 48px
+					padding: 16px 24px
+					max-width: 988px
+					height: 61px
+					background: #F9FAFC
+					border-radius: 42px
+					&::placeholder
+						font-weight: 500
+						font-size: 20px
+						line-height: 29px
+						color: $black
+						opacity: 1
+
+				.search-icon
+					position: absolute
+					top: 50%
+					right: 24px
+					transform: translateY(-50%)
+					border: none
+					background: none
+			@media screen and ( max-width: 1366px )
+				.form-group
+					h2
+						font-size: r(25px)
+					.form-control
+						height: 50px
+						&::placeholder
+							font-weight: 500
+							font-size: 16px
+	.banner-digital
+		+img-ratio(460/1440)
+		img
+			object-position: 50% 30%

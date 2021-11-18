@@ -14,6 +14,7 @@
 		"src/_plugins/bootstrap.min.css",
 		"src/_plugins/font.css",
 		"src/_plugins/swiper-bundle.min.css",
-		"src/_plugins/swiper-bundle.css"
+		"src/_plugins/swiper-bundle.css",
+		"src/_plugins/carouselTicker.css"
 	]
 }
