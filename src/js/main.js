@@ -304,6 +304,19 @@ const accordianList = () => {
 	});
 };
 
+const toggleSlideTool = () => {
+	let btnToggle = $('#panel-1 .from-slide-loan .btn-login');
+	btnToggle.on('click', (e) => {
+		e.preventDefault();
+		$('.card-tool-box').find('#from-slide').slideDown();
+		$('.card-tool-box').find('.card-switcher').slideUp()
+	})
+	$('#from-slide .header-advise li em').on('click', () => {
+		$('.card-tool-box').find('#from-slide').slideUp();
+		$('.card-tool-box').find('.card-switcher').slideDown()
+	})
+}
+
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
@@ -313,5 +326,6 @@ $(document).ready(function () {
 	setBackgroundElement();
 	scrollSection();
 	accordianList();
+	toggleSlideTool();
 	$('.carouselTicker').carouselTicker();
 });
