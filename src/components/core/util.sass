@@ -43,6 +43,7 @@
 	background-image: unset !important
 	opacity: 1 !important
 	cursor: pointer !important
+	transition: all ease-in-out .3s
 	&::before
 		position: absolute
 		top: 50%
@@ -60,3 +61,13 @@
 	left: -80px !important
 	&::before
 		content: '\e317'
+@media screen and ( min-width: 1025px )
+	.swiper-button-next,
+	.swiper-button-prev
+		&:hover
+			background: $gray
+@media screen and ( max-width: 1280px )
+	.swiper-button-next
+		right: -50px !important
+	.swiper-button-prev
+		left: -50px !important

@@ -2,8 +2,9 @@ const mainBanner = () => {
 	var swiper = new Swiper('.home-banner .swiper-container', {
 		pagination: {
 			el: ".swiper-pagination",
+			paginationClickable: true,
+			clickable: true
 		},
-		paginationClickable: true,
 		parallax: true,
 		speed: 2000,
 		effect: "fade",
@@ -31,9 +32,15 @@ const mainBanner = () => {
 			loop: false,
 			navigation: {
 				nextEl: ".swiper-button-next-" + index,
-				prevEl: ".swiper-button-prev-" + index
+				prevEl: ".swiper-button-prev-" + index,
+				clickable: true,
+
 			},
 			breakpoints: {
+				1280: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
 				1366: {
 					slidesPerView: 3,
 					spaceBetween: 10,
@@ -57,16 +64,23 @@ const mainBanner = () => {
 			prevEl: ".slide-single .swiper-button-prev"
 		},
 		breakpoints: {
-			1366: {
-				slidesPerView: 4,
-				spaceBetween: 10,
-			},
-			1400: {
+			1280: {
 				slidesPerView: 5,
 				spaceBetween: 10,
 			},
 		},
 	});
+	var swiper = new Swiper('.comparny-image .swiper-container', {
+		pagination: {
+			el: ".swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		parallax: true,
+		speed: 2000,
+		loop: true
+	});
+
 }
 
 const headerActive = () => {
@@ -142,8 +156,8 @@ const scrollSection = () => {
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-				scrollTop: $("#sec-4").offset().top,
-			},
+			scrollTop: $("#sec-4").offset().top,
+		},
 			"slow"
 		);
 	});
