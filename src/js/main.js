@@ -329,7 +329,7 @@ const scrollTop = () => {
 
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
-	// $('.carouselTicker').carouselTicker();
+	$('.carouselTicker').carouselTicker();
 	mainBanner();
 	headerActive();
 	rangeSlide();

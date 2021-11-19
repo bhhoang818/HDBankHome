@@ -5,6 +5,7 @@
 	"js": [
 		"src/_plugins/bootstrap.bundle.min.js",
 		"node_modules/jquery/dist/jquery.min.js",
+		"src/_plugins/jquery.carouselTicker.js",
 		"src/_plugins/swiper-bundle.js",
 		"src/_plugins/mapping-listener.js",
 		"src/_plugins/mapping.js",

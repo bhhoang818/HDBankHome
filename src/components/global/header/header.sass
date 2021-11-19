@@ -8,6 +8,8 @@
 			.btn-toggle
 				margin-right: 27px
 			.logo
+				display: block
+				max-width: 205px
 			.language
 				position: relative
 				width: 117px
@@ -63,6 +65,25 @@
 					box-shadow: 0px 14px 40px rgba(33, 43, 54, 0.1)
 			.btn-login
 				margin-left: 50px
+	@media screen and ( min-width: 320px )
+		padding: 12/16*1rem 0
+		nav
+			.nav-full
+				.btn-toggle
+					margin-right: 10px
+				// .btn-login
+				// 	display: flex !important
+				// 	align-items: center !important
+				// 	width: 106px
+				// 	height: 32px
+				// 	padding: 6px 16px !important
+				// 	span
+				// 		font-size: r(14px)
+				// 		margin-left: 0
+				// 		padding-bottom: 3px
+				// 	&::after
+				// 		display: none
+				.language
 header
 	position: fixed
 	top: 0
@@ -134,8 +155,8 @@ header
 				display: none
 			.login
 				.title
+					text-align: left !important
 					p
-						text-align: center
 						font-weight: bold
 						line-height: 23px
 						color: $black
