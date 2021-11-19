@@ -20,10 +20,16 @@ footer
 					padding-top: 3px
 					margin-right: 10px
 	.menu-box
+		position: relative
 		align-items: flex-start
+		.footer__logo__arrow
+			position: absolute
+			top: -30px
+			right: 0
+			cursor: pointer
 		.menu-list
 			padding-top: 40px
-			margin-left: 64px
+			margin-left: auto
 			.footer-infor_tile
 				margin-bottom: 8px
 				span
@@ -38,8 +44,6 @@ footer
 					a
 						color: $black
 						font-size: r(14px)
-			&:first-child
-				margin-left: auto
 	.footer-coppyright
 		margin-top: 32px
 		margin-bottom: 48px

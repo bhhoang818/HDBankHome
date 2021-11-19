@@ -5,6 +5,9 @@
 		position: relative
 		.swiper-inner
 			position: relative
+			.image
+				a
+					+img-ratio(696/1440)
 			.wrap-content
 				position: absolute
 				top: 50%
@@ -71,7 +74,7 @@
 			position: absolute
 			top: auto
 			bottom: 10% !important
-			left: 12%
+			left: 16.8%
 			width: 112px !important
 			text-align: left
 			&-bullet
@@ -98,11 +101,12 @@
 		position: relative
 		.title-wrap
 			margin: 0 30px
-			margin-right: 105px
 			display: flex
 			align-items: center
 			justify-content: space-between
 			margin-bottom: 26px
+			max-width: 1280px
+			margin-left: 125px
 			h2
 				font-weight: bold
 				font-size: 20px
@@ -121,24 +125,15 @@
 					content: '\f1df'
 					font-family: Material Icons
 					font-size: r(20px)
-		&::after
-			position: absolute
-			top: 0
-			right: -2%
-			content: ''
-			width: 239px
-			height: 260px
-			z-index: 2
-			pointer-events: none
-			background: linear-gradient(90deg, rgba(255, 255, 255, 0) -18.99%, #FFFFFF 49.64%)
+
 		.slide-endo
-			margin: 0 30px
+			position: relative
+			margin: 0 auto
+			max-width: 1280px
 			.swiper-container
-				overflow: visible
 			.slide-inner
 				position: relative
 				padding: 24px
-				height: 205px
 				background: $white
 				box-shadow: 2px 2px 9px -4px rgba(0, 0, 0, 0.19)
 				border-radius: 20px
@@ -180,3 +175,13 @@
 				&:hover
 					border: 1px solid #BCC0CC
 					box-shadow: 2px 39px 30px -16px rgba(0, 0, 0, 0.21)
+			&::after
+				position: absolute
+				top: 0
+				right: -26px
+				content: ''
+				width: 239px
+				height: 260px
+				z-index: 2
+				pointer-events: none
+				background: linear-gradient(90deg, rgba(255, 255, 255, 0) -18.99%, #FFFFFF 49.64%)

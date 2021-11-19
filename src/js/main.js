@@ -113,7 +113,7 @@ const mainBanner = () => {
 		},
 		breakpoints: {
 			1200: {
-				slidesPerView: 4,
+				slidesPerView: 5,
 				spaceBetween: 24,
 			},
 
@@ -317,8 +317,19 @@ const toggleSlideTool = () => {
 	})
 }
 
+/*==================== SHOW SCROLL TOP ====================*/
+const scrollTop = () => {
+	$(".footer__logo__arrow").on("click", function (e) {
+		e.preventDefault();
+		$("html,body").animate({
+			scrollTop: 0,
+		}, '3000');
+	});
+};
+
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
+	$('.carouselTicker').carouselTicker();
 	mainBanner();
 	headerActive();
 	rangeSlide();
@@ -327,5 +338,6 @@ $(document).ready(function () {
 	scrollSection();
 	accordianList();
 	toggleSlideTool();
-	$('.carouselTicker').carouselTicker();
+	scrollTop();
 });
+
