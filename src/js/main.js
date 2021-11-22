@@ -19,19 +19,44 @@ const mainBanner = () => {
 		},
 		loop: true
 	});
-	$(".single-swiper .swiper-container").each(function (index, element) {
+
+	var swiper = new Swiper(".swiper-card .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".swiper-card .swiper-button-next",
+			prevEl: ".swiper-card .swiper-button-prev",
+			clickable: true,
+
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+
+		},
+	});
+	$(".slide-card_mobile .swiper-container").each(function (index, element) {
 		var $this = $(this);
-		$this.addClass("instance-" + index);
+		$this.addClass("card-" + index);
 		$this.parent().find(".swiper-button-prev").addClass("swiper-button-prev-" + index);
 		$this.parent().find(".swiper-button-next").addClass("swiper-button-next-" + index);
-
-		var swiper = new Swiper(".instance-" + index, {
+		var swiper = new Swiper(".card-" + index, {
 			speed: 750,
 			observer: true,
 			observeParents: true,
 			lazy: true,
 			breakpointsInverse: true,
-			loop: false,
+			spaceBetween: 16,
+			centeredSlides: true,
+			roundLengths: true,
+			loop: true,
+			loopAdditionalSlides: 30,
 			navigation: {
 				nextEl: ".swiper-button-next-" + index,
 				prevEl: ".swiper-button-prev-" + index,
@@ -39,19 +64,14 @@ const mainBanner = () => {
 
 			},
 			breakpoints: {
-				1280: {
-					slidesPerView: 3,
-					spaceBetween: 10,
+				375: {
+					slidesPerView: 1.5,
 				},
-				1366: {
-					slidesPerView: 3,
-					spaceBetween: 10,
-				},
-				1400: {
-					slidesPerView: 3,
-					spaceBetween: 10,
-				},
+				768: {
+					slidesPerView: 2.5,
+				}
 			},
+
 		});
 	});
 	var swiper = new Swiper(".slide-single .swiper-container", {
@@ -66,6 +86,18 @@ const mainBanner = () => {
 			prevEl: ".slide-single .swiper-button-prev"
 		},
 		breakpoints: {
+			375: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			575: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+			768: {
+				slidesPerView: 4,
+				spaceBetween: 10,
+			},
 			1280: {
 				slidesPerView: 5,
 				spaceBetween: 10,
@@ -107,14 +139,26 @@ const mainBanner = () => {
 		lazy: true,
 		breakpointsInverse: true,
 		loop: false,
+		spaceBetween: 24,
 		navigation: {
 			nextEl: ".slide-single .swiper-button-next",
 			prevEl: ".slide-single .swiper-button-prev"
 		},
 		breakpoints: {
-			1200: {
+			320: {
+				slidesPerView: 1.5,
+			},
+			575: {
+				slidesPerView: 2.5,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+			992: {
+				slidesPerView: 4,
+			},
+			1280: {
 				slidesPerView: 5,
-				spaceBetween: 24,
 			},
 
 		},
@@ -131,6 +175,14 @@ const mainBanner = () => {
 			prevEl: ".catelog-slide .swiper-button-prev"
 		},
 		breakpoints: {
+			320: {
+				slidesPerView: 3,
+				spaceBetween: 0,
+			},
+			575: {
+				slidesPerView: 4,
+				spaceBetween: 0,
+			},
 			1200: {
 				slidesPerView: 9,
 				spaceBetween: 50,
@@ -149,6 +201,14 @@ const mainBanner = () => {
 			prevEl: ".pro-flash .swiper-button-prev"
 		},
 		breakpoints: {
+			320: {
+				slidesPerView: 3,
+				spaceBetween: 8,
+			},
+			768: {
+				slidesPerView: 4,
+				spaceBetween: 8,
+			},
 			1200: {
 				slidesPerView: 6,
 				spaceBetween: 8,
@@ -166,14 +226,22 @@ const mainBanner = () => {
 		lazy: true,
 		breakpointsInverse: true,
 		loop: false,
+		spaceBetween: 22,
 		navigation: {
 			nextEl: ".pro-hot .swiper-button-next",
 			prevEl: ".pro-hot .swiper-button-prev"
 		},
 		breakpoints: {
+			320: {
+				slidesPerView: 2,
+				spaceBetween: 8,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 8,
+			},
 			1200: {
 				slidesPerView: 4,
-				spaceBetween: 22,
 			},
 		},
 	});
@@ -188,10 +256,88 @@ const mainBanner = () => {
 			nextEl: ".new-slide .swiper-button-next",
 			prevEl: ".new-slide .swiper-button-prev"
 		},
+		pagination: {
+			el: ".swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
 		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+			575: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
 			1200: {
 				slidesPerView: 3,
 				spaceBetween: 34,
+			},
+		},
+	});
+	$(".swiper-mobile .swiper-container").each(function (index, element) {
+		var $this = $(this);
+		$this.addClass("instance-" + index);
+		$this.parent().find(".swiper-button-prev").addClass("swiper-button-prev-" + index);
+		$this.parent().find(".swiper-button-next").addClass("swiper-button-next-" + index);
+
+		var swiper = new Swiper(".instance-" + index, {
+			speed: 750,
+			observer: true,
+			observeParents: true,
+			lazy: true,
+			breakpointsInverse: true,
+			loop: false,
+			navigation: {
+				nextEl: ".swiper-button-next-" + index,
+				prevEl: ".swiper-button-prev-" + index,
+				clickable: true,
+
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				575: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 5,
+					spaceBetween: 20,
+				}
+			},
+		});
+	});
+	var swiper = new Swiper(".top-block .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		navigation: {
+			nextEl: ".top-block .swiper-button-next",
+			prevEl: ".top-block .swiper-button-prev"
+		},
+		breakpoints: {
+			375: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			575: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+			1280: {
+				slidesPerView: 5,
+				spaceBetween: 10,
 			},
 		},
 	});
@@ -203,14 +349,20 @@ const headerActive = () => {
 	let section = $('section');
 	butonToggle.on('click', (e) => {
 		e.preventDefault();
-		header.addClass('active');
+		if ($(window).width() <= 992) {
+			butonToggle.toggleClass('active')
+			header.toggleClass('active');
+		} else {
+			header.addClass('active');
+		}
 	});
 	section.on('click', (e) => {
 		e.preventDefault();
 		header.removeClass('active');
 	})
-	$('#click-toggle').on('click', () => {
-		$('.language').toggleClass('active');
+	$('.dropdown-toggle').on('click', () => {
+		console.log('test');
+		$('.dropdown .dropdown-menu').slideToggle()
 	})
 }
 
@@ -270,8 +422,8 @@ const scrollSection = () => {
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-			scrollTop: $("#sec-4").offset().top,
-		},
+				scrollTop: $("#sec-4").offset().top,
+			},
 			"slow"
 		);
 	});
@@ -302,6 +454,21 @@ const accordianList = () => {
 		$(".btn-dropdown").not(this).parent().next().slideUp();
 		$(".btn-dropdown").not(this).removeClass("active");
 	});
+	$(".footer-infor_tile").on("click", function () {
+		let $this = $(this);
+		if ($this.next().hasClass("show")) {
+			$this.next().removeClass("show");
+			$this.next().slideUp(350);
+			$this.closest('.menu-list').removeClass("active");
+		} else {
+			$this.parent().parents().find("ul").removeClass("show");
+			$this.parent().parents().find("ul").slideUp(350);
+			$this.parent().parents('.menu-box').find(".menu-list").removeClass("active");
+			$this.next().toggleClass("show");
+			$this.next().slideDown(350);
+			$this.parent(".menu-list").addClass("active");
+		}
+	});
 };
 
 const toggleSlideTool = () => {
@@ -326,10 +493,28 @@ const scrollTop = () => {
 		}, '3000');
 	});
 };
+const checkLayoutBanner = () => {
+	const bannerHero = $(".home-banner ");
+	const heightHeader = $(".nav-top").outerHeight();
+	if (bannerHero.length >= 1 && $(window).width() <= 992) {
+		$("main").css("padding-top", heightHeader);
+	} else {
+		$("main").css("padding-top", 0);
+	}
+};
 
+const initMapping = () => {
+	// if ($(window).width() < 992
+	$(".home-banner .card-tool-box").mapping({
+		mobileWrapper: "#util-wrap",
+		mobileMethod: "appendTo",
+		desktopWrapper: ".home-banner",
+		desktopMethod: "appento",
+		breakpoint: 768.98,
+	});
+};
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
-	$('.carouselTicker').carouselTicker();
 	mainBanner();
 	headerActive();
 	rangeSlide();
@@ -339,5 +524,6 @@ $(document).ready(function () {
 	accordianList();
 	toggleSlideTool();
 	scrollTop();
+	checkLayoutBanner();
+	initMapping();
 });
-

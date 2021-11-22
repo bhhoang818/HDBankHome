@@ -3,9 +3,8 @@
 		"src/fonts/**"
 	],
 	"js": [
-		"src/_plugins/bootstrap.bundle.min.js",
 		"node_modules/jquery/dist/jquery.min.js",
-		"src/_plugins/jquery.carouselTicker.js",
+		"src/_plugins/bootstrap.bundle.min.js",
 		"src/_plugins/swiper-bundle.js",
 		"src/_plugins/mapping-listener.js",
 		"src/_plugins/mapping.js",
@@ -16,6 +15,6 @@
 		"src/_plugins/font.css",
 		"src/_plugins/swiper-bundle.min.css",
 		"src/_plugins/swiper-bundle.css",
-		"src/_plugins/carouselTicker.css"
+		"src/_plugins/jquery-ui.css"
 	]
 }

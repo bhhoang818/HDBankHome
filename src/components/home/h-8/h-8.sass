@@ -45,6 +45,19 @@
 						display: flex
 						align-items: center
 						justify-content: center
+		.swiper-pagination
+			width: 100%
+			@media screen and ( min-width: 1025px )
+				display: none
+			@media screen and ( max-width: 1024px )
+				&-bullet
+					width: 10px
+					height: 10px
+					background: #ECECEC !important
+					opacity: 1
+					margin-right: 8px
+					&-active
+						background: $main !important
 		.swiper-button-next,
 		.swiper-button-prev
 			border: 1px solid $black
@@ -52,3 +65,11 @@
 				color: $black
 			&:hover
 				background: $gray
+			@media screen and ( max-width: 1024px )
+				display: none
+		@media screen and ( max-width: 1024px )
+			padding-bottom: 24px
+		.btn-viewmore
+			margin-top: 50px
+			@media screen and ( min-width: 1025px )
+				display: none

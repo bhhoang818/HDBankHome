@@ -1,4 +1,6 @@
 .product-hdbank
+	.title
+		margin-top: 24px
 	ul
 		justify-content: center
 		padding-left: 0
@@ -25,6 +27,18 @@
 				a
 					color: $white
 					background: $main
+		@media screen and ( max-width: 992.98px )
+			li
+				width: 50%
+				a
+					text-align: center
+					display: block
+					padding: 10px 10px
+					font-size: r(14px)
+		@media screen and ( max-width: 575px )
+			max-width: 67vw
+			margin: 0 auto
+			margin-bottom: 32px
 	.list-product
 		justify-content: space-between
 		.item
@@ -39,3 +53,48 @@
 					line-height: 23px
 					text-align: center
 					color: #000000
+		@media screen and ( max-width: 1024px )
+			.item
+				.content
+					padding: 0 10px
+		@media screen and ( max-width: 856.98px )
+			display: none !important
+
+	.swiper-mobile
+		position: relative
+		.item
+			text-align: center
+			.icon
+				margin-bottom: 12px
+			.content
+				padding: 0
+				p
+					font-weight: 400
+					font-size: 12px
+					line-height: 18px
+					text-align: center
+					color: #000000
+					margin-bottom: 0
+		.swiper-button-next,
+		.swiper-button-prev
+			width: 24px
+			height: 24px
+			border: 1.5px solid rgba($color: $black, $alpha: .4)
+			&::before
+				color: $black
+				opacity: .4
+
+		.swiper-button-netx
+			right: 0
+		.swiper-button-prev
+			left: 0
+		@media screen and ( min-width: 857px )
+			display: none
+		@media screen and ( max-width: 856px )
+			max-width: 80vw
+			margin: 0 auto
+		@media screen and ( max-width: 767px )
+			max-width: 70vw
+		@media screen and ( max-width: 575px )
+			max-width: 67vw
+			margin: 0 auto

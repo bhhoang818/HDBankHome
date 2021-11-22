@@ -19,11 +19,42 @@
 			border: 1px solid $black
 			&::before
 				color: $black
+		@media screen and ( max-width: 1199.98px )
+			margin-bottom: 18px
+			.swiper-button-next,
+			.swiper-button-prev
+				width: 24px !important
+				height: 24px !important
+				&::before
+					font-size: r(16px) !important
+			.swiper-button-next
+				right: 0px !important
+			.swiper-button-prev
+				left: 0px !important
+		@media screen and ( max-width: 991.98px )
+			.swiper-button-next
+				right: -10px !important
+			.swiper-button-prev
+				left: -10px !important
+		@media screen and ( max-width: 767.98px )
+			max-width: 90vw
+			margin: 0 auto
+			.swiper-button-next
+				right: -20px !important
+			.swiper-button-prev
+				left: -20px !important
+		@media screen and ( max-width: 575.98px )
+			max-width: 80vw
 	.flash-sale,
 	.product-hot
 		.title
 			text-align: left !important
 			color: $black !important
+			span
+				font-weight: 400
+			&.title_small
+				@media screen and ( max-width: 575px )
+					font-size: 16px !important
 	.pro-flash,
 	.pro-hot
 		position: relative
@@ -68,6 +99,28 @@
 								font-size: 14px
 							.price
 								font-size: 18px
+			@media screen and ( max-width: 991.98px )
+				.swiper-button-next
+					display: none
+			@media screen and ( max-width: 575.98px )
+				margin-bottom: 18px
+				a
+					.item-pro
+						min-height: 133px
+						.img
+							height: 90px
+							img
+								transform: scale(.7)
+						.infor
+							padding: 8px
+
+							.name
+								font-size: 10px
+								font-weight: 700
+								padding-bottom: 5px
+							.price
+								font-weight: 400
+								font-size: 10px
 	.product-hot
 		.pro-hot
 			.item-pro
@@ -102,10 +155,12 @@
 				.infor
 					padding: 0 24px
 					.name
-						font-weight: 500
-						font-size: 16px
-						line-height: 120%
-						color: $black
+						p
+							margin-bottom: 5px
+							font-weight: 500
+							font-size: 16px
+							line-height: 120%
+							color: $black
 					.price
 						font-weight: 800
 						font-size: 26px
@@ -114,35 +169,38 @@
 						margin-bottom: 10px
 					.icon
 						a
-							font-size: r(20px)
 							font-weight: 800
 							color: $main
 							padding: 0 10px
+							span
+								font-size: r(20px)
+								transition: all ease-in-out .3s
 							&:first-child
 								padding-left: 0
-		.btn-viewmore
-			display: flex
-			align-items: center
-			justify-content: center
-			margin: 40px auto 0
-			position: relative
-			width: 188px
-			height: 40px
-			border: 1px solid #333333
-			box-sizing: border-box
-			border-radius: 50px
-
-			span
-				color: $black
-				font-size: r(14px)
-			&::after
-				content: '\f1df'
-				font-family: Material Icons
-				font-size: r(20px)
-				padding-top: 5px
-				padding-left: 8px
-				color: $black
-				transition: all ease-in-out .3s
-			&:hover
-				&::after
-					transform: rotate(-25deg)
+		@media screen and ( max-width: 575.98px )
+			.pro-hot
+				.item-pro
+					padding: 0 0 16px 0
+					.img
+						max-height: unset
+						a
+							+img-ratio(135/176)
+						.sale-off
+							width: 42px
+							height: 27px
+							padding: 0 8px
+							span
+								font-size: r(10px)
+					.infor
+						padding: 0 16px
+						.name
+							p
+								font-weight: 700
+								font-size: r(10px)
+								line-height: 11px
+						.price
+							font-size: 16px
+		@media screen and ( max-width: 1024.98px )
+			.pro-hot
+				.swiper-button-next
+					display: none

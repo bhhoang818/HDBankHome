@@ -6,7 +6,6 @@
 	margin-right: auto
 .d-flex
 	display: flex
-	align-items: center
 .flex-column
 	flex-direction: column
 .flex-row
@@ -35,33 +34,6 @@
 	cursor: pointer
 .line-bottom
 	border-bottom: 1px solid rgba($main, 0.28)
-.dropdown
-	position: relative
-	cursor: pointer
-	.dropdown-menu
-		position: absolute
-		top: 150%
-		right: 0
-		width: 100%
-		background: $body
-		padding: 10px 15px
-		opacity: 0
-		pointer-events: none
-		transition: .2s ease-in-out all
-		z-index: 11
-		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1)
-		border-radius: 5px
-
-		ul
-			list-style: none
-			padding: 0
-	a
-		transition: .2s ease-in-out all
-	&.active, &:hover
-		.dropdown-menu
-			top: 100%
-			pointer-events: auto
-			opacity: 1
 .text-uppercase
 	text-transform: uppercase
 .text-capitalize
@@ -130,3 +102,9 @@
 	transition: all 1s cubic-bezier(.22, .44, 0, 1)
 .nav-link
 	padding: 1rem .5rem
+.desktop
+	@media screen and ( max-width: 575.98px )
+		display: none
+.mobile
+	@media screen and ( min-width: 576px )
+		display: none

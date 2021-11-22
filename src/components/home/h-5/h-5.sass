@@ -1,5 +1,7 @@
 .banner-innerhome
 	padding-bottom: 89px
+	@media screen and ( max-width: 991.98px )
+		padding-bottom: 40px
 	.big-banner
 		margin-bottom: 42px
 		position: relative
@@ -8,6 +10,9 @@
 			.image
 				a
 					+img-ratio(696/1440)
+				&.mobile
+					a
+						+img-ratio(512/375)
 			.wrap-content
 				position: absolute
 				top: 50%
@@ -83,16 +88,27 @@
 				border-radius: 50%
 				&:focus
 					outline: none !important
-		.swiper-pagination-bullet-active
-			background: #333 !important
-			&:focus
-				outline: none !important
+				&-active
+					background: #333 !important
+					&:focus
+						outline: none !important
+			@media screen and ( max-width: 1024px )
+				bottom: 0 !important
+			@media screen and ( max-width: 575px )
+				left: 24px
+				&-bullet
+					width: 10px
+					height: 10px
+					&-active
+						background: $main !important
 
 		.swiper-button-next,
 		.swiper-button-prev
 			border: 1px solid $black
 			&::before
 				color: $black
+			@media screen and ( max-width: 768px )
+				display: none
 		.swiper-button-next
 			right: 40px !important
 		.swiper-button-prev
@@ -125,7 +141,12 @@
 					content: '\f1df'
 					font-family: Material Icons
 					font-size: r(20px)
-
+			@media screen and ( max-width: 991.98px )
+				margin-left: 0
+				h2
+					font-size: 14px
+				.btn-all
+					font-size: 14px
 		.slide-endo
 			position: relative
 			margin: 0 auto
@@ -135,7 +156,7 @@
 				position: relative
 				padding: 24px
 				background: $white
-				box-shadow: 2px 2px 9px -4px rgba(0, 0, 0, 0.19)
+				box-shadow: 2px 2px 17px -4px rgba(0, 0, 0, 0.19)
 				border-radius: 20px
 				border: 1px solid $tran
 				transition: all ease-in-out .3s
@@ -185,3 +206,5 @@
 				z-index: 2
 				pointer-events: none
 				background: linear-gradient(90deg, rgba(255, 255, 255, 0) -18.99%, #FFFFFF 49.64%)
+				@media screen and ( max-width: 768px )
+					display: none

@@ -6,6 +6,9 @@
 	vertical-align: middle
 	user-select: none
 	padding: 0 !important
+	&:focus
+		outline: none !important
+		box-shadow: initial !important
 	&-toggle
 		margin-left: 0
 		cursor: pointer
@@ -35,7 +38,26 @@
 				top: 10px
 			&:nth-child(4)
 				top: 20px
-
+		&.active
+			span
+				&:nth-child(1)
+					top: 18px
+					width: 0%
+					left: 50%
+				&:nth-child(2)
+					-webkit-transform: rotate(45deg)
+					-moz-transform: rotate(45deg)
+					-o-transform: rotate(45deg)
+					transform: rotate(45deg)
+				&:nth-child(3)
+					-webkit-transform: rotate(-45deg)
+					-moz-transform: rotate(-45deg)
+					-o-transform: rotate(-45deg)
+					transform: rotate(-45deg)
+				&:nth-child(4)
+					top: 18px
+					width: 0%
+					left: 50%
 		@media screen and ( min-width: 320px )
 			min-width: 24px
 			min-height: 24px
@@ -73,28 +95,40 @@
 			font-size: r(18px)
 			font-weight: 700
 			transition: all ease-in-out .5s
+		@media screen and ( min-width: 1025px )
+			&:hover
+				background-color: $main !important
+				span
+					color: $white
+					margin-left: 0
+				&::after
+					right: 16px
+					color: $white
+.btn-viewmore
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 40px auto 0
+	position: relative
+	width: 188px
+	height: 40px
+	border: 1px solid #333333
+	box-sizing: border-box
+	border-radius: 50px
 
-		&:hover
-			background-color: $main !important
-			span
-				color: $white
-				margin-left: 0
-			&::after
-				right: 16px
-				color: $white
-	&-login-bar
-		padding: r(8px) r(24px) !important
-		width: 100%
-		background-color: $yellow !important
-		border-radius: 50px !important
-		align-self: stretch
-		font-weight: 500 !important
-		font-size: r(18px) !important
-		line-height: 26px
-		color: $black !important
-		transition: all ease-in-out .5s !important
-		display: block
-		margin-bottom: 20px
-		&:hover
-			color: $white !important
-			background-color: $main !important
+	span
+		color: $black
+		font-size: r(14px)
+	&::after
+		content: '\f1df'
+		font-family: Material Icons
+		font-size: r(20px)
+		padding-top: 5px
+		padding-left: 8px
+		color: $black
+		transition: all ease-in-out .3s
+	&:hover
+		&::after
+			transform: rotate(-25deg)
+	@media screen and ( max-width: 991.98px )
+		margin-top: 18px
