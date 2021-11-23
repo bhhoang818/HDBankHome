@@ -65,7 +65,7 @@ const mainBanner = () => {
 			},
 			breakpoints: {
 				375: {
-					slidesPerView: 1.5,
+					slidesPerView: 1,
 				},
 				768: {
 					slidesPerView: 2.5,
@@ -454,21 +454,24 @@ const accordianList = () => {
 		$(".btn-dropdown").not(this).parent().next().slideUp();
 		$(".btn-dropdown").not(this).removeClass("active");
 	});
-	$(".footer-infor_tile").on("click", function () {
-		let $this = $(this);
-		if ($this.next().hasClass("show")) {
-			$this.next().removeClass("show");
-			$this.next().slideUp(350);
-			$this.closest('.menu-list').removeClass("active");
-		} else {
-			$this.parent().parents().find("ul").removeClass("show");
-			$this.parent().parents().find("ul").slideUp(350);
-			$this.parent().parents('.menu-box').find(".menu-list").removeClass("active");
-			$this.next().toggleClass("show");
-			$this.next().slideDown(350);
-			$this.parent(".menu-list").addClass("active");
-		}
-	});
+	if ($(window).width() < 768){
+		$(".footer-infor_tile").on("click", function () {
+			let $this = $(this);
+			if ($this.next().hasClass("show")) {
+				$this.next().removeClass("show");
+				$this.next().slideUp(350);
+				$this.closest('.menu-list').removeClass("active");
+			} else {
+				$this.parent().parents().find("ul").removeClass("show");
+				$this.parent().parents().find("ul").slideUp(350);
+				$this.parent().parents('.menu-box').find(".menu-list").removeClass("active");
+				$this.next().toggleClass("show");
+				$this.next().slideDown(350);
+				$this.parent(".menu-list").addClass("active");
+			}
+		});
+	}
+	
 };
 
 const toggleSlideTool = () => {
