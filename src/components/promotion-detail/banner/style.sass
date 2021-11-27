@@ -1,0 +1,11 @@
+.banner-detail
+    .banner-desktop
+        width: 100%
+        +img-ratio(552/1440)
+        @media screen and ( max-width: 575.98px )
+            display: none
+    .banner-mobile
+        width: 100%
+        +img-ratio(250/375)
+        @media screen and ( min-width: 576px )
+            display: none

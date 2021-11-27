@@ -8,7 +8,8 @@ import plumber from "gulp-plumber";
 export const pugTask = () => {
 	return src([
 			"src/pages/*.pug",
-			"!src/pages/\_*.pug"
+			"!src/pages/\_*.pug",
+			// "src/components/**/**.pug"
 		])
 		.pipe(plumber())
 		.pipe(pug({

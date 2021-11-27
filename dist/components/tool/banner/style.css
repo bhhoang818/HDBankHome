@@ -1,0 +1,40 @@
+.banner-tool .banner-desktop {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: 25%;
+}
+.banner-tool .banner-desktop img, .banner-tool .banner-desktop iframe, .banner-tool .banner-desktop video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: 0.3s ease-in-out all;
+}
+@media screen and (max-width: 575.98px) {
+  .banner-tool .banner-desktop {
+    display: none;
+  }
+}
+.banner-tool .banner-mobile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: 37.3333333333%;
+}
+.banner-tool .banner-mobile img, .banner-tool .banner-mobile iframe, .banner-tool .banner-mobile video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: 0.3s ease-in-out all;
+}
+@media screen and (min-width: 576px) {
+  .banner-tool .banner-mobile {
+    display: none;
+  }
+}

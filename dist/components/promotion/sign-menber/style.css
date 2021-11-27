@@ -1,0 +1,77 @@
+.banner-menber .big-banner_desktop {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: 55.3472222222%;
+}
+.banner-menber .big-banner_desktop img, .banner-menber .big-banner_desktop iframe, .banner-menber .big-banner_desktop video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: 0.3s ease-in-out all;
+}
+.banner-menber .big-banner_desktop .btn-login {
+  position: absolute;
+  z-index: 2;
+  bottom: 103px;
+  left: 11.9%;
+  width: 200px;
+  height: 58px;
+  color: #333;
+  padding: 0;
+}
+.banner-menber .big-banner_desktop .btn-login p {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-left: 30px;
+  transition: all ease-in-out 0.3s;
+}
+.banner-menber .big-banner_desktop .btn-login:hover p {
+  transform: translateX(-20px);
+  color: #ffffff;
+}
+@media screen and (max-width: 1366px) {
+  .banner-menber .big-banner_desktop .btn-login {
+    bottom: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-menber .big-banner_desktop .btn-login {
+    height: 38px;
+    bottom: 24px;
+  }
+  .banner-menber .big-banner_desktop .btn-login p {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .banner-menber .big-banner_desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .banner-menber .big-banner_mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .banner-menber .big-banner_mobile {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 226.1333333333%;
+  }
+  .banner-menber .big-banner_mobile img, .banner-menber .big-banner_mobile iframe, .banner-menber .big-banner_mobile video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.3s ease-in-out all;
+  }
+}

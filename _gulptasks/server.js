@@ -8,6 +8,7 @@ import bSync from "browser-sync";
 import jsCore from "./core-js"
 import jsTask from "./script"
 import pugTask from "./html"
+import pugToHtml from "./pugToHtml"
 import cssCore from "./core-css"
 import sassTask from "./css"
 import {
@@ -39,8 +40,12 @@ export const server = () => {
 	], series(pugTask));
 
 	watch([
+		"src/components/**/**.pug"
+	], series(pugToHtml));
+
+
+	watch([
 		"src/components/**/**.sass",
-		"src/components/_core/materialize/**.scss"
 	], series(sassTask));
 
 	watch([

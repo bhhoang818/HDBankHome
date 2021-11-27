@@ -7,6 +7,7 @@ import {
 import server from "./_gulptasks/server";
 import jsTask from "./_gulptasks/script";
 import pugTask from "./_gulptasks/html";
+import pugToHtml from "./_gulptasks/pugToHtml";
 import sassTask from "./_gulptasks/css";
 import jsCore from "./_gulptasks/core-js";
 import cssCore from "./_gulptasks/core-css";
@@ -35,5 +36,6 @@ exports.default = series(
 	sassTask,
 	jsTask,
 	pugTask,
+	pugToHtml,
 	server,
 )

@@ -1,0 +1,15 @@
+extends _layout.pug
+
+block var
+	- var title = 'Chi Tiết Ưu Đãi'
+	- var bodyClass = 'promotion-detail '
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/promotion-detail/banner/index.pug
+	include ../components/promotion-detail/content/index.pug
+	include ../components/promotion-detail/product-related/index.pug
+	include ../components/promotion-detail/promotion-other/index.pug
+
+
+

@@ -12,8 +12,8 @@ import autoprefixer from "autoprefixer";
 
 export const sassTask = () => {
 	return src([
-		"src/components/core/_**.sass",
-		"src/components/core/**.sass",
+		"src/components/_core/_**.sass",
+		"src/components/_core/**.sass",
 		"src/components/global/**.sass",
 		"src/components/**/**.sass",
 	])
@@ -31,5 +31,4 @@ export const sassTask = () => {
 		]))
 		.pipe(dest("dist/css"))
 };
-
 module.exports = sassTask;

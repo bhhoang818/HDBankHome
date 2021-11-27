@@ -1,0 +1,14 @@
+extends _layout.pug
+
+block var
+	- var title = 'Công cụ/Tiện ích'
+	- var bodyClass = 'tool'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/tool/banner/index.pug
+	include ../components/tool/utility/index.pug
+	include ../components/tool/suggest-products/index.pug
+
+
+

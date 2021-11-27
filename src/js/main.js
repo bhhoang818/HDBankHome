@@ -132,6 +132,22 @@ const mainBanner = () => {
 		speed: 2000,
 		loop: true
 	});
+	var swiper = new Swiper('.banner-promotion .swiper-container', {
+		pagination: {
+			el: ".banner-promotion .swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		navigation: {
+			nextEl: ".banner-promotion .swiper-button-next",
+			prevEl: ".banner-promotion .swiper-button-prev"
+		},
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		loop: true
+	});
 	var swiper = new Swiper(".slide-endo .swiper-container", {
 		speed: 750,
 		observer: true,
@@ -341,6 +357,34 @@ const mainBanner = () => {
 			},
 		},
 	});
+	var swiper = new Swiper(".product-slide .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: true,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".product-slide .swiper-button-next",
+			prevEl: ".product-slide .swiper-button-prev",
+			clickable: true,
+
+		},
+		breakpoints: {
+			375: {
+				slidesPerView: 3,
+			},
+
+			768: {
+				slidesPerView: 4,
+			},
+			1200: {
+				slidesPerView: 5,
+			},
+
+		},
+	});
 }
 
 const headerActive = () => {
@@ -385,6 +429,20 @@ const rangeSlide = () => {
 const tabPanel = () => {
 	$(".header-switcher > li").on("click", function () {
 		let $panel = $(this).closest(".card-switcher");
+		$panel.find("li.active").removeClass("active");
+		$(this).addClass("active");
+		let panelToShow = $(this).attr("rel");
+		$panel.find(".panel.active").fadeOut(300, showNextPanel);
+
+		function showNextPanel() {
+			$(this).removeClass("active");
+			$("#" + panelToShow).fadeIn(300, function () {
+				$(this).addClass("active").fadeIn(300);
+			});
+		}
+	});
+	$(".tab-list > li").on("click", function () {
+		let $panel = $(this).closest(".tabs ");
 		$panel.find("li.active").removeClass("active");
 		$(this).addClass("active");
 		let panelToShow = $(this).attr("rel");
@@ -454,7 +512,7 @@ const accordianList = () => {
 		$(".btn-dropdown").not(this).parent().next().slideUp();
 		$(".btn-dropdown").not(this).removeClass("active");
 	});
-	if ($(window).width() < 768){
+	if ($(window).width() < 768) {
 		$(".footer-infor_tile").on("click", function () {
 			let $this = $(this);
 			if ($this.next().hasClass("show")) {
@@ -471,7 +529,7 @@ const accordianList = () => {
 			}
 		});
 	}
-	
+
 };
 
 const toggleSlideTool = () => {
@@ -485,6 +543,9 @@ const toggleSlideTool = () => {
 		$('.card-tool-box').find('#from-slide').slideUp();
 		$('.card-tool-box').find('.card-switcher').slideDown()
 	})
+	$('.title-mobile').on('click', () => {
+		$('.title-mobile').next().slideToggle();
+	})
 }
 
 /*==================== SHOW SCROLL TOP ====================*/
@@ -495,15 +556,6 @@ const scrollTop = () => {
 			scrollTop: 0,
 		}, '3000');
 	});
-};
-const checkLayoutBanner = () => {
-	const bannerHero = $(".home-banner ");
-	const heightHeader = $(".nav-top").outerHeight();
-	if (bannerHero.length >= 1 && $(window).width() <= 992) {
-		$("main").css("padding-top", heightHeader);
-	} else {
-		$("main").css("padding-top", 0);
-	}
 };
 
 const initMapping = () => {
@@ -516,6 +568,7 @@ const initMapping = () => {
 		breakpoint: 768.98,
 	});
 };
+
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
@@ -527,6 +580,5 @@ $(document).ready(function () {
 	accordianList();
 	toggleSlideTool();
 	scrollTop();
-	checkLayoutBanner();
 	initMapping();
 });

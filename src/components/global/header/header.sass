@@ -10,8 +10,28 @@
 			.logo
 				display: block
 				max-width: 205px
-			.dropdown
+			.search-box
 				margin-left: auto
+				.searchform
+					.form-group
+						width: 400px
+						height: 58px
+						position: relative
+						background: #F9FAFC
+						border-radius: 42px
+						.searchinput
+							width: 100%
+							height: 100%
+							background: $tran
+							padding-left: 15px
+						button
+							position: absolute
+							top: 50%
+							right: 10px
+							background: $tran
+							transform: translateY(-50%)
+			.dropdown
+				margin-left: 50px
 				.dropdown-toggle
 					padding: 0px 12px 0px 16px
 					width: 84px
@@ -82,8 +102,21 @@
 					background: $main
 				@media screen and ( min-width: 992px )
 					display: none
+	@media ( max-width: 1199.98px )
+		nav
+			.nav-full
+				.search-box
+					.searchform
+						.form-group
+							width: 280px
+	@media ( max-width: 1024.98px )
+		nav
+			.nav-full
+				.search-box
+					display: none
+				.dropdown
+					margin-left: auto
 	@media ( max-width: 992px ) and ( min-width: 320px )
-		position: fixed
 		padding: 12/16*1rem 0
 		height: 60px
 		z-index: 999
@@ -94,6 +127,7 @@
 					margin-right: 10px
 				.logo
 					max-width: 104px
+
 				.dropdown
 					order: 5
 					margin-left: 15px
@@ -191,33 +225,27 @@
 					background-color: $yellow
 					display: none
 				.login
-					.title
-						padding: 0 !important
-						text-align: left !important
-						p
-							font-weight: bold
-							line-height: 23px
-							color: $black
 					.btn-login
 						width: 100%
-						margin-bottom: 20px
+						margin-bottom: 0
 						height: 44px
 						padding: 9px 0 3px 0 !important
+						p
+							display: block
+							margin-bottom: 0
+							font-size: r(18px)
+							font-weight: 700
+							transition: all ease-in-out .5s
 						&::after
-							right: calc( 100% - 78px )
+							right: calc( 100% - 40px )
 							top: 60%
 						@media screen and ( min-width: 1024px )
 							&:hover
 								&::after
-									right: 50px
+									right: 20px
 									color: $white
-					.sign-in
-						display: flex
-						justify-content: center
-						font-weight: normal
-						line-height: 23px
-						text-decoration-line: underline !important
-						color: $black
+								p
+									color: $white
 				.side-navigation-wrap
 					margin-top: 20px
 					.side-navigation

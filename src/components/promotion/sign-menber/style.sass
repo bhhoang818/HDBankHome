@@ -1,0 +1,42 @@
+.banner-menber
+    .big-banner_desktop
+        +img-ratio(797/1440)
+        .btn-login
+            position: absolute
+            z-index: 2
+            bottom: 103px
+            left: 11.9%
+            width: 200px
+            height: 58px
+            color: $black
+            padding: 0
+            p
+                margin-bottom: 0
+                font-size: r(18px)
+                font-weight: 700
+                padding-left: 30px
+                transition: all ease-in-out .3s
+            &:hover
+                p
+                    transform: translateX(-20px)
+                    color: $white
+    @media screen and ( max-width: 1366px )
+        .big-banner_desktop
+            .btn-login
+                bottom: 50px
+    @media screen and ( max-width: 1024px )
+        .big-banner_desktop
+            .btn-login
+                height: 38px
+                bottom: 24px
+                p
+                    font-size: r(14px)
+    @media screen and ( max-width: 575.98px )
+        .big-banner_desktop
+            display: none
+    @media screen and ( min-width: 576px )
+        .big-banner_mobile
+            display: none
+    @media screen and ( max-width: 575.98px )
+        .big-banner_mobile
+            +img-ratio(848/375)
