@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Priority User'
+	- var bodyClass = 'prioritypage'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/priority-user/banner/index.pug
+	include ../components/priority-user/content/priority-user.pug
+	include ../components/promotion/atm/atm.pug
