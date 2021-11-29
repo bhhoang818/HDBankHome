@@ -385,6 +385,26 @@ const mainBanner = () => {
 
 		},
 	});
+	var swiper = new Swiper('.priority-user-banner .swiper-container', {
+		pagination: {
+			el: ".swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		effect: "fade",
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		fadeEffect: {
+			crossFade: true,
+		},
+		loop: true
+	});
 }
 
 const headerActive = () => {
@@ -543,8 +563,15 @@ const toggleSlideTool = () => {
 		$('.card-tool-box').find('#from-slide').slideUp();
 		$('.card-tool-box').find('.card-switcher').slideDown()
 	})
-	$('.title-mobile').on('click', () => {
-		$('.title-mobile').next().slideToggle();
+	$('.title-mobile').on('click', function () {
+		$(this).next().slideToggle();
+	})
+	$('.title-question-box').on('click', function () {
+		$(this).next().slideToggle();
+		if($(this).parent().hasClass('active'))
+			$(this).parent().removeClass('active')
+		else
+			$(this).parent().addClass('active')
 	})
 }
 

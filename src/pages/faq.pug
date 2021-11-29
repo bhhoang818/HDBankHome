@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'FAQ'
+	- var bodyClass = 'faqpage'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/faq/banner/index.pug
+	include ../components/faq/content/faq.pug
+	include ../components/promotion/atm/atm.pug
