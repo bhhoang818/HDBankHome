@@ -621,7 +621,7 @@ const handleEventNewsPage = () => {
 		$panel.find("li.active").removeClass("active");
 		$(this).addClass("active");
 		let panelToShow = $(this).attr("rel");
-		$panel.closest(".news-main-content-box").find(".panel.active").fadeOut(300, showNextPanel);
+		$panel.closest(".tab-box").find(".panel.active").fadeOut(300, showNextPanel);
 
 		function showNextPanel() {
 			$(this).removeClass("active");

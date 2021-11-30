@@ -54,34 +54,8 @@
                         transform: translateY(-50%)
                         background: $tran
         .list-categories-box
-            @media screen and ( max-width: 575.98px ) 
-                width: 200%
-                overflow-x: auto
-                padding-bottom: 10px
             .list-categories
-                margin: 0
-                padding: 0
-                display: flex
                 justify-content: center
-                @media screen and ( max-width: 575.98px ) 
-                    justify-content: flex-start
-                    width: 200%
-                    max-width: 200%
-                    margin-left: 10px
-                .item-category 
-                    background: #FFF9E2
-                    border-radius: 21px
-                    padding: 8px 16px
-                    margin-right: 10px
-                    cursor: pointer
-                    font-weight: normal
-                    a 
-                        color: #333333
-                    @media screen and ( max-width: 575.98px ) 
-                        font-size: 0.875rem
-                .item-category.active
-                    border: 1.4px solid #b1b5c9;
-                    font-weight: bold
         .panel
             display: none
         .panel.active
@@ -98,7 +72,7 @@
                 margin-top: 35px
             .list-news
                 padding: 0
-                width: 80%
+                max-width: 1040px
                 @media screen and ( max-width: 575.98px ) 
                     width: 100% !important
                     margin-bottom: 0
@@ -111,6 +85,8 @@
                         width: 98px
                         a
                             +img-ratio(98/98)
+                            img
+                                border-radius: 8px
                         @media screen and ( max-width: 575.98px ) 
                             width: 64px !important
                             margin-right: 15px !important

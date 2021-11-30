@@ -1,0 +1,54 @@
+.news-related
+    padding-bottom: 0
+    @media screen and ( max-width: 1024.98px )
+        .title
+            margin-bottom: 0 !important
+        .news-item
+            max-height: 320px
+            margin-bottom: 24px
+            &_content
+                &__title
+                    a
+                        p
+                            font-size: r(12px)
+                            overflow: hidden
+                            display: -webkit-box
+                            text-overflow: ellipsis
+                            -webkit-box-orient: vertical
+                            -webkit-line-clamp: 2
+                &__desc
+                    display: none
+        @media screen and ( max-width: 575.98px )
+            .news-item
+                &_content
+                    &__desc
+                        display: block
+                        font-size: 0.625rem
+                        p
+                            margin-top: 5px
+    .loadmore
+        font-size: 20px
+        line-height: 29px
+        color: #6F7279
+        text-align: center
+        @media screen and ( max-width: 1024.98px )
+            display: none
+    .viewmore
+        font-size: 14px
+        line-height: 20px
+        color: #6F7279
+        text-align: center
+        @media screen and ( min-width: 1025px )
+            display: none
+
+    @media screen and ( max-width: 768.98px )
+        .news-item
+            max-height: 220px
+            &_content
+                padding: 8px
+    @media screen and ( max-width: 575.98px )
+        .news-item
+            max-height: 180px
+    @media screen and ( max-width: 375.98px )
+        .news-item
+            max-height: 170px

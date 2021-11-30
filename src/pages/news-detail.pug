@@ -1,0 +1,15 @@
+extends _layout.pug
+
+block var
+	- var title = 'Chi Tiết Tin Tức'
+	- var bodyClass = 'news-detail '
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/news-detail/content/index.pug
+	include ../components/news-detail/news-related/index.pug
+	include ../components/news-detail/news-other/index.pug
+	include ../components/promotion/atm/atm.pug
+
+
+
