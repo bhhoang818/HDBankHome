@@ -417,6 +417,18 @@ const mainBanner = () => {
 		speed: 2000,
 		loop: true
 	});
+	var swiper = new Swiper('.page-banner .swiper-container', {
+		pagination: {
+			el: ".page-banner .swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		loop: true
+	});
 }
 
 const headerActive = () => {
@@ -514,6 +526,7 @@ const tabPanel = () => {
 				$(this).addClass("active").fadeIn(300);
 			});
 		}
+
 	});
 }
 
@@ -593,15 +606,17 @@ const accordianList = () => {
 };
 
 const toggleSlideTool = () => {
-	let btnToggle = $('#panel-1 .from-slide-loan .btn-login');
+	let btnToggle = $('.from-slide-loan .btn-login');
 	btnToggle.on('click', (e) => {
 		e.preventDefault();
 		$('.card-tool-box').find('#from-slide').slideDown();
-		$('.card-tool-box').find('.card-switcher').slideUp()
+		$('.card-tool-box').find('.card-switcher').slideUp();
+		$('.card-tool-box').find(".dot span").toggleClass('active')
 	})
 	$('#from-slide .header-advise li em').on('click', () => {
 		$('.card-tool-box').find('#from-slide').slideUp();
 		$('.card-tool-box').find('.card-switcher').slideDown()
+		$('.card-tool-box').find(".dot span").toggleClass('active')
 	})
 	$('.title-mobile').on('click', function () {
 		$(this).next().slideToggle();
@@ -613,6 +628,7 @@ const toggleSlideTool = () => {
 		else
 			$(this).parent().addClass('active')
 	})
+
 }
 
 /*==================== SHOW SCROLL TOP ====================*/
@@ -641,15 +657,16 @@ const handleEventNewsPage = () => {
 		e.preventDefault();
 		let $panel = $(this).closest(".main-content ");
 		console.log(".btn-loadmore click");
-		if($(".section.news-content .item-news-loadmore").is(":visible")){
+		if ($(".section.news-content .item-news-loadmore").is(":visible")) {
 			$(".section.news-content .item-news-loadmore").hide()
 			$(".section.news-content .btn-hide").hide()
 			$(".section.news-content .btn-loadmore").show()
 			var scrollDiv = $panel.find(".btn-loadmore").offset().top - 500;
 			console.log(scrollDiv);
-			$('html, body').animate({ scrollTop: scrollDiv }, 200);
-		}
-		else{
+			$('html, body').animate({
+				scrollTop: scrollDiv
+			}, 200);
+		} else {
 			$(".section.news-content .item-news-loadmore").css("display", "flex")
 			$(".section.news-content .btn-loadmore").hide()
 			$(".section.news-content .btn-hide").show()
