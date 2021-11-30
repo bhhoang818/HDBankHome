@@ -49,7 +49,7 @@
 		top: 50%
 		left: 50%
 		transform: translate(-50%, -50%)
-		font-family: Material Icons
+		font-family: Linearicons-Free
 		font-size: r(30px) !important
 		color: $white
 	&:focus
@@ -57,12 +57,12 @@
 .swiper-button-next
 	right: -80px !important
 	&::before
-		content: '\f1df'
+		content: '\e87a'
 
 .swiper-button-prev
 	left: -80px !important
 	&::before
-		content: '\e317'
+		content: '\e879'
 @media screen and ( min-width: 1025px )
 	.swiper-button-next,
 	.swiper-button-prev
@@ -108,3 +108,43 @@
 				padding: 8px
 				font-size: r(15px)
 				text-align: center
+.productpager
+	width: 100%
+	.pagination
+		justify-content: center
+		.page-item
+			margin-right: 4px !important
+			.page-link
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 40px
+				height: 40px
+				background: #FFFFFF
+				border: 1px solid #DDE1EB
+				box-sizing: border-box
+				border-radius: 8px
+				font-size: r(20px)
+				color: #6F7279
+				&:focus
+					box-shadow: none
+				@media screen and ( max-width:  )
+					width: 32px
+					height: 32px
+					font-size: 1rem
+input#amount,
+input#amount-promotion,
+input#amount-card
+	width: 100px
+	border: none
+	background: none
+	color: $main
+	font-weight: 800
+	font-size: r(20px)
+	line-height: 29px
+	&:focus
+		outline: none
+		box-shadow: none
+
+	@media screen and ( max-width: 1366px )
+		margin-bottom: 8px

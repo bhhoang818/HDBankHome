@@ -405,6 +405,18 @@ const mainBanner = () => {
 		},
 		loop: true
 	});
+	var swiper = new Swiper('.banner-page-product .swiper-container', {
+		pagination: {
+			el: ".banner-page-product .swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		loop: true
+	});
 }
 
 const headerActive = () => {
@@ -444,6 +456,34 @@ const rangeSlide = () => {
 		}
 	});
 	$("#amount").val($("#slider-range-min").slider("value") + "Triệu");
+
+	$("#slider-range-promotion").slider({
+		range: "min",
+		value: 200,
+		min: 1,
+		max: 500,
+		slide: function (event, ui) {
+			$("#amount-promotion").val(ui.value + " Triệu");
+			if ($("#amount-promotion").val() == 500 + " Triệu") {
+				$("#amount-promotion").val(500 + " triệu");
+			}
+		}
+	});
+	$("#amount-promotion").val($("#slider-range-promotion").slider("value") + " Triệu");
+
+	$("#slider-range-card").slider({
+		range: "min",
+		value: 20,
+		min: 1,
+		max: 100,
+		slide: function (event, ui) {
+			$("#amount-card").val(ui.value + " .000.000 Triệu");
+			if ($("#amount-card").val() == 100 + " Triệu") {
+				$("#amount-card").val(100 + " triệu");
+			}
+		}
+	});
+	$("#amount-card").val($("#slider-range-card").slider("value") + " .000.000 Triệu");
 }
 
 const tabPanel = () => {
@@ -568,7 +608,7 @@ const toggleSlideTool = () => {
 	})
 	$('.title-question-box').on('click', function () {
 		$(this).next().slideToggle();
-		if($(this).parent().hasClass('active'))
+		if ($(this).parent().hasClass('active'))
 			$(this).parent().removeClass('active')
 		else
 			$(this).parent().addClass('active')
