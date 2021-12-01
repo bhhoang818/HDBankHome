@@ -1,0 +1,47 @@
+section.section.nimish-list 
+	.filter-catelog 
+		h1.title.title_small.title_small-black Danh mục thẻ
+		.form-group 
+			select.form-control
+				option(value="") Tất cả thẻ
+		.container--tabs
+			ul.nav-tabs
+				li.active
+					a(href="#tab-1")
+						p Cashback-hoàn tiền
+				li
+					a(href="#tab-2")
+						p Du lịch
+				li
+					a(href="#tab-3")
+						p Trả góp
+				li
+					a(href="#tab-4")
+						p Mua sắm
+				li
+					a(href="#tab-5")
+						p hashtag
+				li
+					a(href="#tab-6")
+						p hashtag
+			.tab-content
+				#tab-1.tab-panel.active
+					-for(i=1; i<10; i++)
+						.card-item 
+							.card-item_img 
+								a(href="") 
+									img(src="./images/producttion/c-"+i+".png", alt="")
+							.card-item_content 
+								.card-item_content__title 
+									a(href="") HDBank Mastercard Debit
+								.card-item_content__desc
+									ul
+										li
+											p Rút tiền mặt tại hơn 1 triệu máy ATM trên toàn thế giới
+										li
+											p Thẻ công nghệ Contactless - Không cần chạm: cho phép khách hàng giao dịch mọi lúc mọi nơi, thanh toán tại hàng nghìn điểm POS/mPOS
+										li
+											p Hưởng lãi không kỳ hạn trên số dư tài khoản của khách hàng.
+								.card-item_content__button 
+									a.viewdetail(href="") Xem chi tiết
+									a.btn-small(href="") Mở thẻ

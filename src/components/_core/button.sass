@@ -82,6 +82,7 @@
 		transition: all ease-in-out .5s
 		span,
 		p
+			color: $black
 			margin-bottom: 0
 			display: block
 			margin-left: 20px
@@ -91,6 +92,7 @@
 		&::after
 			position: absolute
 			top: 53%
+			color: $black
 			right: calc( 100% - 36px )
 			transform: translateY(-50%)
 			content: "\e87a"
@@ -180,18 +182,18 @@
 	align-items: center
 	padding: 16px 0
 	width: 190px
-	height: 73px
 	background: #FFD643
 	border-radius: 50px
 	font-weight: 500
 	font-size: r(28px)
 	color: #333333
 	&::before
-		padding-top: 10px
 		padding-right: 10px
 		content: '\f1df'
 		font-family: Material Icons
 		font-size: r(20px)
+	&:hover
+		color: $black
 	@media screen and ( max-width: 991.98px )
 		padding: 4px 12px
 		width: 142.5px

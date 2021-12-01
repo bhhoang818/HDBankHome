@@ -11,6 +11,8 @@ block main
 	section.section.tool-card-product 
 		.container 
 			.row 
-				include ../components/product-card/tool/index.pug
-				include ../components/product-card/promotion-card/index.pug
+				.col-lg-4
+					include ../components/product-card/tool/index.pug
+				.col-lg-8 
+					include ../components/product-card/promotion-card/index.pug
 	include ../components/promotion/atm/atm.pug

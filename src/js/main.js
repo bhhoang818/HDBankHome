@@ -577,6 +577,7 @@ const tabPanel = () => {
 		}
 
 	});
+
 }
 
 /*===================BACKGROUNDELEMENT===========*/
@@ -602,8 +603,8 @@ const scrollSection = () => {
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-				scrollTop: $("#sec-4").offset().top,
-			},
+			scrollTop: $("#sec-4").offset().top,
+		},
 			"slow"
 		);
 	});
