@@ -429,6 +429,26 @@ const mainBanner = () => {
 		speed: 2000,
 		loop: true
 	});
+	var swiper = new Swiper('.priority-user-banner .swiper-container', {
+		pagination: {
+			el: ".swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		effect: "fade",
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		fadeEffect: {
+			crossFade: true,
+		},
+		loop: true
+	});
 }
 
 const headerActive = () => {
