@@ -1,58 +1,57 @@
-.col-lg-8 
-	.card-product-promotion 
-		h2.title.title_small Ưu đãi sản phẩm thẻ
-		.catelog-list 
-			ul.d-flex
-				li
+.card-product-promotion 
+	h2.title.title_small Ưu đãi sản phẩm thẻ
+	.catelog-list 
+		ul.tab-list.d-flex
+			li
+				a(href="")
+					p Thẻ ghi nợ
+			li
+				a(href="")
+					p Ưu đãi
+			li
+				a(href="")
+					p Thẻ tín dụng
+			li
+				a(href="")
+					p Thẻ
+			li
+				a(href="")
+					p Lazada
+			li
+				a(href="")
+					p Shopee
+			li
+				a(href="")
+					p Covid-19
+	.promotion 
+		-for(i=1; i<5; i++)
+			.promotion-item 
+				.promotion-item_img 
 					a(href="")
-						p Thẻ ghi nợ
-				li
-					a(href="")
-						p Ưu đãi
-				li
-					a(href="")
-						p Thẻ tín dụng
-				li
-					a(href="")
-						p Thẻ
-				li
-					a(href="")
-						p Lazada
-				li
-					a(href="")
-						p Shopee
-				li
-					a(href="")
-						p Covid-19
-		.promotion 
-			-for(i=1; i<5; i++)
-				.promotion-item 
-					.promotion-item_img 
+						img(src="./images/producttion/promotion-card-"+i+".png", alt="") 
+				.promotion-item_content 
+					.promotion-item_content__title 
 						a(href="")
-							img(src="./images/producttion/promotion-card-"+i+".png", alt="") 
-					.promotion-item_content 
-						.promotion-item_content__title 
-							a(href="")
-								p Cập nhật biểu phí tháng 11
-						.promotion-item_content__desc 
-							p Khách hàng cá nhân đăng ký thành công "Cộng tác viên" và thực hiện giới thiệu khách hàng trên App HDBank...
-			nav.productpager
-				ul.pagination
-					li.page-item
-						a.page-link(href='#')
-							img(src="./images/icons/prev.png", alt="")
-					li.page-item
-						a.page-link(href='#')
-							img(src="./images/icons/prev-one.png", alt="")
-					li.page-item
-						a.page-link(href='#') 1
-					li.page-item
-						a.page-link(href='#') 2
-					li.page-item
-						a.page-link(href='#') 3
-					li.page-item
-						a.page-link(href='#')
-							img(src="./images/icons/next-one.png", alt="")
-					li.page-item
-						a.page-link(href='#')
-							img(src="./images/icons/next.png", alt="")
+							p Cập nhật biểu phí tháng 11
+					.promotion-item_content__desc 
+						p Khách hàng cá nhân đăng ký thành công "Cộng tác viên" và thực hiện giới thiệu khách hàng trên App HDBank...
+		nav.productpager
+			ul.pagination
+				li.page-item
+					a.page-link(href='#')
+						img(src="./images/icons/prev.png", alt="")
+				li.page-item
+					a.page-link(href='#')
+						img(src="./images/icons/prev-one.png", alt="")
+				li.page-item
+					a.page-link(href='#') 1
+				li.page-item
+					a.page-link(href='#') 2
+				li.page-item
+					a.page-link(href='#') 3
+				li.page-item
+					a.page-link(href='#')
+						img(src="./images/icons/next-one.png", alt="")
+				li.page-item
+					a.page-link(href='#')
+						img(src="./images/icons/next.png", alt="")

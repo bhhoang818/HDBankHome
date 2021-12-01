@@ -75,39 +75,15 @@
 		left: -50px !important
 .tabs
 	.tab-list
+		display: flex
 		justify-content: center
 		margin-bottom: 32px
 		padding-left: 0
-		li
-			padding: 14px 50.4px
-			background: #FFFFFF
-			border: 1.4px solid #B1B5C9
-			box-sizing: border-box
-			cursor: pointer
-			font-weight: 800
-			font-size: r(19.6px)
-			line-height: 29px
-			color: #333333
-			&:first-child
-				border-radius: 12px 0px 0px 12px
-			&:last-child
-				border-radius: 0px 12px 12px 0px
-			&.active
-				background: #F00020
-				color: $white
-				border: 0
 	.panel
 		display: none
 		&.active
 			display: block
-	@media screen and ( max-width: 575.98px )
-		.tab-list
-			margin-bottom: 16px
-			li
-				width: 50%
-				padding: 8px
-				font-size: r(15px)
-				text-align: center
+
 .productpager
 	width: 100%
 	.pagination
@@ -148,3 +124,26 @@ input#amount-card
 
 	@media screen and ( max-width: 1366px )
 		margin-bottom: 8px
+.container--tabs
+	.nav-tabs
+		width: 100%
+		margin: 0
+		padding: 0
+		display: flex
+		align-items: center
+		li
+			position: relative
+			display: flex
+			align-items: center
+			&.active
+	.tab-content
+		float: left
+		width: 100%
+
+		.tab-panel
+			display: none
+			&.active
+				display: block
+
+		.active
+			display: block

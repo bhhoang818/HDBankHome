@@ -1,0 +1,24 @@
+extends _layout.pug
+
+block var
+	- var title = 'Sản Phẩm Thẻ Nimish'
+	- var bodyClass = 'product-card'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/nimish-card/banner/index.pug
+	include ../components/nimish-card/card-catelog/index.pug
+	section.section.tool-card-product 
+		.container 
+			.row 
+				.col-lg-4
+					include ../components/nimish-card/tool/index.pug
+				.col-lg-8 
+					include ../components/nimish-card/promotion-card/index.pug
+	section.section.atm-location 
+		.container
+			.row 
+				.col-12.col-lg-12.col-xl-8 
+					include ../components/product-insurance/branch/index.pug
+				.col-12.col-lg-12.col-xl-4
+					include ../components/product-insurance/FAQ/index.pug
