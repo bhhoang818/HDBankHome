@@ -36,6 +36,19 @@
             margin-right: 8px
             &-active
                 background: $main
+    .swiper-button-next
+        right: 20px !important
+    .swiper-button-prev
+        left: 20px !important
+    .swiper-button-next,
+    .swiper-button-prev
+        border: 1px solid #333
+        &::before
+            color: #333
+        &:hover
+            background: none
+        @media screen and ( max-width: 1024.98px )
+            display: none
     @media screen and ( max-width: 1199.98px )
         .slide-inner
             &__img

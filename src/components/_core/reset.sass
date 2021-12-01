@@ -146,13 +146,15 @@ button
 
 button:focus
 	outline: none
-	outline: 5px auto -webkit-focus-ring-color
 
 input, button, select, optgroup, textarea
 	margin: 0
 	font-family: inherit
 	font-size: inherit
 	line-height: inherit
+	&:focus
+		outline: none !important
+		box-shadow: none !important
 
 button, input
 	overflow: visible

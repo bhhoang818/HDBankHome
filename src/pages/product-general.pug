@@ -1,0 +1,31 @@
+extends _layout.pug
+
+block var
+	- var title = 'Sản Phẩm chung'
+	- var bodyClass = 'product-general'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/product-general/banner/index.pug
+	section.section.sign-up-loan 
+		.container-fluid 
+			.row 
+				.col-lg-7 
+					include ../components/product-general/signup-loan/index.pug
+				.col-lg-5
+					include ../components/product-general/tool/index.pug
+	section.section.loan
+		.container 
+			.loan-promtion-block 
+				.row 
+					.col-lg-3 
+						include ../components/product-general/product-catelog/index.pug
+					.col-lg-9 
+						include ../components/product-general/promotion-loan/index.pug
+	section.section.atm-location 
+		.container
+			.row 
+				.col-12.col-lg-12.col-xl-8 
+					include ../components/product-general/branch/index.pug
+				.col-12.col-lg-12.col-xl-4
+					include ../components/product-general/FAQ/index.pug

@@ -80,7 +80,9 @@
 		background-color: $yellow !important
 		padding: 16px 24px 16px 24px !important
 		transition: all ease-in-out .5s
-		span
+		span,
+		p
+			margin-bottom: 0
 			display: block
 			margin-left: 20px
 			font-size: r(18px)
@@ -88,7 +90,7 @@
 			transition: all ease-in-out .5s
 		&::after
 			position: absolute
-			top: 50%
+			top: 53%
 			right: calc( 100% - 36px )
 			transform: translateY(-50%)
 			content: "\e87a"
@@ -99,7 +101,8 @@
 		@media screen and ( min-width: 1025px )
 			&:hover
 				background-color: $main !important
-				span
+				span,
+				p
 					color: $white
 					margin-left: 0
 				&::after
