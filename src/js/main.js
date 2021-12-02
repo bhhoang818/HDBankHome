@@ -449,6 +449,35 @@ const mainBanner = () => {
 		},
 		loop: true
 	});
+	var swiper = new Swiper(".priority-user-content .swiper-card-promotion .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		spaceBetween: 10,
+		simulateTouch: false,
+		breakpoints: {
+			360: {
+				navigation: {
+					nextEl: ".swiper-card-promotion .swiper-button-next",
+					prevEl: ".swiper-card-promotion .swiper-button-prev",
+					clickable: true,
+
+				},
+				slidesPerView: 3,
+				simulateTouch: true
+			},
+			768: {
+				slidesPerView: 4,
+			},
+			1200: {
+				slidesPerView: 4,
+			},
+
+		},
+	});
 }
 
 const headerActive = () => {
@@ -713,23 +742,23 @@ const handleEventNewsPage = () => {
 	});
 };
 
-/*==================HEADER WHEN SCROLL============*/
-const activeHeaderWhenScroll = () => {
-	window.addEventListener("scroll", function () {
-		if (window.pageYOffset > 0 && $(window).width() >= 992) {
-			document.querySelector(".nav-top").classList.add("header-croll-down");
-		} else {
-			document
-				.querySelector(".nav-top")
-				.classList.remove("header-croll-down");
-		}
+const handleEventPriorityUserPage = () => {
+	$(".link-info").on("click", function () {
+		let $customers = $(this).closest(".list-customers");
+		$customers.find(".item-customer.active").removeClass("active");
+		$(this).closest(".item-customer").addClass("active");
+		// let panelToShow = $(this).attr("rel");
+		// $customer.closest(".tab-box").find(".panel.active").fadeOut(300, showNextPanel);
+
+		// function showNextPanel() {
+		// 	$(this).removeClass("active");
+		// 	$("#" + panelToShow).fadeIn(300, function () {
+		// 		$(this).addClass("active").fadeIn(300);
+		// 	});
+		// }
 	});
 };
-// ===========================CHECK BANNER========================= //
-const checkLayoutBanner = () => {
-	let heightHeader = $(".nav-top").outerHeight();
-	$("main").css("padding-top", heightHeader);
-};
+
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
@@ -743,6 +772,5 @@ $(document).ready(function () {
 	scrollTop();
 	initMapping();
 	handleEventNewsPage();
-	activeHeaderWhenScroll();
-	checkLayoutBanner();
+	handleEventPriorityUserPage();
 });
