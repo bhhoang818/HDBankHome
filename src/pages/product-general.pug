@@ -8,12 +8,10 @@ block main
 	include ../components/breakcrumb/breakcrumb.pug
 	include ../components/product-general/banner/index.pug
 	section.section.sign-up-loan 
-		.container-fluid 
-			.row 
-				.col-lg-7 
-					include ../components/product-general/signup-loan/index.pug
-				.col-lg-5
-					include ../components/product-general/tool/index.pug
+		.container
+			.wrapper-content 
+				include ../components/product-general/signup-loan/index.pug
+				include ../components/product-general/tool/index.pug
 	section.section.loan
 		.container 
 			.loan-promtion-block 

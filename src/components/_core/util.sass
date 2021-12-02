@@ -9,7 +9,6 @@
 	left: 0
 	z-index: 99
 	transition: .3s all ease-in-out
-
 	&.active
 		opacity: 1
 		visibility: visible
@@ -76,8 +75,6 @@
 .tabs
 	.tab-list
 		display: flex
-		justify-content: center
-		margin-bottom: 32px
 		padding-left: 0
 	.panel
 		display: none
@@ -147,3 +144,34 @@ input#amount-card
 
 		.active
 			display: block
+.tag-list
+	padding-top: 24px
+	margin-bottom: 40px
+	.nav-list
+		display: flex
+		justify-content: center
+		ul
+			li
+				padding: 0 4px
+				cursor: pointer
+				p
+					display: block
+					padding: 8px 16px
+					background: #FFF9E2
+					border-radius: 21px
+					color: $black
+					margin-bottom: 0
+					line-height: 23px
+	@media screen and ( max-width: 1199.98px )
+		padding-top: 0
+		margin: 8px 0
+		.nav-list
+			justify-content: flex-start
+			overflow-x: auto
+			margin-bottom: 8px
+			ul
+				min-width: 200%
+				margin-bottom: 8px
+				li
+					p
+						font-size: r(14px)

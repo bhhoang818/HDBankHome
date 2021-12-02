@@ -457,17 +457,17 @@ const mainBanner = () => {
 		breakpointsInverse: true,
 		loop: false,
 		spaceBetween: 10,
-		simulateTouch:false,
+		simulateTouch: false,
 		breakpoints: {
 			360: {
 				navigation: {
 					nextEl: ".swiper-card-promotion .swiper-button-next",
 					prevEl: ".swiper-card-promotion .swiper-button-prev",
 					clickable: true,
-		
+
 				},
 				slidesPerView: 3,
-				simulateTouch:true
+				simulateTouch: true
 			},
 			768: {
 				slidesPerView: 4,
@@ -488,17 +488,20 @@ const headerActive = () => {
 		e.preventDefault();
 		if ($(window).width() <= 992) {
 			butonToggle.toggleClass('active')
-			header.toggleClass('active');
+			header.toggleClass('active')
+			$("#overlay").toggleClass("active")
 		} else {
-			header.addClass('active');
+			header.toggleClass('active')
+			$("#overlay").toggleClass("active")
 		}
 	});
-	section.on('click', (e) => {
-		e.preventDefault();
-		header.removeClass('active');
-	})
+	$("#overlay").on("click", function () {
+		let $this = $(this);
+		$this.removeClass("active");
+		butonToggle.removeClass("active");
+		header.removeClass("active");
+	});
 	$('.dropdown-toggle').on('click', () => {
-		console.log('test');
 		$('.dropdown .dropdown-menu').slideToggle()
 	})
 }
@@ -538,13 +541,13 @@ const rangeSlide = () => {
 		min: 1,
 		max: 100,
 		slide: function (event, ui) {
-			$("#amount-card").val(ui.value + " .000.000 Triệu");
-			if ($("#amount-card").val() == 100 + " Triệu") {
-				$("#amount-card").val(100 + " triệu");
+			$("#amount-card").val(ui.value + " .000.000");
+			if ($("#amount-card").val() == 100) {
+				$("#amount-card").val(100);
 			}
 		}
 	});
-	$("#amount-card").val($("#slider-range-card").slider("value") + " .000.000 Triệu");
+	$("#amount-card").val($("#slider-range-card").slider("value") + " .000.000");
 }
 
 const tabPanel = () => {
@@ -603,8 +606,8 @@ const scrollSection = () => {
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-			scrollTop: $("#sec-4").offset().top,
-		},
+				scrollTop: $("#sec-4").offset().top,
+			},
 			"slow"
 		);
 	});
