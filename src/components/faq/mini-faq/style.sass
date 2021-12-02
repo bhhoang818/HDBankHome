@@ -1,0 +1,99 @@
+.mini-faq
+	.title-mobile
+		text-align: center
+		padding-top: 24px
+		background: $white
+		.title
+			padding: 0 !important
+		.material-icons
+			font-size: r(30px)
+			color: $black
+			text-align: center
+		@media screen and ( min-width: 576px )
+			display: none
+			
+	.left-block
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		height: 100%
+		background-image: url('../images/bg-2.jpg')
+		background-repeat: no-repeat
+		background-size: cover
+		padding: 24px
+		background-blend-mode: multiply, overlay, normal
+		border-radius: 20px
+		.material-icons
+			font-size: r(30px)
+			color: $white
+			text-align: center
+			@media screen and ( min-width: 576px )
+				display: none
+		.side-navigation-wrap
+			.side-navigation
+				padding-left: 0
+				margin-bottom: 0
+				li
+					margin-bottom: 16px
+					.accordion-title
+						font-weight: bold
+						font-size: 20px
+						line-height: 125%
+						color: $white
+						display: flex
+						align-items: flex-start
+						.ri-arrow-down-s-line
+							margin-left: auto
+						p
+							padding-left: 10px
+					&.active
+						padding: 24px
+						background: #FFFFFF
+						border-radius: 20px
+						.accordion-title
+							color: $main
+					.nav-sub
+						display: none
+			.btn-viewmore
+				border: 1px solid $white
+				&::after
+					color: $white
+				span
+					color: $white
+	@media screen and ( max-width: 768.98px )
+		.right-block
+			padding: 24px
+			margin-bottom: 24px
+			.tabs
+				.group-iput
+					.form-group
+						width: 33.33%
+						.form-control
+							width: 100%
+				.panel
+					&_list
+						&__item
+							&-title
+								p
+									font-size: r(15px)
+							&-desc
+								p
+									font-size: r(12px)
+					.map
+						+img-ratio(350/768)
+
+		.left-block
+			.side-navigation-wrap
+				.side-navigation
+					li
+						.accordion-title
+							font-size: r(15px)
+						.nav-sub
+							p
+								font-size: r(12px)
+	@media screen and ( max-width: 575.98px )
+		.left-block
+			display: none
+			border-radius: 0
+			.title
+				display: none

@@ -1,0 +1,26 @@
+#panel-1.panel.active
+    .description-box
+        p Nếu Quý Khách có yêu cầu, góp ý, khen ngợi hoặc ý kiến phản hồi xin vui lòng gửi email trực tiếp về cho chúng tôi.
+        p Cảm ơn Quý khách đã gửi email đến HDBank!
+    .content-form
+        form.group-input(action="")
+            .form-group
+                input.form-control(type="text" placeholder="Họ và tên")
+                img.icon(src="./images/contact/Input/Profile.png")
+            .form-group
+                input.form-control(type="text" placeholder="Số điện thoại")
+                img.icon(src="./images/contact/Input/Call.png")
+            .form-group
+                input.form-control(type="text" placeholder="Mã nhân viên tư vấn nếu có")
+                img.icon(src="./images/contact/Input/Support.png")
+            .form-group 
+                select.form-control(name="") 
+                    option(value="") Tỉnh/Thành phố
+            .form-group 
+                select.form-control(name="") 
+                    option(value="") Quận/Huyện
+            .form-group 
+                textarea.form-control(name="", rows="5", placeholder="Ghi chú")
+                img.icon(src="./images/contact/Input/Edit_Square.png")
+        button.btn.btn-submit.btn-send-email(type="submit")
+            span Gửi email
