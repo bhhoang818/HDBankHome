@@ -459,17 +459,20 @@ const headerActive = () => {
 		e.preventDefault();
 		if ($(window).width() <= 992) {
 			butonToggle.toggleClass('active')
-			header.toggleClass('active');
+			header.toggleClass('active')
+			$("#overlay").toggleClass("active")
 		} else {
-			header.addClass('active');
+			header.toggleClass('active')
+			$("#overlay").toggleClass("active")
 		}
 	});
-	section.on('click', (e) => {
-		e.preventDefault();
-		header.removeClass('active');
-	})
+	$("#overlay").on("click", function () {
+		let $this = $(this);
+		$this.removeClass("active");
+		butonToggle.removeClass("active");
+		header.removeClass("active");
+	});
 	$('.dropdown-toggle').on('click', () => {
-		console.log('test');
 		$('.dropdown .dropdown-menu').slideToggle()
 	})
 }
@@ -509,13 +512,13 @@ const rangeSlide = () => {
 		min: 1,
 		max: 100,
 		slide: function (event, ui) {
-			$("#amount-card").val(ui.value + " .000.000 Triệu");
-			if ($("#amount-card").val() == 100 + " Triệu") {
-				$("#amount-card").val(100 + " triệu");
+			$("#amount-card").val(ui.value + " .000.000");
+			if ($("#amount-card").val() == 100) {
+				$("#amount-card").val(100);
 			}
 		}
 	});
-	$("#amount-card").val($("#slider-range-card").slider("value") + " .000.000 Triệu");
+	$("#amount-card").val($("#slider-range-card").slider("value") + " .000.000");
 }
 
 const tabPanel = () => {
@@ -574,8 +577,8 @@ const scrollSection = () => {
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-			scrollTop: $("#sec-4").offset().top,
-		},
+				scrollTop: $("#sec-4").offset().top,
+			},
 			"slow"
 		);
 	});
@@ -710,6 +713,23 @@ const handleEventNewsPage = () => {
 	});
 };
 
+/*==================HEADER WHEN SCROLL============*/
+const activeHeaderWhenScroll = () => {
+	window.addEventListener("scroll", function () {
+		if (window.pageYOffset > 0 && $(window).width() >= 992) {
+			document.querySelector(".nav-top").classList.add("header-croll-down");
+		} else {
+			document
+				.querySelector(".nav-top")
+				.classList.remove("header-croll-down");
+		}
+	});
+};
+// ===========================CHECK BANNER========================= //
+const checkLayoutBanner = () => {
+	let heightHeader = $(".nav-top").outerHeight();
+	$("main").css("padding-top", heightHeader);
+};
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
@@ -723,4 +743,6 @@ $(document).ready(function () {
 	scrollTop();
 	initMapping();
 	handleEventNewsPage();
+	activeHeaderWhenScroll();
+	checkLayoutBanner();
 });
