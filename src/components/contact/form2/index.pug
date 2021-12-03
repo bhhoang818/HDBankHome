@@ -1,0 +1,39 @@
+#panel-2.panel
+    .description-box
+        p Xin vui lòng đặt lịch hẹn nếu quý khách dự kiến đến đơn vị giao dịch của chúng tôi
+    .content-form
+        form.group-input(action="")
+            .form-group
+                input.form-control(type="text" placeholder="Họ và tên")
+                img.icon(src="./images/contact/Input/Profile.png")
+            .form-group
+                input.form-control(type="text" placeholder="Số điện thoại")
+                img.icon(src="./images/contact/Input/Call.png")
+            .form-group
+                input.form-control(type="text" placeholder="CMND/Hộ chiếu")
+                img.icon(src="./images/contact/Input/Scan.png")
+            .form-group
+                input.form-control(type="text" placeholder="Mã nhân viên tư vấn nếu có")
+                img.icon(src="./images/contact/Input/Support.png")
+            .form-group 
+                select.form-control(name="") 
+                    option(value="") Tỉnh/Thành phố
+            .form-group 
+                select.form-control(name="") 
+                    option(value="") Địa điểm hẹn
+            .form-group
+                input.form-control(type="text" placeholder="Ngày hẹn")
+                img.icon(src="./images/contact/Input/calendar.png")
+            .form-group
+                select.form-control(name="") 
+                    option(value="") Giờ
+                    option(value="") 00:00
+                    option(value="") 01:00
+                    option(value="") 02:00
+                    option(value="") 03:00
+                    option(value="") 04:00
+            .form-group 
+                textarea.form-control(name="", rows="5", placeholder="Ghi chú")
+                img.icon(src="./images/contact/Input/Edit_Square.png")
+        button.btn.btn-submit.btn-appoinment(type="submit")
+            span Gửi lịch hẹn
