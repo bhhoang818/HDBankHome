@@ -1,10 +1,173 @@
-.loan
-	.loan-promtion-block
+.tool-card-product
+	.product-catelogry
 		max-width: 1024px
 		margin: 0 auto
 		display: flex
-		.product-catelog
-			min-width: 370px
-			width: 370px
-		.card-product-promotion
-			padding: 24px 40px
+		padding: 0px 40px 0px 0px
+		background: #FFFFFF
+		box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12)
+		border-radius: 20px
+		.product-catelory_list
+			max-width: 370px
+			width: 100%
+			padding: 24px 24px 20px
+			background: linear-gradient(167.6deg, #FFD149 7.65%, #E0242C 71.52%, #CB0817 89.4%), #C4C4C4
+			border-radius: 20px
+			.navigation
+				&-list
+					padding-left: 0
+					&_item
+						&__title
+							cursor: pointer
+							position: relative
+							transition: all ease-in-out .3s
+							.img
+								transition: all ease-in-out .3s
+								img
+									border-radius: 12px
+							.contnet
+								display: flex
+								align-items: center
+								justify-content: space-between
+								position: absolute
+								bottom: 0
+								left: 0
+								width: 100%
+								padding: 8px 16px
+								background: linear-gradient(360deg, #000000 -3.93%, rgba(0, 0, 0, 0) 70.15%)
+								filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.12))
+								border-radius: 12px
+								a
+									font-weight: bold
+									font-size: 20px
+									line-height: 29px
+									color: #FFFFFF
+								em
+									font-weight: 400
+									color: $white
+									transform: rotate(0deg)
+									transition: all ease-in-out .3s
+						.navigation-sub
+							margin-top: 8px
+							padding: 16px
+							background: #FFFFFF
+							box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12)
+							border-radius: 20px
+							display: none
+							li
+								a
+									display: flex
+									align-items: center
+									justify-content: space-between
+									p
+										font-weight: bold
+										font-size: 1rem
+										line-height: 23px
+										color: #333333
+									em
+										color: $black
+							li + li
+								margin-top: 17px
+							&.active
+								display: block
+						&.active
+							.navigation-list_item__title
+								height: 58px
+								.img
+									height: 100%
+
+									img
+										width: 100%
+										height: 100%
+										object-fit: cover
+
+					li + li
+						margin-top: 16px
+		#tool-ulitily-mobile
+			.right-box
+				position: static
+			@media screen and ( min-width: 769px )
+				display: none
+	@media screen and ( max-width: 768.98px )
+		.product-catelogry
+			flex-direction: column
+			padding: 0
+			box-shadow: none
+			.product-catelory_list
+				padding: 0
+				background: none
+				.title
+					color: $black !important
+				.navigation
+					&-list
+						display: flex
+						flex-wrap: wrap
+						flex-direction: row
+						&_item
+							flex: 0 50%
+							padding: 0 8px
+							&__title
+								.contnet
+									padding: 8px 0
+									a
+										padding-left: 8px
+										font-size: r(12px)
+									em
+										padding-right: 8px
+							.navigation-sub
+								margin-bottom: 8px
+								li
+									a
+										p,
+										em
+											font-size: r(12px)
+											line-height: 18px
+									& + li
+										margin-top: 8px
+										margin-bottom: 0
+							&:last-child
+								width: 50%
+						li + li
+							margin-top: 0
+							margin-bottom: 16px
+
+			#tool-ulitily-mobile
+				background-image: url('../images/producttion/bg-mb.png')
+				background-repeat: no-repeat
+				background-size: cover
+				padding: 24px 0
+				.card-tool-box
+					position: static
+					max-width: 350px
+					width: 100%
+					margin: 0 auto
+					background: $white
+					.card-switcher
+						.header-switcher
+							margin-bottom: 25px
+						.panel
+							.from-slide-loan
+								form
+									.form-group
+										label
+											font-size: r(14px)
+								.range-slider__label
+									margin-bottom: 16px
+									&__min,
+									&__max
+										span
+											font-size: r(14px)
+								.period-wraper
+									margin-bottom: 8px
+								.btn-login
+									display: flex
+									justify-content: center
+									span
+										margin-left: 0
+
+									&::after
+										right: 65%
+								.desc
+									margin-top: 16px
+					.dot
+						padding-bottom: 25px

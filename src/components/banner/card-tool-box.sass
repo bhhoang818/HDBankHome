@@ -23,7 +23,7 @@
             box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.05)
             border-radius: 40px
             li
-                padding: 8px 16px
+                padding: 14px 16px
                 border-radius: 40px
                 font-style: normal
                 font-weight: 500
@@ -250,7 +250,8 @@
                 .desc
                     text-align: center
                     padding: 0 r(20px)
-
+                @media screen and ( max-width: 768.98px )
+                    max-width: 100%
             &.active
                 display: block
     .from-slide-advise
@@ -302,12 +303,9 @@
                 margin-bottom: 16px
                 border-radius: 40px
                 background-color: $white
-                span
-                    position: absolute
-                    top: 50%
-                    left: 10px
-                    transform: translateY(-50%)
-
+                display: flex
+                align-items: center
+                img
                 .form-control
                     border: none
                     background-color: $tran
