@@ -743,7 +743,8 @@ const handleEventNewsPage = () => {
 };
 
 const handleEventPriorityUserPage = () => {
-	$(".link-info").on("click", function () {
+	$(".link-info").on("click", function (e) {
+		e.preventDefault();
 		let $customers = $(this).closest(".list-customers");
 		$customers.find(".item-customer.active").removeClass("active");
 		$(this).closest(".item-customer").addClass("active");
