@@ -94,6 +94,7 @@
 			padding: 0
 			box-shadow: none
 			.product-catelory_list
+				max-width: 100%
 				padding: 0
 				background: none
 				.title
@@ -107,6 +108,10 @@
 							flex: 0 50%
 							padding: 0 8px
 							&__title
+								.img
+									width: 100%
+									img
+										width: 100%
 								.contnet
 									padding: 8px 0
 									a
@@ -171,3 +176,8 @@
 									margin-top: 16px
 					.dot
 						padding-bottom: 25px
+	@media screen and ( max-width: 1024.98px)
+		.product-catelogry
+			.product-catelory_list
+				flex: 1
+				max-width: 100%
