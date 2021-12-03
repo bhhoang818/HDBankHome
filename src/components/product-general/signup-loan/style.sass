@@ -3,7 +3,7 @@
     display: flex
     align-items: center
     margin-top: 16px
-    min-height: 616px
+    height: 616px
     background: linear-gradient(167.6deg, #FFD149 7.65%, #E0242C 71.52%, #CB0817 89.4%), #C4C4C4
     box-shadow: inset 0px -5px 13px rgba(103, 62, 62, 0.15)
     .wrapper-content
@@ -11,4 +11,77 @@
         align-items: center
         max-width: 1024px
         margin: 0 auto
-        .right-box
+        .left-box
+            max-width: 456px
+            width: 100%
+            .title
+                font-weight: 700
+                letter-spacing: -.5px
+                text-align: center
+            &_content
+                ul
+                    padding-left: 0
+                    li
+                        position: relative
+                        p
+                            color: $white
+                            font-size: r(20px)
+                            padding-left: 20px
+                        &::before
+                            position: absolute
+                            content: '\e061'
+                            font-family: Material Icons
+                            font-size: 10px
+                            color: $white
+                            top: 10px
+                            left: 0
+                        &:last-child
+                            p
+                                padding-left: 0
+                            &::before
+                                display: none
+                    li + li
+                        margin-top: 16px
+                .btn-login
+                    margin-top: 32px
+                    width: auto
+                    padding: 16px 38px !important
+                    p
+                        font-size: r(18px)
+    @media screen and ( max-width: 1366.98px)
+        padding-bottom: 0
+        height: 516px
+    @media screen and ( max-width: 768.98px )
+        background: none
+        box-shadow: none
+        display: block
+        height: auto
+        padding-bottom: r(16px)
+        .wrapper-content
+            max-width: 100%
+            .left-box
+                max-width: 100%
+                .title
+                    padding-top: 32px !important
+                    color: $black !important
+                    font-size: 22px !important
+                &_content
+                    ul
+                        margin-bottom: 0
+                        li
+                            p
+                                color: $black
+                                font-size: r(14px)
+                            &::before
+                                color: $black
+                    .btn-login
+                        margin: 24px auto
+                        padding: 0 16px !important
+                        height: 32px
+                        display: flex
+                        align-items: center
+                        width: 172px
+                        &::after
+                            right: calc( 100% - 27px )
+                        p
+                            font-size: r(14px)
