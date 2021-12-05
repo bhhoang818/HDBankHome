@@ -686,13 +686,6 @@ const toggleSlideTool = () => {
 	$('.title-mobile').on('click', function () {
 		$(this).next().slideToggle();
 	})
-	$('.title-question-box').on('click', function () {
-		$(this).next().slideToggle();
-		if ($(this).parent().hasClass('active'))
-			$(this).parent().removeClass('active')
-		else
-			$(this).parent().addClass('active')
-	})
 
 }
 
@@ -761,6 +754,54 @@ const handleEventNewsPage = () => {
 	});
 };
 
+const handleEventFaqPage = () => {
+	$(".tab-list > li").on("click", function () {
+		let $panel = $(this).closest(".tabs ");
+		$panel.find("li.active").removeClass("active");
+		$(this).addClass("active");
+		let panelToShow = $(this).attr("rel");
+		let $page = $(this).parents(".faq-content").first();
+		$page.find(".panel.active").fadeOut(300, showNextPanel);
+
+		function showNextPanel() {
+			$(this).removeClass("active");
+			$("#" + panelToShow).fadeIn(300, function () {
+				$(this).addClass("active").fadeIn(300);
+			});
+		}
+
+	});
+	$('.title-question-box').on('click', function () {
+		$(this).next().slideToggle();
+		if ($(this).parent().hasClass('active'))
+			$(this).parent().removeClass('active')
+		else
+			$(this).parent().addClass('active')
+	})
+};
+
+const handleEventPriorityUserPage = () => {
+	$('.priority-user-content .item-customer .link-info').on('click', function (e) {
+		debugger;
+		e.preventDefault();
+		let currentActive = $('.priority-user-content').find('.item-customer.active').first();
+		let expectActive = $(this).parents(".item-customer").first();
+		console.log("currentActive", currentActive)
+		console.log("expectActive", expectActive)
+		if(!$(this).parents(".item-customer").first().hasClass('active')){
+			currentActive.find(".right-box").slideUp();
+			currentActive.removeClass('active');
+			expectActive.addClass('active');
+			expectActive.find(".right-box").slideDown();
+		}
+		// $(this).closest(".left-box").next().slideToggle();
+		// if ($(this).parents(".item-customer").first().hasClass('active'))
+		// 	$(this).parents(".item-customer").first().removeClass('active')
+		// else
+		// 	$(this).parents(".item-customer").first().addClass('active')
+	})
+};
+
 /*==================HEADER WHEN SCROLL============*/
 const activeHeaderWhenScroll = () => {
 	window.addEventListener("scroll", function () {
@@ -793,4 +834,6 @@ $(document).ready(function () {
 	handleEventNewsPage();
 	activeHeaderWhenScroll();
 	checkLayoutBanner();
+	handleEventFaqPage();
+	handleEventPriorityUserPage();
 });
