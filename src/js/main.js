@@ -478,6 +478,35 @@ const mainBanner = () => {
 
 		},
 	});
+	var swiper = new Swiper(".about-content .swiper-vision-mission .swiper-container", {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		loop: false,
+		spaceBetween: 10,
+		simulateTouch: false,
+		navigation: {
+			nextEl: ".swiper-vision-mission .swiper-button-next",
+			prevEl: ".swiper-vision-mission .swiper-button-prev",
+			clickable: true,
+
+		},
+		breakpoints: {
+			360: {
+				slidesPerView: 1,
+				simulateTouch: true
+			},
+			768: {
+				slidesPerView: 1,
+			},
+			1200: {
+				slidesPerView: 1,
+			},
+
+		},
+	});
 }
 
 const headerActive = () => {
@@ -794,11 +823,6 @@ const handleEventPriorityUserPage = () => {
 			expectActive.addClass('active');
 			expectActive.find(".right-box").slideDown();
 		}
-		// $(this).closest(".left-box").next().slideToggle();
-		// if ($(this).parents(".item-customer").first().hasClass('active'))
-		// 	$(this).parents(".item-customer").first().removeClass('active')
-		// else
-		// 	$(this).parents(".item-customer").first().addClass('active')
 	})
 };
 
