@@ -11,7 +11,8 @@
     @media screen and ( max-width: 575.98px )
         width: 90%
         box-shadow: none
-        margin: -30px auto 20px;
+        margin: -30px auto 0;
+        padding-bottom: 0
     .container-fluid
         @media screen and ( max-width: 575.98px ) 
             padding: 0
@@ -59,7 +60,7 @@
                         position: relative
                         background-image: url('../images/icons/select.png')
                         background-repeat: no-repeat
-                        background-position: 14px
+                        background-position: 14px !important
                         border: none
                         &:focus
                             outline: none
@@ -113,9 +114,10 @@
                     .content-answer-box
                         display: none
                         padding-right: 50px
+                        padding-bottom: 15px
                         @media screen and ( max-width: 575.98px ) 
                             font-size: 14px
-                            padding: 0 10px
+                            padding: 0 10px 15px
                 .item-question.active
                     .title-question-box
                         .title-question
