@@ -832,9 +832,15 @@ const activeHeaderWhenScroll = () => {
 		if (window.pageYOffset > 0 && $(window).width() > 992) {
 			document.querySelector(".nav-top").classList.add("header-croll-down");
 		} else {
-			document
-				.querySelector(".nav-top")
-				.classList.remove("header-croll-down");
+			document.querySelector(".nav-top").classList.remove("header-croll-down");
+		}
+		if ($(window).width() < 769) {
+			if ((window.pageYOffset)) {
+				$('.mobile-popup').slideUp()
+			} else {
+				$('.mobile-popup').slideDown()
+
+			}
 		}
 	});
 };
