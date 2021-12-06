@@ -847,7 +847,7 @@ const checkLayoutBanner = () => {
 const startMarquee = () => {
 	$('.marquee_text').marquee({
 		direction: 'left',
-		duration: 10000,
+		duration: 15000,
 		gap: 8,
 		delayBeforeStart: 0,
 		duplicated: true,
