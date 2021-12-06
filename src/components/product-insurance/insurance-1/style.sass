@@ -1,0 +1,63 @@
+.insurance-1
+    .wraper-content
+        max-width: 842px
+        width: 100%
+        margin: 0 auto
+        p
+            font-size: 20px
+            line-height: 29px
+            text-align: center
+            color: #333333
+        .button-box
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-top: 48px
+            .btn-login
+                width: 200px
+                margin-left: 16px
+            .btn-suport
+                display: flex
+                align-items: center
+                padding: 16px 24px
+                border: 1px solid #333333
+                box-sizing: border-box
+                border-radius: 50px
+                p
+                    font-weight: bold
+                    font-size: 18px
+                    line-height: 26px
+                    color: #333333
+                    transition: all .3s
+                &::before
+                    content: '\e87a'
+                    font-family: Linearicons-Free
+                    margin-right: 10px
+                    color: $black
+                    transition: all .3s
+
+                &:hover
+                    p
+                        transform: translateX(-30px)
+                    &::before
+                        transform: translateX(130px)
+    @media screen and ( max-width: 992.98px )
+        .wraper-content
+            p
+                text-align: center
+                font-size: r(14px)
+                line-height: 20px
+            .button-box
+                margin-top: 24px
+                .btn-login,
+                .btn-suport
+                    height: 32px
+                    width: auto
+                    &::after
+                        display: none
+                    &::before
+                        display: none
+    @media screen and ( max-width: 575.98px )
+        .wraper-content
+            p
+                text-align: justify

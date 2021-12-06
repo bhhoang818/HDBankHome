@@ -78,86 +78,51 @@
 		left: 50%
 		transform: translateX(-50%)
 		max-width: 1344px
+		width: 100%
+		height: 48px
 		background: rgba($color: $main, $alpha: 0.72)
 		backdrop-filter: blur(30px)
 		border-radius: 12px
 		z-index: 10
-		padding: 8px 24px
-		.marquee-list
+		padding: 8px 0
+		div
 			width: 100%
-			display: flex
-			align-items: center
-			margin: 0
-			padding-left: 0
-			animation: scrolling 18s linear infinite
-			.marquee-list_item
+			.marquee_text
 				display: flex
 				align-items: center
-				margin-left: 24px
-				border: none
-				white-space: nowrap
-				color: $white
-				font-size: r(18px)
-				p
-					font-weight: 600
-					margin-bottom: 0
-		&::before
-			position: absolute
-			top: 0
-			left: 0
-			background: $main
-			width: 24px
-			height: 100%
-			content: ''
-			z-index: 2
-			opacity: 0.72
-			border-top-left-radius: 12px
-			border-bottom-left-radius: 12px
-		&::after
-			position: absolute
-			top: 0
-			right: 0
-			background: $main
-			width: 24px
-			height: 100%
-			content: ''
-			z-index: 2
-			opacity: 0.72
-			border-top-right-radius: 12px
-			border-bottom-right-radius: 12px
+				margin: 0
+				padding-left: 0
+				.js-marquee-wrapper
+					display: flex
+					.js-marquee
+						display: flex
+						.marquee-list_item
+							display: flex
+							align-items: center
+							margin-left: 24px
+							border: none
+							white-space: nowrap
+							color: $white
+							font-size: r(18px)
+							p
+								font-weight: 600
+								margin-bottom: 0
 		@media screen and ( max-width: 1366px )
 			top: 15px
 			max-width: 1024px
 			.marquee-list
-				animation: scrolling 15s linear infinite
 				.marquee-list_item
 					span
 						font-size: r(14px)
 		@media screen and ( max-width: 1024px )
 			top: 24px
 			max-width: 90vw
-	@media ( max-width: 575.98px )
-		.hero-image
-			width: 100%
-			height: 100vh
-			a
-				+img-ratio(644/375)
-				height: 100%
-	@media ( max-width: 1366px )
+	@media ( max-width: 1366.98px )
 		.hero-image
 			width: 100%
 			height: 100vh
 			a
 				height: 100%
-
-@keyframes scrolling
-	0%
-		transform: translateX(88vw)
-	100%
-		transform: translateX(-110vw)
-@media screen and ( max-width: 575.98px )
-	@keyframes scrolling
-		0%
-			transform: translateX(88vw)
-		100%
-			transform: translateX(-330vw)
+				img
+					width: 100%
+					height: 100%

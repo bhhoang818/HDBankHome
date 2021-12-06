@@ -1,0 +1,144 @@
+.nimish-list
+    width: 100%
+    .filter-catelog
+        max-width: 1024px
+        width: 100%
+        margin: 0 auto
+        .form-group
+            margin-bottom: 24px
+            .form-control
+                padding-left: 48px
+                width: 480px
+                height: 53px
+                background: #F9FAFC
+                border-radius: 40px
+                margin: 0 auto
+            @media screen and ( max-width: 575.98px )
+                .form-control
+                    width: 100%
+
+        .tag-list.tabs
+            .hashtag-content
+                .card-item
+                    padding: 24px 0
+                    display: flex
+                    align-items: center
+                    &_img
+                        max-width: 277px
+                        width: 100%
+                        text-align: center
+                    &_content
+                        margin-left: 40px
+                        padding: 40px 0 56px 0
+
+                        &__title
+                            padding-bottom: 8px
+                            a
+                                p
+                                    font-weight: bold
+                                    font-size: 20px
+                                    line-height: 29px
+                                    color: $black
+                        &__desc
+                            ul
+                                padding-left: 0
+                                li
+                                    position: relative
+                                    padding-left: 30px
+                                    p
+                                        font-size: r(14px)
+                                        line-height: 20px
+                                    &::before
+                                        position: absolute
+                                        top: 0px
+                                        left: 0
+                                        width: 20px
+                                        height: 20px
+                                        background-image: url('../images/icons/check_active.png')
+                                        background-repeat: no-repeat
+                                        background-size: cover
+                                        content: ''
+                                li + li
+                                    margin: 8px 0
+                        &__button
+                            display: flex
+                            justify-content: flex-end
+                            .btn-small
+                                margin-top: 0
+                                margin-left: 16px
+                            .viewdetail
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                padding: 8px
+                                width: 140px
+                                height: 39px
+                                border: 1px solid #333333
+                                box-sizing: border-box
+                                border-radius: 50px
+                                text-align: center
+                                font-weight: 500
+                                font-size: 16px
+                                line-height: 23px
+                                color: #333333
+
+                .card-item + .card-item
+                    .card-item_content
+                        border-top: 1px solid rgba($color: #BCC0CC, $alpha: .4)
+                @media screen and ( max-width: 991.98px )
+                    .card-item
+                        &_content
+                            &__button
+                                .btn-small
+                                    margin-right: 0
+                                    height: auto
+                                .viewdetail
+                @media screen and ( max-width: 768.98px )
+                    .card-item
+                        &_img
+                            max-width: unset
+                            flex: 1 0 50%
+                            padding-right: 16px
+                        &_content
+                            flex: 1 0 50%
+                            margin-left: 0
+                            padding: 0
+                            &__title
+                                padding-bottom: 0
+                                a
+                                    p
+                                        font-size: 12px
+                                        line-height: 18px
+                                        text-align: center
+                            &__desc
+                                ul
+                                    li
+                                        padding-left: 16px
+
+                                        p
+                                            font-size: 10px
+                                            overflow: hidden
+                                            display: -webkit-box
+                                            text-overflow: ellipsis
+                                            -webkit-box-orient: vertical
+                                            -webkit-line-clamp: 2
+                                        &::before
+                                            top: 3px
+                                            width: 13px
+                                            height: 13px
+                                    li + li
+                                        margin: 4px 0
+                            &__button
+                                .btn-small
+                                    width: 65px
+                                    height: 23px
+                                    font-size: 10px
+                                    margin-left: 8px
+                                .viewdetail
+                                    width: 90px
+                                    height: 23px
+                                    font-size: 10px
+                    .card-item + .card-item
+                        border-top: 1px solid rgba($color: #BCC0CC, $alpha: .4)
+                        .card-item_content
+                            border-top: 0

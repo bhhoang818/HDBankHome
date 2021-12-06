@@ -10,10 +10,10 @@ const mainBanner = () => {
 		parallax: true,
 		speed: 2000,
 		effect: "fade",
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-		},
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
+		// },
 		fadeEffect: {
 			crossFade: true,
 		},
@@ -632,23 +632,23 @@ const accordianList = () => {
 		$(".btn-dropdown").not(this).parent().next().slideUp();
 		$(".btn-dropdown").not(this).removeClass("active");
 	});
-	if ($(window).width() < 768) {
-		$(".footer-infor_tile").on("click", function () {
-			let $this = $(this);
-			if ($this.next().hasClass("show")) {
-				$this.next().removeClass("show");
-				$this.next().slideUp(350);
-				$this.closest('.menu-list').removeClass("active");
-			} else {
-				$this.parent().parents().find("ul").removeClass("show");
-				$this.parent().parents().find("ul").slideUp(350);
-				$this.parent().parents('.menu-box').find(".menu-list").removeClass("active");
-				$this.next().toggleClass("show");
-				$this.next().slideDown(350);
-				$this.parent(".menu-list").addClass("active");
-			}
-		});
-	}
+	// if ($(window).width() < 768) {
+	// 	$(".footer-infor_tile").on("click", function () {
+	// 		let $this = $(this);
+	// 		if ($this.next().hasClass("show")) {
+	// 			$this.next().removeClass("show");
+	// 			$this.next().slideUp(350);
+	// 			$this.closest('.menu-list').removeClass("active");
+	// 		} else {
+	// 			$this.parent().parents().find("ul").removeClass("show");
+	// 			$this.parent().parents().find("ul").slideUp(350);
+	// 			$this.parent().parents('.menu-box').find(".menu-list").removeClass("active");
+	// 			$this.next().toggleClass("show");
+	// 			$this.next().slideDown(350);
+	// 			$this.parent(".menu-list").addClass("active");
+	// 		}
+	// 	});
+	// }
 	$(".navigation-list_item__title .contnet").on("click", function (e) {
 		let $this = $(this);
 		e.preventDefault();
@@ -764,7 +764,7 @@ const handleEventNewsPage = () => {
 /*==================HEADER WHEN SCROLL============*/
 const activeHeaderWhenScroll = () => {
 	window.addEventListener("scroll", function () {
-		if (window.pageYOffset > 0 && $(window).width() >= 992) {
+		if (window.pageYOffset > 0 && $(window).width() > 992) {
 			document.querySelector(".nav-top").classList.add("header-croll-down");
 		} else {
 			document
@@ -778,6 +778,17 @@ const checkLayoutBanner = () => {
 	let heightHeader = $("nav").outerHeight();
 	$("main").css("padding-top", heightHeader);
 };
+
+const startMarquee = () => {
+	$('.marquee_text').marquee({
+		direction: 'left',
+		duration: 10000,
+		gap: 10,
+		delayBeforeStart: 0,
+		duplicated: true,
+		startVisible: true
+	});
+}
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
@@ -793,4 +804,5 @@ $(document).ready(function () {
 	handleEventNewsPage();
 	activeHeaderWhenScroll();
 	checkLayoutBanner();
+	startMarquee();
 });

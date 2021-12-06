@@ -22,6 +22,7 @@
 							position: relative
 							transition: all ease-in-out .3s
 							.img
+								+img-ratio(106/322)
 								transition: all ease-in-out .3s
 								img
 									border-radius: 12px
@@ -72,14 +73,8 @@
 								display: block
 						&.active
 							.navigation-list_item__title
-								height: 58px
 								.img
-									height: 100%
-
-									img
-										width: 100%
-										height: 100%
-										object-fit: cover
+									+img-ratio(58/322)
 
 					li + li
 						margin-top: 16px
@@ -88,9 +83,26 @@
 				position: static
 			@media screen and ( min-width: 769px )
 				display: none
+	@media screen and ( max-width: 1024.98px)
+		.product-catelogry
+			.product-catelory_list
+				max-width: 100%
+	@media screen and ( max-width: 992.98px)
+		.product-catelogry
+			padding: 0
+			flex-direction: column
+			.product-catelory_list
+				.navigation
+					&-list
+						&_item
+							&__title
+								.img
+									img
+										width: 100%
+									a
+										font-size: 15px
 	@media screen and ( max-width: 768.98px )
 		.product-catelogry
-			flex-direction: column
 			padding: 0
 			box-shadow: none
 			.product-catelory_list
@@ -176,8 +188,3 @@
 									margin-top: 16px
 					.dot
 						padding-bottom: 25px
-	@media screen and ( max-width: 1024.98px)
-		.product-catelogry
-			.product-catelory_list
-				flex: 1
-				max-width: 100%
