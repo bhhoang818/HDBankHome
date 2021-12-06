@@ -848,7 +848,7 @@ const startMarquee = () => {
 	$('.marquee_text').marquee({
 		direction: 'left',
 		duration: 10000,
-		gap: 10,
+		gap: 8,
 		delayBeforeStart: 0,
 		duplicated: true,
 		startVisible: true
