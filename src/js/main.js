@@ -860,6 +860,41 @@ const startMarquee = () => {
 		startVisible: true
 	});
 }
+const videoControl = () => {
+	var vids = $("#player");
+	$.each(vids, function () {
+		this.controls = false;
+	});
+
+	vids.click(function () {
+		if (this.paused) {
+			this.play();
+		} else {
+			this.pause();
+		}
+	});
+}
+const admnistrator = () => {
+	$('.administrator-item').on('click', function (e) {
+		let $this = $(this);
+		let $detail = $(this).next();
+		$detail.toggleClass('active');
+		if ($detail.hasClass('active')) {
+			$this.slideUp()
+			$detail.parent().find('.item-full-content').slideToggle();
+			$detail.parent().toggleClass('active')
+		} else {
+			$this.slideDown();
+			$('.administrator-col').find('.item-full-content').slideUp();
+			$('.administrator-col').removeClass('active');
+		}
+		$('.administrator-item').not(this).next().removeClass('active');
+		$('.administrator-item').not(this).parent().removeClass('active');
+		$('.administrator-item').not(this).next().slideUp();
+		$('.administrator-item').not(this).slideDown();
+	})
+}
+
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {
 	mainBanner();
@@ -878,4 +913,6 @@ $(document).ready(function () {
 	startMarquee();
 	handleEventFaqPage();
 	handleEventPriorityUserPage();
+	videoControl();
+	// admnistrator();
 });

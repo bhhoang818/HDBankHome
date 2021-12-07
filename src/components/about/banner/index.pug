@@ -1,6 +1,7 @@
 section.banner 
-    .banner-video
-        <video width="100%" height="100%" controls="" disablepictureinpicture="" controlslist="nodownload">
-            <source src="https://diaocphulong-my.sharepoint.com/:v:/g/personal/trung_ho_phulong_com/ERQW0G4nhJhMtoQFTIMtDRkBzLxUvFCT0rwilyA1TRDypw?e=cymSXc&amp;download=1" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.
-        </video>
+    .banner-video.desktop
+        video#player(playsinline='' poster="./images/about/banner.png")
+            source(src='./images/about/hdbank.mp4' type='video/mp4')
+    .banner-video.mobile
+        video#player(playsinline='' poster="./images/about/banner-mb.png")
+            source(src='./images/about/hdbank.mp4' type='video/mp4')
