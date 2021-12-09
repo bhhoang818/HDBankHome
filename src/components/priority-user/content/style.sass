@@ -6,7 +6,7 @@
             display: none
             @media ( max-width: 575.98px )
                 display: block
-                padding: 40px 0 !important
+                padding: 30px 0 !important
         .swiper-card-promotion
             position: relative
             text-align: center
@@ -14,7 +14,11 @@
             @media ( max-width: 575.98px )
                 margin: 0 auto
                 width: 80%
+            .swiper-slide-thumb-active
+                .item-card
+                    font-weight: bold
             .item-card
+                cursor: pointer
                 .img-card
                     a 
                         img
@@ -23,12 +27,13 @@
                                 height: 60px
 
                 .title-card 
-                    margin-top: 10px
+                    margin-top: 20px
                     font-size: 1.375rem
                     line-height: 32px
                     color: #333333
                     @media ( max-width: 575.98px )
                         line-height: 14px
+                        font-size: 0.78rem
                     .title 
                         color: inherit
                         @media ( max-width: 575.98px )
@@ -38,59 +43,78 @@
             .swiper-button-next
                 border: none
                 display: none
-                // background: url(../../../images/priority-user/button/arrownext.png) !important
-                right: -40px !important
-                // width: 24px !important
-                // height: 24px !important
+                right: -45px !important
+                top: 50px
                 @media ( max-width: 575.98px )
                     display: block
             .swiper-button-prev
                 border: none
                 display: none
-                // background: url(../../../images/priority-user/button/arrowprev.png) !important
-                left: -40px !important
-                // width: 24px !important
-                // height: 24px !important
+                left: -45px !important
+                top: 50px
                 @media ( max-width: 575.98px )
                     display: block
             .swiper-button-prev::before
                 display: none
             .swiper-button-next::before
                 display: none
-    .info-box
-        margin-top: 30px
-        .info-paragraph
-            font-size: 1.75rem
-            line-height: 41px;
-            text-align: center
-            @media screen and ( max-width: 575.98px )
-                text-align: left
-                font-size: 0.875rem
-                line-height: 24px
-        .list-highlight 
-            text-align: center
-            @media screen and ( max-width: 575.98px )
-                padding: 0
-                text-align: left
-            .item-highlight 
-                font-size: 1.5rem
-                line-height: 35px
-                font-weight: 600
+        .info-box
+            margin-top: 20px
+            .panel
+                &.acitive
+                    display: block
+                    opacity: 1 !important
+            .info-paragraph
+                font-size: 1.75rem
+                line-height: 41px;
+                text-align: center
+                margin-bottom: 10px !important
                 @media screen and ( max-width: 575.98px )
-                    display: flex
-                    align-items: center
-                .icon-check
-                    display: none
-                    margin-right: 7px
-                    @media screen and ( max-width: 575.98px )
-                        display: block
-                .text-highlight
-                    color: red
-                @media screen and ( max-width: 575.98px )
+                    text-align: left
                     font-size: 0.875rem
                     line-height: 24px
+            .list-highlight 
+                text-align: center
+                @media screen and ( max-width: 575.98px )
+                    padding: 0
+                    text-align: left
+                .item-highlight 
+                    font-size: 1.5rem
+                    line-height: 35px
+                    font-weight: 600
+                    @media screen and ( max-width: 575.98px )
+                        display: flex
+                        align-items: flex-start
+                        margin-bottom: 5px
+                    .icon-check
+                        display: none
+                        margin-right: 7px
+                        margin-top: 2px
+                        @media screen and ( max-width: 575.98px )
+                            display: block
+                    .text-highlight
+                        color: red
+                    @media screen and ( max-width: 575.98px )
+                        font-size: 0.875rem
+                        line-height: 24px
+                &.list-uudai-dn
+                    max-width: max-content
+                    margin: auto
+                    text-align: left
+                    @media screen and ( max-width: 575.98px )
+                        max-width: 100%
+                    .item-highlight 
+                        .icon-check
+                            display: inline
+                            margin-top: -5px
+                            margin-right: 12px
+                            @media screen and ( max-width: 575.98px )
+                                margin-right: 7px
+                                margin-top: 2px
     .customers-box
         margin-top: 60px
+        @media screen and ( max-width: 768.98px )
+            margin-top: 10px
         .list-customers
             padding: 40px
             box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12)

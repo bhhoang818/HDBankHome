@@ -449,35 +449,6 @@ const mainBanner = () => {
 		},
 		loop: true
 	});
-	var swiper = new Swiper(".priority-user-content .swiper-card-promotion .swiper-container", {
-		speed: 750,
-		observer: true,
-		observeParents: true,
-		lazy: true,
-		breakpointsInverse: true,
-		loop: false,
-		spaceBetween: 10,
-		simulateTouch: false,
-		breakpoints: {
-			360: {
-				navigation: {
-					nextEl: ".swiper-card-promotion .swiper-button-next",
-					prevEl: ".swiper-card-promotion .swiper-button-prev",
-					clickable: true,
-
-				},
-				slidesPerView: 3,
-				simulateTouch: true
-			},
-			768: {
-				slidesPerView: 4,
-			},
-			1200: {
-				slidesPerView: 4,
-			},
-
-		},
-	});
 	var swiper = new Swiper(".about-content .swiper-vision-mission .swiper-container", {
 		speed: 750,
 		observer: true,
@@ -491,7 +462,6 @@ const mainBanner = () => {
 			nextEl: ".swiper-vision-mission .swiper-button-next",
 			prevEl: ".swiper-vision-mission .swiper-button-prev",
 			clickable: true,
-
 		},
 		breakpoints: {
 			360: {
@@ -507,6 +477,97 @@ const mainBanner = () => {
 
 		},
 	});
+	// var swiperPriority = new Swiper(".priority-user-content .swiper-card-promotion .swiper-container", {
+	// 	speed: 750,
+	// 	observer: true,
+	// 	observeParents: true,
+	// 	lazy: true,
+	// 	breakpointsInverse: true,
+	// 	loop: false,
+	// 	spaceBetween: 10,
+	// 	simulateTouch: false,
+	// 	slideToClickedSlide: true,
+	// 	centeredSlides: true,
+	// 	// autoplay: {
+	// 	// 	delay: 3000,
+	// 	// 	disableOnInteraction: false,
+	// 	// },
+	// 	breakpoints: {
+	// 		360: {
+	// 			navigation: {
+	// 				nextEl: ".swiper-card-promotion .swiper-button-next",
+	// 				prevEl: ".swiper-card-promotion .swiper-button-prev",
+	// 				clickable: true,
+
+	// 			},
+	// 			slidesPerView: 3,
+	// 			simulateTouch: true
+	// 		},
+	// 		768: {
+	// 			slidesPerView: 4,
+	// 		},
+	// 		1200: {
+	// 			slidesPerView: 4,
+	// 		},
+
+	// 	},
+	// });
+	var galleryThumbs = new Swiper('.priority-user-content .swiper-card-promotion .gallery-thumbs', {
+		speed: 750,
+		observer: true,
+		observeParents: true,
+		lazy: true,
+		breakpointsInverse: true,
+		simulateTouch: true,
+		centeredSlides: false,
+        spaceBetween: 10,
+        // loopedSlides: 6,
+        slideToClickedSlide: true,
+        loop: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: true,
+		},
+        breakpoints: {
+            320: {
+				navigation: {
+					nextEl: ".swiper-card-promotion .swiper-button-next",
+					prevEl: ".swiper-card-promotion .swiper-button-prev",
+					clickable: true,
+				},
+				slidesPerView: 3,
+				simulateTouch: true,
+				loop: true,
+				centeredSlides: true,
+			},
+			768: {
+				slidesPerView: 4,
+				allowSlideNext: false,
+				allowSlidePrev: false,
+			},
+			1200: {
+				slidesPerView: 4,
+				allowSlideNext: false,
+				allowSlidePrev: false,
+			},
+        },
+    });
+    var galleryTop = new Swiper('.swiper-card-promotion .gallery-top', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-card-promotion .swiper-button-next',
+            prevEl: '.swiper-card-promotion .swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+    });
+    galleryTop.params.control = galleryThumbs
+    galleryThumbs.params.control = galleryTop
 }
 
 const headerActive = () => {
@@ -811,7 +872,6 @@ const handleEventFaqPage = () => {
 
 const handleEventPriorityUserPage = () => {
 	$('.priority-user-content .item-customer .link-info').on('click', function (e) {
-		debugger;
 		e.preventDefault();
 		let currentActive = $('.priority-user-content').find('.item-customer.active').first();
 		let expectActive = $(this).parents(".item-customer").first();
