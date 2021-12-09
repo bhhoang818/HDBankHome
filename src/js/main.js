@@ -653,6 +653,22 @@ const tabPanel = () => {
 
 	});
 
+	$(".tab-list-component > li").on("click", function () {
+		let $panel = $(this).closest(".tabs ");
+		$panel.find("li.active").removeClass("active");
+		$(this).addClass("active");
+		let panelToShow = $(this).attr("rel");
+		$panel.find(".panel.active").fadeOut(300, showNextPanel);
+
+		function showNextPanel() {
+			$(this).removeClass("active");
+			$("#" + panelToShow).fadeIn(300, function () {
+				$(this).addClass("active").fadeIn(300);
+			});
+		}
+
+	});
+
 }
 
 /*===================BACKGROUNDELEMENT===========*/
@@ -827,7 +843,7 @@ const handleEventNewsPage = () => {
 };
 
 const handleEventFaqPage = () => {
-	$(".tab-list > li").on("click", function () {
+	$(".tab-list-component > li").on("click", function () {
 		let $panel = $(this).closest(".tabs ");
 		$panel.find("li.active").removeClass("active");
 		$(this).addClass("active");
