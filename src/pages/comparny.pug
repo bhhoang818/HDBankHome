@@ -1,0 +1,12 @@
+extends _layout.pug
+
+block var
+	- var title = 'Sản phẩm bảo hiểm'
+	- var bodyClass = 'detail-insurance'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/detail-insurance/banner/index.pug
+	include ../components/detail-insurance/content/index.pug
+	include ../components/detail-insurance/promotion/index.pug
+	include ../components/detail-insurance/pro-related/index.pug
