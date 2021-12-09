@@ -507,6 +507,25 @@ const mainBanner = () => {
 
 		},
 	});
+	var swiper = new Swiper('.slide-related .swiper-container', {
+		navigation: {
+			nextEl: ".slide-related .swiper-button-next",
+			prevEl: ".slide-related .swiper-button-prev",
+			clickable: true,
+
+		},
+		spaceBetween: 22,
+		slidesPerView: 3,
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		breakpoints: {
+			375: {
+				slidesPerView: 1,
+			},
+		},
+	});
 }
 
 const headerActive = () => {

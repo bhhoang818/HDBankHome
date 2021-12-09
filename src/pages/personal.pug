@@ -1,0 +1,21 @@
+extends _layout.pug
+
+block var
+	- var title = 'Cá nhân'
+	- var bodyClass = 'pesonal-page'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/personal/banner/index.pug
+	section.section.tool-card-product
+		.container 
+			.product-catelogry
+				include ../components/personal/per-2/index.pug
+				include ../components/personal/per-3/index.pug
+	section.section.atm-location 
+		.container
+			.row 
+				.col-12.col-lg-12.col-xl-8 
+					include ../components/personal/branch/index.pug
+				.col-12.col-lg-12.col-xl-4
+					include ../components/personal/faq/index.pug

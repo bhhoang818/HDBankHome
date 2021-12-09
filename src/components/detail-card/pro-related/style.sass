@@ -1,0 +1,28 @@
+.pro-related
+    .slide-related
+        position: relative
+        .slide-inner
+            &__img
+                min-height: 198px
+            &__content
+                text-align: center
+                a
+                    font-weight: 800
+                    font-size: 27px
+                    line-height: 125%
+                    color: #333333 !important
+        .swiper-button-next
+            right: 0 !important
+        .swiper-button-prev
+            left: 0 !important
+        .swiper-button-next,
+        .swiper-button-prev
+            border: 1px solid $black
+            &::before
+                color: $black
+    @media screen and ( max-width: 1024.98px )
+        .slide-related
+            .slide-inner
+                &__content
+                    a
+                        font-size: 20px
