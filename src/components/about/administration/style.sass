@@ -1,85 +1,101 @@
 .administrator
     .tabs
         .panel
-            display: flex
-            flex-direction: row
-            flex-wrap: wrap
-            .administrator-col
-                flex: 1 0 25%
-                padding: 0 16px
+            .administrator-wrapper
+                position: relative
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                .administrator-col
+                    flex: 1 0 25%
+                    padding: 0 16px
+                    transition: all .3s
 
-                .administrator-item
-                    text-align: center
-                    max-height: 382px
-                    height: 100%
-                    background: rgba(255, 255, 255, 0.94)
-                    box-shadow: 1.21795px 1.21795px 6.08974px rgba(0, 0, 0, 0.07)
-                    border-radius: 20px
-                    margin-top: 24px
-                    cursor: pointer
-                    &_img
-                        +img-ratio(224/270)
-                        img
-                            border-top-left-radius: 20px
-                            border-top-right-radius: 20px
-                    &_content
-                        padding: 16px
-                        display: flex
-                        flex-direction: column
-                        align-items: center
-                        justify-content: space-between
-                        &__name
-                            margin-bottom: 8px
-                            p
-                                font-size: 22px
-                                line-height: 125%
-                                text-align: center
-                                color: #333333
-                        &__position
-                            p
-                                font-size: 18px
-                                line-height: 26px
-                                text-align: center
-                                color: #6F7279
-                .item-full-content
-                    display: none
-                    padding: 24px
-                    background: #FFF9E2
-                    border-radius: 20px
-                    .wrapper
-                        &-title
+                    .administrator-item
+                        text-align: center
+                        max-height: 382px
+                        height: 100%
+                        background: rgba(255, 255, 255, 0.94)
+                        box-shadow: 1.21795px 1.21795px 6.08974px rgba(0, 0, 0, 0.07)
+                        border-radius: 20px
+                        margin-top: 24px
+                        cursor: pointer
+                        &_img
+                            +img-ratio(224/270)
+                            img
+                                border-top-left-radius: 20px
+                                border-top-right-radius: 20px
+                        &_content
+                            padding: 16px
                             display: flex
+                            flex-direction: column
+                            align-items: center
                             justify-content: space-between
-                            align-items: flex-start
-                            margin-bottom: 16px
-                            .sub-title
-                                h3
-                                    font-weight: bold
-                                    font-size: 24px
-                                    line-height: 125%
-                                    color: $main
+                            &__name
+                                margin-bottom: 8px
                                 p
-                                    font-size: 16px
+                                    font-size: 22px
                                     line-height: 125%
+                                    text-align: center
                                     color: #333333
-                            .close
-                                cursor: pointer
-                        &-content
-                            display: flex
-                            .avatar
-                                min-width: 269px
-                                min-height: 280px
-                                img
-                                    border-radius: 12px
-                                    height: 100%
-                                    width: 100%
-                                    object-fit: cover
-                            .desc
-                                margin-left: 24px
+                            &__position
                                 p
-                                    font-size: 16px
-                                    line-height: 125%
-                                    text-align: justify
-                                    color: #000000
-                &.active
-                    flex: 1 0 100%
+                                    font-size: 18px
+                                    line-height: 26px
+                                    text-align: center
+                                    color: #6F7279
+                    .item-full-content
+                        position: absolute
+                        left: 0
+                        width: 100%
+                        display: none
+                        padding: 24px
+                        background: #FFF9E2
+                        border-radius: 20px
+                        .wrapper
+                            &-title
+                                display: flex
+                                justify-content: space-between
+                                align-items: flex-start
+                                margin-bottom: 16px
+                                .sub-title
+                                    h3
+                                        font-weight: bold
+                                        font-size: 24px
+                                        line-height: 125%
+                                        color: $main
+                                    p
+                                        font-size: 16px
+                                        line-height: 125%
+                                        color: #333333
+                                .close
+                                    cursor: pointer
+                            &-content
+                                display: flex
+                                .avatar
+                                    min-width: 269px
+                                    min-height: 280px
+                                    img
+                                        border-radius: 12px
+                                        height: 100%
+                                        width: 100%
+                                        object-fit: cover
+                                .desc
+                                    margin-left: 24px
+                                    p
+                                        font-size: 16px
+                                        line-height: 125%
+                                        text-align: justify
+                                        color: #000000
+                    &.active
+                        flex: 1 0 100%
+    @media (max-width: 768.98px) and ( min-width: 320px )
+        .title
+            display: none
+        .tabs
+            .tab-list
+                li
+                    font-size: 14px
+                    line-height: 17.5px
+                    text-align: center
+                    padding: 9px 24px
