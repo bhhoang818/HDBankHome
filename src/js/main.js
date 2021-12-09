@@ -10,10 +10,10 @@ const mainBanner = () => {
 		parallax: true,
 		speed: 2000,
 		effect: "fade",
-		// autoplay: {
-		// 	delay: 3000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
 		fadeEffect: {
 			crossFade: true,
 		},
@@ -477,41 +477,6 @@ const mainBanner = () => {
 
 		},
 	});
-	// var swiperPriority = new Swiper(".priority-user-content .swiper-card-promotion .swiper-container", {
-	// 	speed: 750,
-	// 	observer: true,
-	// 	observeParents: true,
-	// 	lazy: true,
-	// 	breakpointsInverse: true,
-	// 	loop: false,
-	// 	spaceBetween: 10,
-	// 	simulateTouch: false,
-	// 	slideToClickedSlide: true,
-	// 	centeredSlides: true,
-	// 	// autoplay: {
-	// 	// 	delay: 3000,
-	// 	// 	disableOnInteraction: false,
-	// 	// },
-	// 	breakpoints: {
-	// 		360: {
-	// 			navigation: {
-	// 				nextEl: ".swiper-card-promotion .swiper-button-next",
-	// 				prevEl: ".swiper-card-promotion .swiper-button-prev",
-	// 				clickable: true,
-
-	// 			},
-	// 			slidesPerView: 3,
-	// 			simulateTouch: true
-	// 		},
-	// 		768: {
-	// 			slidesPerView: 4,
-	// 		},
-	// 		1200: {
-	// 			slidesPerView: 4,
-	// 		},
-
-	// 	},
-	// });
 	var galleryThumbs = new Swiper('.priority-user-content .swiper-card-promotion .gallery-thumbs', {
 		speed: 750,
 		observer: true,
