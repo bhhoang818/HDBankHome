@@ -1,0 +1,13 @@
+extends _layout.pug
+
+block var
+	- var title = 'Sản phẩm card'
+	- var bodyClass = 'detail-card'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/detail-card/detail/index.pug
+	include ../components/detail-card/list-col/index.pug
+	include ../components/detail-card/promotion/index.pug
+	include ../components/detail-card/pro-related/index.pug
+	include ../components/detail-card/hot-line/index.pug

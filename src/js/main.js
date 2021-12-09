@@ -876,23 +876,24 @@ const videoControl = () => {
 }
 const admnistrator = () => {
 	$('.administrator-item').on('click', function (e) {
-		let $this = $(this);
-		let $detail = $(this).next();
-		$detail.toggleClass('active');
-		if ($detail.hasClass('active')) {
-			$this.slideUp()
-			$detail.parent().find('.item-full-content').slideToggle();
-			$detail.parent().toggleClass('active')
+		let $paddingtop = $('.administrator-col .item-full-content').outerHeight();
+		let $detailbox = $(this).next();
+		$detailbox.toggleClass('active');
+		if ($detailbox.hasClass('active')) {
+			$('.administrator-col').css('padding-bottom', $paddingtop);
+			$('.administrator-col').find('.item-full-content.active').slideToggle();
 		} else {
-			$this.slideDown();
+			$('.administrator-col').css('padding-bottom', 0);
 			$('.administrator-col').find('.item-full-content').slideUp();
-			$('.administrator-col').removeClass('active');
 		}
-		$('.administrator-item').not(this).next().removeClass('active');
-		$('.administrator-item').not(this).parent().removeClass('active');
-		$('.administrator-item').not(this).next().slideUp();
-		$('.administrator-item').not(this).slideDown();
+		$('.administrator-col .administrator-item').not(this).next().removeClass('active');
+		$('.administrator-col .administrator-item').not(this).parent('.administrator-col').css('padding-bottom', 0);
 	})
+	$('.administrator-col').find('.close ').on('click', function () {
+		$('.administrator-col').find('.item-full-content').removeClass('active');
+		$('.administrator-col').find('.item-full-content').slideUp();
+		$('.administrator-col').css('padding-bottom', 0);
+	});
 }
 
 /*==================== LOAD FUNCTION ====================*/
@@ -914,5 +915,5 @@ $(document).ready(function () {
 	handleEventFaqPage();
 	handleEventPriorityUserPage();
 	videoControl();
-	// admnistrator();
+	admnistrator();
 });

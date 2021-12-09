@@ -1,0 +1,12 @@
+extends _layout.pug
+
+block var
+	- var title = 'Sản phẩm vay'
+	- var bodyClass = 'detail-loan'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/detail-loan/banner/index.pug
+	include ../components/detail-loan/content/index.pug
+	include ../components/detail-loan/promotion/index.pug
+	include ../components/detail-loan/signup-loan/index.pug
