@@ -15,8 +15,12 @@
 	.hero-image
 		width: 100%
 		position: relative
-		a
-			+img-ratio(552/1440)
+		height: 552px
+		display: block
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
 		.product-list-slide
 			position: absolute
 			bottom: 95px
@@ -120,17 +124,17 @@
 	@media ( max-width: 1366.98px )
 		.hero-image
 			width: 100%
-			a
-				height: 100%
-				img
-					width: 100%
-					height: 100%
 	@media screen and ( max-width: 768.98px )
 		.hero-image
+			width: 100%
+			height: auto
 			a
-				+img-ratio(645/768)
+				width: 100%
+				height: 100%
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
 	@media screen and ( max-width: 575.98px )
 		.hero-image
-			height: 100%
-			a
-				+img-ratio(645/575)
+			height: 690px

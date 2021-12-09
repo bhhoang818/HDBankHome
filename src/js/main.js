@@ -520,16 +520,16 @@ const mainBanner = () => {
 		breakpointsInverse: true,
 		simulateTouch: true,
 		centeredSlides: false,
-        spaceBetween: 10,
-        // loopedSlides: 6,
-        slideToClickedSlide: true,
-        loop: true,
+		spaceBetween: 10,
+		// loopedSlides: 6,
+		slideToClickedSlide: true,
+		loop: true,
 		autoplay: {
 			delay: 3000,
 			disableOnInteraction: true,
 		},
-        breakpoints: {
-            320: {
+		breakpoints: {
+			320: {
 				navigation: {
 					nextEl: ".swiper-card-promotion .swiper-button-next",
 					prevEl: ".swiper-card-promotion .swiper-button-prev",
@@ -550,24 +550,41 @@ const mainBanner = () => {
 				allowSlideNext: false,
 				allowSlidePrev: false,
 			},
-        },
-    });
-    var galleryTop = new Swiper('.swiper-card-promotion .gallery-top', {
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-card-promotion .swiper-button-next',
-            prevEl: '.swiper-card-promotion .swiper-button-prev',
-        },
-        thumbs: {
-            swiper: galleryThumbs,
-        },
+		},
+	});
+	var galleryTop = new Swiper('.swiper-card-promotion .gallery-top', {
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-card-promotion .swiper-button-next',
+			prevEl: '.swiper-card-promotion .swiper-button-prev',
+		},
+		thumbs: {
+			swiper: galleryThumbs,
+		},
 		autoplay: {
 			delay: 3000,
 			disableOnInteraction: false,
 		},
-    });
-    galleryTop.params.control = galleryThumbs
-    galleryThumbs.params.control = galleryTop
+	});
+	var swiper = new Swiper('.slide-related .swiper-container', {
+		navigation: {
+			nextEl: ".slide-related .swiper-button-next",
+			prevEl: ".slide-related .swiper-button-prev",
+			clickable: true,
+
+		},
+		spaceBetween: 22,
+		slidesPerView: 3,
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		breakpoints: {
+			375: {
+				slidesPerView: 1,
+			},
+		},
+	});
 }
 
 const headerActive = () => {
