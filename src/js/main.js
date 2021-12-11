@@ -532,6 +532,26 @@ const mainBanner = () => {
 			},
 		},
 	});
+	var swiper = new Swiper('.highlight-news-content-box .swiper-container', {
+		pagination: {
+			el: ".swiper-pagination",
+			paginationClickable: true,
+			clickable: true
+		},
+		observer: true,
+		observeParents: true,
+		parallax: true,
+		speed: 2000,
+		effect: "fade",
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		fadeEffect: {
+			crossFade: true,
+		},
+		loop: true
+	});
 }
 
 const headerActive = () => {

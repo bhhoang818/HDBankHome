@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Investor'
+	- var bodyClass = 'investorpage'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/investor/banner/index.pug
+	include ../components/investor/content/index.pug
