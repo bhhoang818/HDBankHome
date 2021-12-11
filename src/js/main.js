@@ -20,28 +20,7 @@ const mainBanner = () => {
 		loop: true
 	});
 
-	var swiper = new Swiper(".swiper-card .swiper-container", {
-		speed: 750,
-		observer: true,
-		observeParents: true,
-		lazy: true,
-		breakpointsInverse: true,
-		loop: false,
-		navigation: {
-			nextEl: ".swiper-card .swiper-button-next",
-			prevEl: ".swiper-card .swiper-button-prev",
-			clickable: true,
-
-		},
-		breakpoints: {
-			1024: {
-				slidesPerView: 3,
-				spaceBetween: 10,
-			},
-
-		},
-	});
-	$(".slide-card_mobile .swiper-container").each(function (index, element) {
+	$(".slide-card .swiper-container").each(function (index, element) {
 		var $this = $(this);
 		$this.addClass("card-" + index);
 		$this.parent().find(".swiper-button-prev").addClass("swiper-button-prev-" + index);
@@ -65,10 +44,13 @@ const mainBanner = () => {
 			},
 			breakpoints: {
 				375: {
-					slidesPerView: 1,
+					slidesPerView: 1.5,
 				},
 				768: {
-					slidesPerView: 2.5,
+					slidesPerView: 1.5,
+				},
+				1025:{
+					slidesPerView: 1,
 				}
 			},
 
@@ -685,10 +667,11 @@ const setBackgroundElement = () => {
 };
 
 const scrollSection = () => {
+	let heightHeader = $("nav").outerHeight();
 	$("#list").click(function (e) {
 		e.preventDefault();
 		$("html,body").animate({
-				scrollTop: $("#sec-4").offset().top,
+				scrollTop: $("#sec-4").offset().top - heightHeader,
 			},
 			"slow"
 		);
@@ -720,23 +703,6 @@ const accordianList = () => {
 		$(".btn-dropdown").not(this).parent().next().slideUp();
 		$(".btn-dropdown").not(this).removeClass("active");
 	});
-	// if ($(window).width() < 768) {
-	// 	$(".footer-infor_tile").on("click", function () {
-	// 		let $this = $(this);
-	// 		if ($this.next().hasClass("show")) {
-	// 			$this.next().removeClass("show");
-	// 			$this.next().slideUp(350);
-	// 			$this.closest('.menu-list').removeClass("active");
-	// 		} else {
-	// 			$this.parent().parents().find("ul").removeClass("show");
-	// 			$this.parent().parents().find("ul").slideUp(350);
-	// 			$this.parent().parents('.menu-box').find(".menu-list").removeClass("active");
-	// 			$this.next().toggleClass("show");
-	// 			$this.next().slideDown(350);
-	// 			$this.parent(".menu-list").addClass("active");
-	// 		}
-	// 	});
-	// }
 	$(".navigation-list_item__title .contnet").on("click", function (e) {
 		let $this = $(this);
 		e.preventDefault();
