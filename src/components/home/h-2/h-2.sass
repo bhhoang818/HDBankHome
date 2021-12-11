@@ -22,6 +22,10 @@
 			@media screen and ( min-width: 1025px )
 				&:hover
 					background: rgba(255, 255, 255, 0.4)
+					.swiper-button-next,
+					.swiper-button-prev
+						opacity: 1
+						visibility: visible
 			h3
 				font-weight: bold
 				font-size: 20px
@@ -92,8 +96,10 @@
 							visibility: visible
 			.swiper-button-next,
 			.swiper-button-prev
-				top: auto
-				bottom: 20px
+				top: 40%
+				opacity: 0
+				visibility: hidden
+				transition: all ease-in-out .3s
 			.swiper-button-next
 				right: 10px !important
 			.swiper-button-prev
