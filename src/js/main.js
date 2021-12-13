@@ -49,7 +49,7 @@ const mainBanner = () => {
 				768: {
 					slidesPerView: 1.5,
 				},
-				1025:{
+				1025: {
 					slidesPerView: 1,
 				}
 			},
@@ -139,8 +139,8 @@ const mainBanner = () => {
 		loop: false,
 		spaceBetween: 24,
 		navigation: {
-			nextEl: ".slide-single .swiper-button-next",
-			prevEl: ".slide-single .swiper-button-prev"
+			nextEl: ".slide-endo .swiper-button-next",
+			prevEl: ".slide-endo .swiper-button-prev"
 		},
 		breakpoints: {
 			320: {
@@ -742,6 +742,24 @@ const accordianList = () => {
 	if ($(".navigation-list li").hasClass("active")) {
 		$(".navigation-list li.active").find(".navigation-sub").slideDown(350);
 	}
+	$("#accordian em").click(function () {
+		var link = $(this);
+		var closest_ul = link.closest("ul");
+		var parallel_active_links = closest_ul.find(".active")
+		var closest_li = link.closest("li");
+		var link_status = closest_li.hasClass("active");
+		var count = 0;
+
+		closest_ul.find("ul").slideUp(function () {
+			if (++count == closest_ul.find("ul").length)
+				parallel_active_links.removeClass("active");
+		});
+
+		if (!link_status) {
+			closest_li.children("ul").slideDown();
+			closest_li.addClass("active");
+		}
+	})
 };
 
 const toggleSlideTool = () => {
@@ -960,4 +978,5 @@ $(document).ready(function () {
 	handleEventPriorityUserPage();
 	videoControl();
 	admnistrator();
+
 });

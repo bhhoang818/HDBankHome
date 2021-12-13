@@ -1,1 +1,89 @@
+#accordian
+    ul
+        padding-left: 0
+        border-radius: 20px
+        ul
+            background: #FFFFFF
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12)
+            padding-left: 0
+            display: none
+            ul
+                box-shadow: none
+    li
+        .wrap-title
+            position: relative
+            .content
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                padding: 8px 16px
+                background: linear-gradient(360deg, #000000 -3.93%, rgba(0, 0, 0, 0) 70.15%)
+                filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.12))
+                border-radius: 12px
+                z-index: 2
+                display: flex
+                align-items: center
+                justify-content: space-between
+                a,
+                em
+                    color: $white
+                    font-weight: bold
+                    font-size: 20px
+                    line-height: 29px
+                    cursor: pointer
+                    transform: rotate(0deg)
+                    transition: all eas-in-out .3s
 
+            .img
+                +img-ratio(106/322)
+                transition: all ease-in-out .3s
+                img
+                    border-radius: 12px
+        ul
+            padding: 24px
+            li
+                .content
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    a,
+                    em
+                        font-weight: bold
+                        font-size: 16px
+                        line-height: 23px
+                        color: #333333
+                        cursor: pointer
+                        transform: rotate(0deg)
+                        transition: all eas-in-out .3s
+                &.active
+                    .content
+                        em
+                            transform: rotate(180deg)
+                ul
+                    padding: 0
+                    li
+                        margin-top: 0
+                        padding-top: 17px
+                        a
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            font-weight: normal
+                            font-size: 16px
+                            line-height: 23px
+                            color: #333333
+            li + li
+                padding-top: 17px
+                margin-top: 0
+        &.active>ul
+            display: block
+        &.active
+            .wrap-title
+                .img
+                    +img-ratio(58/322)
+                .content
+                    em
+                        transform: rotate(180deg)
+    li + li
+        margin-top: 8px
