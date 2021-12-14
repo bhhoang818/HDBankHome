@@ -11,20 +11,22 @@
         color: inherit
         .news-left-box
             margin-right: 20px
-            width: 98px
+            width: 171px
             a
-                +img-ratio(98/98)
+                +img-ratio(98/171)
                 img
                     border-radius: 8px
             @media screen and ( max-width: 575.98px ) 
-                width: 64px !important
+                width: 112px !important
                 margin-right: 15px !important
+                a
+                    +img-ratio(64/112)
         .news-right-box
-            max-width: calc(100% - 118px)
+            max-width: calc(100% - 191px)
             a 
                 color: inherit
             @media screen and ( max-width: 575.98px )
-                max-width: calc(100% - 90px) !important
+                max-width: calc(100% - 127px) !important
             .news-title
                 margin-bottom: 4px
                 font-weight: 600
