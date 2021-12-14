@@ -1,0 +1,9 @@
+extends _layout.pug
+
+block var
+	- var title = '404'
+	- var bodyClass = '404page'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/404/index.pug

@@ -1,0 +1,9 @@
+extends _layout.pug
+
+block var
+	- var title = 'Contruction'
+	- var bodyClass = 'contruction'
+
+block main
+	include ../components/breakcrumb/breakcrumb.pug
+	include ../components/maintenance/construction/index.pug
