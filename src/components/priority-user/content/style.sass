@@ -10,23 +10,44 @@
         .swiper-card-promotion
             position: relative
             text-align: center
-            margin-top: 50px
+            // margin-top: 50px
             @media ( max-width: 575.98px )
                 margin: 0 auto
                 width: 80%
+            .gallery-thumbs
+                padding-bottom: 10px
+                padding-top: 50px
+                @media ( max-width: 575.98px )
+                    padding-top: 15px
             .swiper-slide-thumb-active
                 .item-card
                     font-weight: bold
+                    // padding-top: 20px
+                    .img-card
+                        img
+                            transform: scale(1.5)
+                            padding-bottom: 15px
+                    .title-card
+                        font-size: 1.6rem
+                        font-weight: 700
+                        @media ( max-width: 575.98px )
+                            font-size: 0.8rem
+                    @media ( max-width: 575.98px )
+                        .img-card
+                            padding: 0 5px
+                            img
+                                transform: scale(1.3)
+                                padding-bottom: 10px
             .item-card
                 cursor: pointer
                 .img-card
-                    a 
+                    a
                         img
                             @media ( max-width: 575.98px )
                                 width: 60px
                                 height: 60px
 
-                .title-card 
+                .title-card
                     margin-top: 20px
                     font-size: 1.375rem
                     line-height: 32px
@@ -34,7 +55,7 @@
                     @media ( max-width: 575.98px )
                         line-height: 14px
                         font-size: 0.78rem
-                    .title 
+                    .title
                         color: inherit
                         @media ( max-width: 575.98px )
                             font-size: 0.75rem
@@ -66,19 +87,19 @@
                     opacity: 1 !important
             .info-paragraph
                 font-size: 1.75rem
-                line-height: 41px;
+                line-height: 41px
                 text-align: center
                 margin-bottom: 10px !important
                 @media screen and ( max-width: 575.98px )
                     text-align: left
                     font-size: 0.875rem
                     line-height: 24px
-            .list-highlight 
+            .list-highlight
                 text-align: center
                 @media screen and ( max-width: 575.98px )
                     padding: 0
                     text-align: left
-                .item-highlight 
+                .item-highlight
                     font-size: 1.5rem
                     line-height: 35px
                     font-weight: 600
@@ -103,7 +124,7 @@
                     text-align: left
                     @media screen and ( max-width: 575.98px )
                         max-width: 100%
-                    .item-highlight 
+                    .item-highlight
                         .icon-check
                             display: inline
                             margin-top: -5px
@@ -131,7 +152,7 @@
                     position: relative
                     @media screen and ( max-width: 575.98px )
                         height: 106px
-                    a 
+                    a
                         height: 100%
                         width: 100%
                         @media screen and ( max-width: 575.98px )
@@ -171,12 +192,12 @@
                     top: 30px
                     right: 0
                     padding-right: 30px
-                    max-height: 560px;
-                    overflow-x: auto;
+                    max-height: 560px
+                    overflow-x: auto
                     @media screen and ( max-width: 575.98px )
-                        padding-left: calc(var(--bs-gutter-x)*0.5) !important;
+                        padding-left: calc(var(--bs-gutter-x)*0.5) !important
                         position: relative !important
-                        padding-right: calc(var(--bs-gutter-x)*0.5) !important;
+                        padding-right: calc(var(--bs-gutter-x)*0.5) !important
                         // margin-top: -30px;
                         // margin-bottom: 30px;
                         top: 0
@@ -205,13 +226,13 @@
                                 font-size: 0.75rem
                                 line-height: 18px
                             ul
-                                li 
+                                li
                                     list-style: initial
                 &.active
                     .left-box
                         @media screen and ( max-width: 575.98px )
                             height: 45px
-                        a 
+                        a
                             img
                                 @media screen and ( max-width: 575.98px )
                                     height: 45px !important
@@ -221,10 +242,9 @@
                                     height: 100%
                                 .arrow
                                     @media screen and ( max-width: 575.98px )
-                                        transform: rotate(90deg);
-                                        margin: 0 0 0 10px;
+                                        transform: rotate(90deg)
+                                        margin: 0 0 0 10px
                     .right-box
                         display: block
                         .info-box
                             display: block
-                            
