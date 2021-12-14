@@ -12,6 +12,22 @@
         +img-ratio(379/375)
         @media screen and ( min-width: 576px )
             display: none
+    .info-box-container
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.75) 11.34%, rgba(0, 0, 0, 0) 35.88%)
+        .info-box
+            position: absolute
+            bottom: 50px
+            a
+                color: white
+            @media screen and ( min-width: 576px )
+                bottom: 20px
+                .banner-title
+                    font-size: 1rem
+
     // .left-info 
     //     position: absolute
     //     left: 0
@@ -39,4 +55,3 @@
     //         height: 60%
     //     @media screen and ( max-width: 1200px )
     //         display: none
-    
