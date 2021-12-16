@@ -508,8 +508,9 @@ const mainBanner = () => {
 		thumbs: {
 			swiper: galleryThumbs,
 		},
+		speed: 2000,
 		autoplay: {
-			delay: 3000,
+			delay: 3500,
 			disableOnInteraction: false,
 		},
 	});

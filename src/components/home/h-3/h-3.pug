@@ -25,20 +25,17 @@ section.section.customer(setBackground="./images/bg-2.jpg")
 		.block-mobile 
 			.top-block 
 				h3 Tiền gửi HDBank
-				.swiper-container
-					.swiper-wrapper
-						-for(i=2; i<6; i++)
-							.swiper-slide
-								.slide-inner
-									.slide-inner_img
-										a(href="")
-											img(src="./images/customer-"+i+".png", alt="")
-									.slide-inner_content
-										.slide-inner_content__title
-											a(href="")  Tài khoản thanh toán trực tuyến
-										.slide-inner_content__desc 
-											p Gửi và rút tiền mặt tiện lợi. Nhận tiền và chuyển khoản nhanh chóng.
-										a.btn-small(href="") Mở tài khoản
+				.list-block
+					-for(i=2; i<4; i++)
+						.list-block_item
+							.list-block_item__img
+								a(href="") 
+									img(src="./images/customer-"+i+".png", alt="")
+							.list-block_item__content 
+								.desc 
+									a(href="") Tài khoản thanh toán trực tuyến
+									p Gửi và rút tiền mặt tiện lợi. Nhận chuyển khoản 24/7.
+								a.btn-small(href="") Mở tài khoản
 			.middle-block 
 				h3 Bảo hiểm HDBank
 				.middle-block_item
