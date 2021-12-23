@@ -4,7 +4,7 @@
         width: 100%
         &__img
             position: relative
-            width: 100%
+            +img-ratio(552/1440)
             img
                 width: 100%
             .btn-login
@@ -16,7 +16,7 @@
                 display: none
         &_mobile
             .slide-inner__img
-                +img-ratio(466/375)
+                +img-ratio(380/375)
             .btn-login
                 width: 133px
                 height: 44px
