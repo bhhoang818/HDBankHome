@@ -1,0 +1,318 @@
+{
+    "menuhome": "家",
+    "mainMenu": {
+        "dashboard": "HDBank"
+    },
+    "examplePage": {
+        "masterTitle": "コントロール＆グリッドデモ",
+        "gridA": {
+            "name": "名前"
+        }
+    },
+    "seo": {
+        "homedescription": "HDBankベトナム",
+        "productPersonal": "個人的",
+        "productCorporate": "企業"
+    },
+    "app": {
+        "productInfor": "製品情報",
+        "registerAdvisory": "登録アドバイザリ",
+        "toolCalculator": "ツール計算機",
+        "404": {
+            "description404": "ページが見つかりません",
+            "sorry": "申し訳ありませんが、リクエストしたページが見つかりませんでした。",
+            "notfound": "HDBankのホームページで他の役立つ情報を見つけることができます。",
+            "back": "ホームページに戻ります",
+            "callsupport": "サポートを求める"
+        }
+    },
+    "landing": {
+        "common": {
+            "searchplaceholder": "検索...",
+            "register": "登録",
+            "login": "ログイン",
+            "contact": "お問い合わせ",
+            "query": "アドバイスをください。",
+            "readmore": "もっとご覧ください",
+            "readall": "すべてを表示します。",
+            "readallcard": "すべてのカードを表示します。",
+            "readdetail": "詳細をご覧ください",
+            "copyright": "Copyright2021はHDBankに属しています"
+        },
+        "minisite": {
+            "rule": "利用規約",
+            "security": "安全及びセキュリティ",
+            "sitemap": "サイトマップ"
+        },
+        "siteFooter": {
+            "add": "25Bis Nguyen Thi Minh Khai、Ben Nghe、一区、ホーチミン市、ベトナム。",
+            "whyHDBank": "どうしてHDBankを選ぶのですか？",
+            "about": "HDBankについて情報",
+            "recruitment": "募集情報",
+            "promotion": "特価提供",
+            "event": "ニュース及びイベント",
+            "personal": "個人のお客様",
+            "sanPhamTienGui": "送金製品",
+            "sanPhamVay": "ローン製品",
+            "the": "カード",
+            "baoHiem": "保険",
+            "nganHangTienGui": "デジタル銀行",
+            "corporate": "ビジネスのお客様",
+            "tinDung": "クレジット",
+            "theDoanhNghiep": "企業カード",
+            "quanLyDongTien": "キャッシュフロー管理",
+            "taiTroThuongMai": "商業スポンサー",
+            "thanhToanQuocTe": "国際決済",
+            "support": "支援",
+            "chiNhanh": "支店ネットワーク/ ATM",
+            "eInvoice": "e-Invoice",
+            "congCuTienIch": "効用",
+            "cauHoiThuongGap": "よくある質問-FAQ",
+            "lienHe": "コンタクト"
+        },
+        "productHDBank": {
+            "title": "HDBankのサービス",
+            "personal": "個人",
+            "coporate": "ビジネス"
+        },
+        "card": {
+            "title": "HDBankカードでお買い物をお楽しみください。",
+            "readall": "すべてのカードを表示します。"
+        },
+        "personalProduct": {
+            "title": "個人のお客様"
+        },
+        "coporateProduct": {
+            "title": "企業顧客",
+            "eCretditTop": "eCredit-クレジット拡張",
+            "eCretditBottom": "24時間年中無休のオンラインビジネス"
+        },
+        "priorityProduct": {
+            "title": "優先顧客"
+        },
+        "investorProduct": {
+            "title": "投資家"
+        },
+        "tool": {
+            "title": "ツール"
+        },
+        "ads": {
+            "title": "あなたの昇進"
+        },
+        "news": {
+            "title": "HDBankニュース"
+        },
+        "sidebar": {
+            "inputSearch": "検索...",
+            "register": "アカウントを登録",
+            "job": "キャリアの機会",
+            "faq": "よくある質問-FAQ",
+            "onlinesupport": "オンラインサポートチャット",
+            "email": "メールを送ります。",
+            "downloadapp": "HDBankアプリをダウンロードしてください。",
+            "connectapp": "HDBankに接続する",
+            "tool": "ツール",
+            "atm": "支店/ ATM"
+        }
+    },
+    "toolEx": {
+        "alert": {
+            "thongbaoloinhap": "完全な情報を入力してください",
+            "capnhatthanhcong": "更新に成功",
+            "capnhatkhongthanhcong": "更新失敗",
+            "emailisnotvalid": "メールが無効です",
+            "checkIsAgree": "「HDBankの利用規約に同意します」を選択してください"
+        },
+        "label": {
+            "ty": "十億",
+            "trieu": "十万",
+            "uoctinhkhoanvay": "ローンの見積もり",
+            "quydoitygia": "外国為替レート",
+            "sotienvay": "ローン金額",
+            "kyhanvay": "ローン期間",
+            "laisuat": "お借入金利",
+            "thang": "月",
+            "trahangthang": "月払い",
+            "xembangtingocvalaitamtinh": "元本と利息の計算を一時的に表示する",
+            "tieptuc": "つづき",
+            "example": "例：ローン金額5億-60か月の支払いサイクル-60か月のローン金利7％/年-支払総額602,476,200VND-支払利息合計102,476,200VND。",
+            "nhapsotien": "金額を入力してください",
+            "capnhatluc": "で更新",
+            "dangkytuvan": "相談に申し込む",
+            "sotien": "ローン金額",
+            "tramoithang": "月払い",
+            "daguithongtin": "送信された情報",
+            "camon": "HDBankに情報を送信していただきありがとうございます。 24営業時間以内に折り返しご連絡いたします",
+            "hovaten": "名前と苗字",
+            "sodienthoai": "電話番号",
+            "nhapnoidung": "コンテンツをインポートする",
+            "dangky": "登録",
+            "dongtien": "コイン",
+            "tienmat": "現金",
+            "chuyenkhoan": "移行",
+            "banra": "完売",
+            "gioihan240thang": "ローン期間の制限は240か月で、最小月数は0を超えています。再試行してください",
+            "gioihanlaisuat": "ローンの金利制限は月額30％です。もう一度やり直してください"
+        },
+        "tygia": {
+            "tygia": "為替レート",
+            "tygiahoidoai": "為替レート",
+            "tygiavang": "ゴールドレート",
+            "ngoaite": "通貨",
+            "tygiamua": "購入率（VND）",
+            "tygiaban": "販売率（VND）",
+            "tienmat": "現金",
+            "chuyenkhoan": "移行",
+            "note": "CNY：この情報は参照用です",
+            "ngaytruyvan": "クエリの日付",
+            "loaivang": "ゴールドタイプ",
+            "giamua": "購入価格（VND",
+            "giaban": "販売価格（VND"
+        }
+    },
+    "registerFormProductDetail": {
+        "hotline1": "電話でのサポートをご希望される方はこちら",
+        "hotline2": "1900 6060に今すぐ電話する",
+        "slogan": "ホットラインのスタッフがいつでもサポート致します。",
+        "registerTitle": "今すぐ登録する",
+        "registerDescription": "必要な情報を登録していただいた後に、こちらから直接連絡致します。",
+        "btnSend": "送信",
+        "agreementCheckbox": "上記の情報に基づき、弊行の商品、サービス及びお得な情報をお送り致します。",
+        "userNamePlaceholder": "名前",
+        "phoneNumberPlaceholder": "電話番号",
+        "emailPlaceholder": "Eメール",
+        "employeeCodePlaceholder": "従業員コード",
+        "noteMorePlaceholder": "備考（例：希望の融資枠）",
+        "provincePlaceholder": "県・市",
+        "districtPlaceholder": "区・町",
+        "registerSuccessInfor": "情報を送りました。",
+        "registerSuccessInfor1": "必要な情報をご登録頂き、誠にありがとうございます。24時間以内に連絡させて頂きます。"
+    },
+    "question": {
+        "questionFrequen": "よくあるご質問",
+        "qna": "質問及び回答を見る"
+    },
+    "evaluate": {
+        "product": "評価する商品",
+        "me": "あなたのコメント",
+        "share": "この商品をシェアします",
+        "sendRating": "評価を送信しました。",
+        "thanks": "HDバンクのサービスをご利用していただきまして、ありがとう御座います。",
+        "btn.back": "戻る"
+    },
+    "about": {
+        "introduceHD": "HDBank概要",
+        "news": "ニュース",
+        "selectCategory": "カテゴリを選んでください...",
+        "vision": "HDBankビジョン",
+        "governanceStructure": "銀行経営者組織",
+        "boardOfDirector": "取締役会",
+        "boardOfManagenent": "理事会",
+        "organization": "組織構造",
+        "chairwoman": "HDBankの取締役会長",
+        "standingVice": "HDBankの取締役会の常任副会長",
+        "viceChairman": "取締役副会長",
+        "independent": "副会長、独立取締役",
+        "memberOfTheBoard": "役員",
+        "messageFromThe": "取締役会からのメッセージ",
+        "generalNews": "概要情報",
+        "corporate": "企業文化",
+        "sustainable": "持続発展",
+        "mission": "HDBankの使命",
+        "coreValue": "基本的価値観"
+    },
+    "registerEmailForm": {
+        "title": "Đăng ký nhận tin tức",
+        "description": "Đăng ký để nhận thông tin định kỳ về kết quả hoạt động của HDBank cùng các thông tin liên quan đến cổ đông, nhà đầu tư.",
+        "placeholderEmail": "Email của bạn",
+        "infoText1": "Phòng quan hệ nhà đầu tư",
+        "infoText2": "Email: ir@hdbank.com.vn",
+        "infoText3": "Hotline +8428 6291 5669 (Ext 1486)",
+        "register": "Đăng ký"
+    },
+    "investor": {
+        "titleBox1": "株主との関係",
+        "titleBox2": "Thông tin hoạt động nổi bật",
+        "viewall": "Xem tất cả",
+        "highlight": "目立つニュース",
+        "news": "ニュース"
+    },
+    "toolListPage": {
+        "title": "Utilities Tool",
+        "personal": "Personal",
+        "corporate": "Corporate",
+        "suggestedProducts": "Related Products",
+        "viewAll": "View all"
+    },
+    "maintenance": {
+        "title": "ウェブサイトはメンテナンス中です",
+        "description1": "すぐに戻ってきます。",
+        "description2": "ご不便をおかけして申し訳ございません。",
+        "hotline": "ホットライン 1900 6060"
+    },
+    "priority": {
+        "title": "優先顧客"
+    },
+    "breadcrumbs": {
+        "homepage": "Home",
+        "news": "News",
+        "personal": "Personal",
+        "corporate": "Corporate",
+        "product": "Product",
+        "promotion": "Promotion",
+        "atm-branch": "ATM Branch",
+        "detail": "Chi tiết",
+        "the-tin-dung": "Thẻ tín dụng",
+        "the-tin-dung-quoc-te-hdbank-visa": "Thẻ tín dụng quốc tế hdbank visa",
+        "the-tra-truoc": "Thẻ trả trước",
+        "hdbank-gift-card": "HDBank Gift Card"
+    },
+    "widgets": {
+        "productSuggestion": {
+            "viewDetail": "Xem chi tiết"
+        }
+    },
+    "faq": {
+        "title": "FAQ",
+        "yourProblem": "What's your problem ?"
+    },
+    "news": {
+        "news": "ニュース",
+        "relatedNewsTitle": "関連ニュース",
+        "lastedNewsTitle": "更新",
+        "loadMore": "もっと読み込む",
+        "covid-19": "Covid-19",
+        "production": "商品",
+        "promotion": "お得",
+        "bussinesses": "企業",
+        "partnership": "パートナー",
+        "card": "カード",
+        "lazada": "Lazada",
+        "shoppe": "Shoppe",
+        "search": "検索"
+    },
+    "socialList": {
+        "share": "シェア"
+    },
+    "promotion": {
+        "promotionArticle": {
+            "allPromotions": "すべてのお得",
+            "ecom": "Ecom",
+            "insurance": "保険",
+            "creditCard": "クレジット",
+            "Card": "カード",
+            "lazad": "Lazada",
+            "shoppe": "Shoppe"
+        },
+        "promotionDetail":{
+            "relatedProduct": "関連製品",
+            "promotionOther": "その他のお得",
+            "loadMore": "もっと読み込む"
+        } 
+    },
+    "branch": {
+        "title": "支店/ ATM網",
+        "branchList": "支店",
+        "atm": "ATM"
+    }
+}

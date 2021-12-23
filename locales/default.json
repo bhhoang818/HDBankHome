@@ -1,0 +1,487 @@
+{
+    "menuhome": "Trang chủ",
+    "mainMenu": {
+        "dashboard": "HDBank"
+    },
+    "examplePage": {
+        "masterTitle": "Trang mẫu sử dụng lưới và các trường nhập",
+        "gridA": {
+            "name": "Tên"
+        }
+    },
+    "seo": {
+        "homedescription": "HDBank Việt Nam",
+        "productPersonal": "Cá nhân",
+        "productCorporate": "Doanh nghiệp"
+    },
+    "app": {
+        "productInfor": "Thông tin sản phẩm",
+        "registerAdvisory": "Tư vấn & đăng ký",
+        "toolCalculator": "Công cụ tính toán",
+        "404": {
+            "description404": "Không tìm thấy trang",
+            "sorry": "Rất tiếc, chúng tôi không thể tìm thấy trang mà bạn yêu cầu.",
+            "notfound": "Có thể bạn sẽ tìm thấy những thông tin hữu ích khác tại trang chủ HDBank.",
+            "back": "Về trang chủ",
+            "callsupport": "Gọi hỗ trợ"
+        }
+    },
+    "landing": {
+        "common": {
+            "searchplaceholder": "Nhập từ khóa tìm kiếm...",
+            "register": "Đăng ký",
+            "login": "Đăng nhập",
+            "contact": "Liên hệ ngay",
+            "query": "Tôi cần tư vấn",
+            "readmore": "Xem thêm",
+            "readall": "Xem tất cả",
+            "readallcard": "Xem tất cả thẻ",
+            "readdetail": "Xem chi tiết",
+            "copyright": "Bản quyền @ 2021 thuộc về HDBank"
+        },
+        "minisite": {
+            "rule": "Điều khoản sử dụng",
+            "security": "An toàn & Bảo mật",
+            "sitemap": "Sơ đồ trang"
+        },
+        "siteFooter": {
+            "add": "25Bis Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP Hồ Chí Minh",
+            "whyHDBank": "Vì sao chọn HDBank?",
+            "about": "Về chúng tôi",
+            "recruitment": "Tuyển dụng",
+            "promotion": "Ưu đãi",
+            "event": "Tin tức và sự kiện",
+            "personal": "Khách hàng cá nhân",
+            "sanPhamTienGui": "Sản phẩm tiền gửi",
+            "sanPhamVay": "Sản phẩm Vay",
+            "the": "Thẻ",
+            "baoHiem": "Bảo hiểm",
+            "nganHangTienGui": "Ngân hàng điện tử",
+            "corporate": "Khách hàng doanh nghiệp",
+            "tinDung": "Tín dụng",
+            "theDoanhNghiep": "Thẻ doanh nghiệp",
+            "quanLyDongTien": "Quản lý dòng tiền",
+            "taiTroThuongMai": "Tài trợ thương mại",
+            "thanhToanQuocTe": "Thanh toán quốc tế",
+            "support": "Hỗ trợ",
+            "chiNhanh": "Chi nhánh/ATM",
+            "eInvoice": "e-Invoice",
+            "congCuTienIch": "Công cụ - Tiện ích",
+            "cauHoiThuongGap": "Câu hỏi thường gặp",
+            "lienHe": "Liên hệ"
+        },
+        "productHDBank": {
+            "title": "Các sản phẩm tại HDBank",
+            "personal": "Cá nhân",
+            "coporate": "Doanh nghiệp"
+        },
+        "card": {
+            "title": "Thoải mái mua sắm cùng thẻ HDBank",
+            "readall": "Xem tất cả thẻ"
+        },
+        "personalProduct": {
+            "title": "Khách hàng cá nhân"
+        },
+        "coporateProduct": {
+            "title": "Khách hàng doanh nghiệp",
+            "eCretditTop": "eCredit - Cấp tín dụng",
+            "eCretditBottom": "doanh nghiệp online 24/7"
+        },
+        "priorityProduct": {
+            "title": "Khách hàng ưu tiên"
+        },
+        "investorProduct": {
+            "title": "Nhà đầu tư"
+        },
+        "ads": {
+            "title": "Ưu đãi cho bạn"
+        },
+        "tool": {
+            "title": "Công cụ"
+        },
+        "news": {
+            "title": "Bản tin HDBank"
+        },
+        "sidebar": {
+            "inputSearch": "Tìm kiếm",
+            "register": "Đăng ký tài khoản",
+            "job": "Cơ hội nghề nghiệp",
+            "faq": "Câu hỏi thường gặp - FAQ",
+            "onlinesupport": "Chat hỗ trợ trực tuyến",
+            "email": "Gửi email",
+            "downloadapp": "Tải app HDBank",
+            "connectapp": "Kết nối với HDBank",
+            "tool": "Công cụ tiện ích",
+            "atm": "Mạng lưới chi nhánh/ATM"
+        }
+    },
+    "toolEx": {
+        "alert": {
+            "thongbaoloinhap": "Vui lòng nhập đầy đủ thông tin",
+            "capnhatthanhcong": "Cập nhật thành công",
+            "capnhatkhongthanhcong": "Cập nhật không thành công",
+            "emailisnotvalid": "Email không hợp lệ",
+            "checkIsAgree": "Vui lòng chọn \"Tôi đồng ý với điều khoản và điều kiện của HDBank\"",
+            "OTPkhongHopLe": "Vui lòng nhập OTP chính xác",
+            "vuilongnhapsdt":"Vui lòng nhập số điện thoại chính xác!"
+        },
+        "label": {
+            "ty": "tỷ",
+            "trieu": "triệu",
+            "uoctinhkhoanvay": "Ước tính khoản vay",
+            "quydoitygia": "Tỷ giá",
+            "sotienvay": "Số tiền vay",
+            "kyhanvay": "Kỳ hạn vay",
+            "laisuat": "Lãi suất",
+            "thang": "tháng",
+            "trahangthang": "Trả hàng tháng",
+            "xembangtingocvalaitamtinh": "Xem bảng tính gốc và lãi tạm tính",
+            "tieptuc": "Tiếp tục",
+            "example": "Ví dụ: Số tiền vay 500 triệu - chu kỳ trả trong 60 tháng - lãi suất vay 7%/năm - Tổng tiền phải trả 602.476.200đ - Tổng lãi phải trả 102.476.200đ.",
+            "nhapsotien": "Nhập số tiền",
+            "capnhatluc": "Cập nhật lúc",
+            "dangkytuvan": "Đăng ký tư vấn",
+            "sotien": "Số tiền",
+            "tramoithang": "Trả mỗi tháng",
+            "daguithongtin": "Đã gửi thông tin",
+            "camon": "Cảm ơn bạn đã gửi thông tin cho HDBank. Chúng tôi sẽ gọi lại cho bạn ngay trong 24 giờ làm việc",
+            "hovaten": "Họ và tên",
+            "sodienthoai": "Số điện thoại",
+            "nhapnoidung": "Nhập nội dung",
+            "dangky": "Đăng ký",
+            "dongtien": "Đồng tiền",
+            "tienmat": "Tiền mặt",
+            "chuyenkhoan": "Chuyển khoản",
+            "banra": "Bán ra",
+            "gioihan240thang": "Giới hạn thời gian vay là 240 tháng và số tháng tối thiểu lơn hơn 0. Vui lòng thử lại",
+            "gioihanlaisuat": "  Giới hạn lãi suất vay là 30% tháng. Vui lòng thử lại"
+        },
+        "TruyVanBaoLanh": {
+            "congcutientich": "Công cụ tiện ích",
+            "truyvanbaolanh": "Truy vấn thông tin bảo lãnh",
+            "socmndbaolanh": "Số CMND bên được bảo lãnh",
+            "tenbenduocbaolanh": "Tên bên được bảo lãnh",
+            "ngayphathanh": "Ngày phát hành/hiệu lực",
+            "giatribaolanh": "Giá trị thư bảo lãnh",
+            "nhapgiatribaolanh": "Nhập giá trị thư bảo lãnh",
+            "huongdansudung": " Hướng dẫn sử dụng",
+            "bancantrogiup": "Bạn cần trợ giúp",
+            "note1": "Trường hợp không truy xuất được thông tin , Quý khách vui lòng liên hệ số điện thoại sau để được hỗ trợ: Tổng đài (028) 36282848 (ext: 172, 174,181)",
+            "note2": "Trường hợp cần xác nhận Thư bảo lãnh bằng văn bản , Quý khách vui lòng gửi văn bản đề nghị về địa chỉ sau:",
+            "note3": "Ngân hàng TMCP Phát triển TPHCM - Phòng Chính sách và Giám sát nghiệp vụ Quản lý &amp; Hỗ trợ tín dụng",
+            "note4": "Số 185 B-C Lê Văn Sỹ, Phường 14, Quận Phú Nhuận, TPHCM",
+            "donviphathanh": "Đơn vị phát hành",
+            "loaibaolanh": "Loại bảo lãnh",
+            "ngayphathanhOutput": "Ngày phát hành/hiệu lực (dd-MM-yyyy)",
+            "ngayhethan": "Ngày hết hạn",
+            "giaitriduocbaolanh": "Giá trị được bảo lãnh",
+            "benthuhuong": "Bên thụ hưởng",
+            "thoat": "Thoát",
+            "in": "In",
+            "textprint": "Truy vấn thông tin bảo lãnh",
+            "chon": "Chọn",
+            "truyvan": "Truy vấn",
+            "benduocbaolanh": "Bên được bảo lãnh",
+            "khongtimthaythongtinbaolanh": "Không tìm thấy thông tin quý khách nhập. Vui lòng thử lại"
+        },
+        "tygia": {
+            "tygia": "Tỷ giá",
+            "tygiahoidoai": "Tỷ giá hối đoái",
+            "tygiavang": "Tỷ giá vàng",
+            "ngoaite": "Ngoại tệ",
+            "tygiamua": "Tỷ giá mua(VNĐ)",
+            "tygiaban": "Tỷ giá bán(VNĐ)",
+            "tienmat": "Tiền mặt",
+            "chuyenkhoan": "Chuyển khoản",
+            "note": "CNY: Thông tin chỉ mang tính chất tham khảo.",
+            "ngaytruyvan": "Ngày truy vấn",
+            "loaivang": "Loại vàng",
+            "giamua": "Giá mua (VNĐ)",
+            "giaban": "Giá bán (VNĐ)"
+        },
+        "interestrate": {
+            "laisuat": "Lãi suất",
+            "tieudeLS": "Lãi suất"
+        },
+        "savingbook": {
+            "tracuusotietkiem": "Tra cứu sổ tiết kiệm",
+            "soseri": "Số Seri",
+            "nhapsosori": "Nhập số seri",
+            "sotaikhoantietkiem": "Sổ tài khoản tiết kiệm",
+            "nhapsotaikhoantietkiem": "Nhập sổ tài khoản tiết kiệm",
+            "truyvan": "Truy vấn",
+            "huongdansudung": "Hướng dẫn sử dụng",
+            "thoidiemxuatdulieu": "Thời điểm kết xuất dữ liệu",
+            "sotaikhoan": "Số tài khoản",
+            "hovaten": "Họ và tên",
+            "ngaygui": "Ngày gửi",
+            "ngaydaohan": "Ngày đáo hạn",
+            "kyhan": "Kỳ hạn",
+            "laisuat": "Lãi suất",
+            "sotiengui": "Số tiền gửi",
+            "thoat": "Thoát",
+            "in": "In",
+            "thongtintruyvansotk": "Thông tin truy vấn sổ tiết kiệm",
+            "khongtimthaythongtinstk": " Không tìm thấy thông tin sổ tiết kiệm",
+            "nhapmacaptcha": "Quý khách vui lòng xác nhận bảo mật",
+            "ngay": "Ngày",
+            "nam": "Năm",
+            "ngayin": "Ngày in",
+            "gioin": "Giờ in",
+            "camonquyk": "Cám ơn Quý khách đã sử dụng dịch vụ của HDBank"
+        },
+        "bieuphibieumau": {
+            "danhsachbieuphibieumau": "Danh sách biểu phí - biểu mẫu"
+        },
+        "truyvantraiphieu": {
+            "truyvantraiphieu": "Truy vấn thông tin trái phiếu",
+            "soseri": "Số seri",
+            "sohopdong": "Số hợp đồng",
+            "truyvan": "Truy vấn",
+            "huongdansudung": "Hướng dẫn sử dụng",
+            "nhapotp": "Nhập OTP ",
+            "xacnhanotp": "Xác nhận OTP",
+            "thoidiemketxuatdulieu": "Thời điểm kết xuất dữ liệu",
+            "tochucphathanh": "Tổ chức phát hành",
+            "matraiphieu": "Mã trái phiếu",
+            "ngayphathanh": "Ngày phát hành",
+            "ngaydaohan": "Ngày đáo hạn",
+            "menhgia": "Mệnh giá",
+            "hovaten": "Họ và tên",
+            "ngaymuatraiphieu": "Ngày mua trái phiếu",
+            "soluongtraiphieusohuu": "Số lượng trái phiếu sở hữu",
+            "tongmenhgiatraiphieu": "Tổng mệnh giá trái phiếu",
+            "ngaybantraiphieu": "Ngày bán trái phiếu (dự kiến)",
+            "tonggiabantraiphieudukien": "Tổng giá bán Trái phiếu (dự kiến)",
+            "ngaybantraiphieuthucte": "Ngày bán Trái phiếu (thực tế)",
+            "tonggiabantraiphieuthucte": "Tổng giá bán Trái phiếu (thực tế)",
+            "traiphieu": "Trái phiếu",
+            "xacnhan": "Xác nhận"
+        },
+        "xacnhansodu": {
+            "thongtintruyvanxacnhansodu": "THÔNG TIN TRUY VẤN XÁC NHẬN SỐ DƯ",
+            "quykhachvuilongnhapcaptcha": "Quý khách vui lòng nhập mã captcha",
+            "khongtimthaydulieu": " Không tìm thấy dữ liệu",
+            "thongtinquykhachnhapkhongdung": " Thông tin quý khách nhập không đúng. Vui lòng thử lại",
+            "truyvanxacnhansodu": "Truy vấn xác nhận số dư",
+            "socv": "Số công văn",
+            "soseri": "Số Seri",
+            "guitruyvan": "Gửi truy vấn",
+            "huongdansudung": "Hướng dẫn sử dụng",
+            "ngayketxuat": "Ngày kết xuất",
+            "hotenkhachhang": "Họ tên khách hàng",
+            "socmnd": "Số CMND",
+            "ngaybatdau": "Ngày bắt đầu xác nhận số dư",
+            "ngayketthuc": "Ngày kết thúc xác nhận số dư",
+            "tongsodu": "Tổng số dư",
+            "tongsodudambao": "Tổng số dư đảm bảo",
+            "thoat": "Thoát",
+            "in": "In"
+        },
+        "tinhlaitietkiem": {
+            "tinhlaitk": "Tính lãi tiết kiệm",
+            "sotiengui": "Số tiền gửi",
+            "kyhangui": "Kỳ hạn gửi",
+            "vuilongnhapsochinhxac": "Vui lòng nhập số chính xác",
+            "laidutinh": "Lãi dự tính",
+            "tongtiengocvalaicuoiky": " Tổng tiền gốc và lãi cuối kỳ",
+            "bangtinhchimangtinh": "Bảng tính chỉ mang tính chất tham khảo"
+        }
+    },
+    "registerFormProductDetail": {
+        "hotline1": "Hoặc gọi ngay hotline để được hỗ trợ ngay lập tức",
+        "hotline2": "Gọi ngay 1900 6060",
+        "slogan": "Nhân viên Hotline luôn sẵn sàng hỗ trợ bạn mọi lúc",
+        "registerTitle": "Đăng ký ngay",
+        "registerDescription": "Hãy để lại thông tin của bạn, chúng tôi sẽ gọi lại bạn chỉ trong 24h.",
+        "btnSend": "Gửi",
+        "agreementCheckbox": "Tôi đồng ý với điều khoản và điều kiện của Ngân hàng",
+        "userNamePlaceholder": "Họ và tên",
+        "phoneNumberPlaceholder": "Số điện thoại",
+        "emailPlaceholder": "Email",
+        "employeeCodePlaceholder": "Mã nhân viên tư vấn (Nếu có)",
+        "noteMorePlaceholder": "Ghi chú (Vd: Số tiền/ hạn mức mong muốn..) ",
+        "provincePlaceholder": "Tỉnh/ Thành Phố",
+        "districtPlaceholder": "Quận/ Huyện",
+        "registerSuccessInfor": "Đã gửi thông tin",
+        "registerSuccessInfor1": "Cảm ơn bạn đã gửi thông tin cho HDBank. Chúng tôi sẽ gọi lại cho bạn ngay trong 24 giờ làm việc."
+    },
+    "question": {
+        "questionFrequen": "Câu hỏi thường gặp",
+        "qna": "Xem câu hỏi và giải đáp"
+    },
+    "evaluate": {
+        "product": "Sản phẩm được đánh giá",
+        "me": "Đánh giá của bạn",
+        "share": "Chia sẻ sản phẩm này",
+        "sendRating": "Đã gửi đánh giá",
+        "thanks": "Cám ơn Quý khách đã phản hồi và sử dụng dịch vụ của HDBank",
+        "btn.back": "Quay lại"
+    },
+    "about": {
+        "introduceHD": "Về HDBank",
+        "readmore": "Xem thêm",
+        "allnews": "Tất cả tin tức",
+        "othersNewsCategory": "Danh mục tin tức khác",
+        "news": "Tin tức",
+        "selectCategory": "Chọn danh mục...",
+        "vision": "Tầm nhìn HDBank",
+        "governanceStructure": "Cơ cấu quản trị ngân hàng",
+        "boardOfDirector": "Hội đồng quản trị",
+        "boardOfManagenent": "Ban điều hành",
+        "organization": "Cơ cấu tổ chức",
+        "chairwoman": "Chủ tịch HĐQT HDBank",
+        "standingVice": "Phó chủ tịch Thường trực HĐQT HDBank",
+        "viceChairman": "Phó chủ tịch HĐQT",
+        "independent": "Phó Chủ tịch, Thành viên HĐQT độc lập",
+        "memberOfTheBoard": "Thành viên HĐQT",
+        "messageFromThe": "Thông điệp từ Hội Đồng Quản Trị",
+        "generalNews": "Thông tin chung",
+        "corporate": "Văn hoá doanh nghiệp",
+        "sustainable": "Phát triển bền vững",
+        "mission": "Sứ mệnh HDBank",
+        "coreValue": "Giá trị cốt lõi"
+    },
+    "registerEmailForm": {
+        "title": "Đăng ký nhận tin tức",
+        "description": "Đăng ký để nhận thông tin định kỳ về kết quả hoạt động của HDBank cùng các thông tin liên quan đến cổ đông, nhà đầu tư.",
+        "placeholderEmail": "Email của bạn",
+        "infoText1": "Phòng quan hệ nhà đầu tư",
+        "infoText2": "Email: ir@hdbank.com.vn",
+        "infoText3": "Hotline +8428 6291 5669 (Ext 1486)",
+        "register": "Đăng ký"
+    },
+    "investor": {
+        "titleBox1": "Quan hệ cổ đông",
+        "titleBox2": "Thông tin hoạt động nổi bật",
+        "viewall": "Xem tất cả",
+        "highlight": "Nổi bật",
+        "news": "Tin tức"
+    },
+    "toolListPage": {
+        "title": "Công cụ tiện ích",
+        "personal": "Cá nhân",
+        "corporate": "Doanh nghiệp",
+        "suggestedProducts": "Sản phẩm gợi ý",
+        "viewAll": "Xem tất cả"
+    },
+    "maintenance": {
+        "title": "Website đang bảo trì",
+        "description1": "Chúng tôi sẽ sớm quay trở lại.",
+        "description2": "Rất xin lỗi quý khách vì sự bất tiện này!",
+        "hotline": "Hotline 1900 6060"
+    },
+    "priorityUser": {
+        "title": "Khách hàng ưu tiên",
+        "khachHangDNVip": "Khách hàng doanh nghiệp VIP",
+        "doiNguTuVan": "Đội ngũ tư vấn chuyên biệt luôn luôn sẵn sàng phục vụ quý doanh nghiệp 24/7",
+        "dieuKienThamGia": "Điều kiện tham gia",
+        "dacQuyenDN": "Đặc quyền doanh nghiệp",
+        "uuDaiDN": "Ưu đãi doanh nghiệp",
+        "uuDaiBLD": "Ưu đãi ban lãnh đạo",
+        "doiNguChuyenBiet": "Đội ngũ tư vấn chuyên biệt",
+        "uuTienPhucVu": "Ưu tiên phục vụ, thực hiện giao dịch",
+        "hotline": "HOTLINE riêng cho KH VIP 24/7 - 18006060",
+        "fdi": "Khách hàng FDI",
+        "jp": "Bản Nhật Bản",
+        "taiwan": "Bản Đài loan"
+    },
+    "breadcrumbs": {
+        "homepage": "Trang chủ",
+        "news": "Tin tức",
+        "personal": "Cá nhân",
+        "corporate": "Doanh nghiệp",
+        "product": "Sản phẩm",
+        "promotion": "Ưu đãi",
+        "atm-branch": "Mạng lưới chi nhánh/ ATM",
+        "detail": "Chi tiết",
+        "the-tin-dung": "Thẻ tín dụng",
+        "the-tin-dung-quoc-te-hdbank-visa": "Thẻ tín dụng quốc tế hdbank visa",
+        "the-tra-truoc": "Thẻ trả trước",
+        "hdbank-gift-card": "HDBank Gift Card",
+        "cong-cu":"Công cụ",
+        "interest-rate": "Lãi suất",
+        "exchange-rate":"Tỷ giá",
+        "saving-book":"Tra cứu sổ tiết kiệm",
+        "uoc-tinh-lai-khoan-vay": "Ước tính lãi khoản vay",
+        "balance-confirm":"Truy vấn xác nhận số dư"
+    },
+    "widgets": {
+        "productSuggestion": {
+            "viewDetail": "Xem chi tiết"
+        }
+    },
+    "faq": {
+        "title": "Câu hỏi thường gặp",
+        "yourProblem": "Vấn đề bạn đang gặp phải"
+    },
+    "news": {
+        "news": "Tin tức",
+        "relatedNewsTitle": "Tin liên quan",
+        "lastedNewsTitle": "Mới cập nhật",
+        "loadMore": "Tải thêm",
+        "covid-19": "Covid-19",
+        "production": "Sản phẩm",
+        "promotion": "Ưu đãi",
+        "bussinesses": "Doanh nghiệp",
+        "partnership": "Đối tác",
+        "card": "Thẻ",
+        "lazada": "Lazada",
+        "shoppe": "Shoppe",
+        "search": "Tìm kiếm"
+    },
+    "socialList": {
+        "share": "Chia sẻ"
+    },
+    "productGeneral": {
+        "common": {
+            "applyForACardNow": "Mở thẻ ngay",
+            "allCard": "Tất cả thẻ",
+            "viewDetail": "Xem chi tiết",
+            "applyCard": "Mở thẻ",
+            "milion": "Tỷ",
+            "bilion": "Triệu"
+        },
+        "card": {
+            "cardProduct": "Sản phẩm thẻ",
+            "vietJetVisa": "Ngập tràn quà tặng với thẻ VietJet Visa Platinum",
+            "globalTravel": "Dịch vụ bảo hiểm du lịch toàn cầu",
+            "Vip": "Dịch vụ phòng chờ quốc nội VIP tại sân bay",
+            "cashBack": "Cashback-hoàn tiền",
+            "travel": "Du lịch",
+            "installment": "Trả góp",
+            "shopping": "Mua sắm",
+            "mastercardDebit": "HDBank Mastercard Debit",
+            "withdrawCash": "Rút tiền mặt tại hơn 1 triệu máy ATM trên toàn thế giới"
+        },
+        "tool": {
+            "title": "Công cụ"
+        },
+        "loan": {
+            "lendingProducts": "Sản phẩm vay",
+            "receiveLoanIn30Minutes": "Chỉ 30 phút có ngay khoản vay"
+        }
+    },
+    "promotion": {
+        "promotionArticle": {
+            "allPromotions": "Tất cả ưu đãi",
+            "ecom": "Ecom",
+            "insurance": "Bảo hiểm",
+            "creditCard": "Thẻ tín dụng",
+            "Card": "Thẻ",
+            "lazad": "Lazada",
+            "shoppe": "Shoppe"
+        },
+        "promotionDetail":{
+            "relatedProduct": "Sản phẩm liên quan",
+            "promotionOther": "Ưu đãi khác",
+            "loadMore": "Tải thêm"
+        } 
+
+    },
+    "branch": {
+        "title": "Mạng lưới chi nhánh/ATM",
+        "branchList": "Chi nhánh",
+        "atm": "ATM"
+    }
+}

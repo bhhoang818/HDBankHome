@@ -98,15 +98,15 @@ const mainBanner = () => {
 		speed: 2000,
 		loop: true
 	});
-	var swiper = new Swiper('.banner-innerhome .big-banner', {
+	var swiper = new Swiper('.big-banner', {
 		pagination: {
-			el: ".banner-innerhome .big-banner .swiper-pagination",
+			el: ".swiper-pagination",
 			paginationClickable: true,
 			clickable: true
 		},
 		navigation: {
-			nextEl: ".banner-innerhome .big-banner .swiper-button-next",
-			prevEl: ".banner-innerhome .big-banner .swiper-button-prev"
+			nextEl: ".big-banner .swiper-button-next",
+			prevEl: ".big-banner .swiper-button-prev"
 		},
 		observer: true,
 		observeParents: true,
