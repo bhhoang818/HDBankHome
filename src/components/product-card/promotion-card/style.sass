@@ -7,6 +7,11 @@
         padding: r(16px) 0
 
     .card-product-promotion
+        width: 100%
+        height: 100%
+        .empty-placeholder
+            width: 100%
+            height: 100%
         .tag-list
             .list-wrapper
                 &_item
@@ -47,6 +52,7 @@
                         background: #FFF9E2
                         box-shadow: 0px 14px 40px rgba(79, 51, 39, 0.1)
                         border-radius: 20px
+
         @media screen and ( max-width: 1199.98px )
             .tag-list
                 .list-wrapper
@@ -87,3 +93,22 @@
                         &__content
                             &-desc
                                 display: none
+    .empty-placeholder
+        display: flex
+        align-items: center
+        &_wrapper
+            margin: auto
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &__img
+                margin-bottom: 32px
+            &__content
+                text-align: center
+                p
+                    font-size: 20px
+                    color: #6F7279
+                    a
+                        color: #F3304A
+                        text-decoration: underline !important

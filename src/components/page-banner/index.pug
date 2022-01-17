@@ -1,0 +1,16 @@
+section.page-banner
+    .swiper-container
+        .swiper-wrapper
+            -for(i=1; i<5; i++)
+                .swiper-slide
+                    .slide-inner.slide-inner_desktop 
+                        .slide-inner__img
+                            img(src="./images/investor/banner.png", alt="")
+                        .slide-inner__content
+                            p Báo cáo kết quả hoạt động kinh doanh
+                    .slide-inner.slide-inner_mobile 
+                        .slide-inner__img
+                            img(src="./images/investor/banner-mb.png", alt="")
+                        .slide-inner__content
+                            p Báo cáo kết quả hoạt động kinh doanh
+    .swiper-pagination

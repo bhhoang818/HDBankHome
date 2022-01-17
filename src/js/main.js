@@ -408,7 +408,14 @@ const mainBanner = () => {
 		observer: true,
 		observeParents: true,
 		parallax: true,
-		speed: 2000,
+		effect: "fade",
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		fadeEffect: {
+			crossFade: true,
+		},
 		loop: true
 	});
 	var swiper = new Swiper('.priority-user-banner .swiper-container', {
@@ -958,6 +965,23 @@ const admnistrator = () => {
 		$('.administrator-col').css('padding-bottom', 0);
 	});
 }
+
+function reveal() {
+	var reveals = document.querySelectorAll(".reveal");
+	for (var i = 0; i < reveals.length; i++) {
+		var windowHeight = window.innerHeight;
+		var elementTop = reveals[i].getBoundingClientRect().top;
+		var elementVisible = 150;
+		if (elementTop < windowHeight - elementVisible) {
+			reveals[i].classList.add("active");
+		} else {
+			reveals[i].classList.remove("active");
+		}
+	}
+}
+
+window.addEventListener("scroll", reveal);
+
 
 /*==================== LOAD FUNCTION ====================*/
 $(document).ready(function () {

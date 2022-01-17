@@ -11,8 +11,30 @@
                 position: absolute
                 bottom: 68px
                 left: 16%
+        &__content
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            pointer-events: auto
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0.75) 11.34%, rgba(0, 0, 0, 0) 35.88%)
+            p
+                position: absolute
+                bottom: 50px
+                font-weight: 800
+                font-size: 48px
+                color: #FFFFFF
+                padding-left: 80px
+                @media screen and ( max-width: 768.98px )
+                    bottom: 60px
+                    font-size: 20px
+                @media screen and ( max-width: 575.98px )
+                    padding-left: 0
+                    text-align: center
+                    font-size: 1rem
+                    width: 100%
         &_desktop
-            @media screen and ( max-width: 575.98px )
+            @media screen and ( max-width: 768.98px )
                 display: none
         &_mobile
             .slide-inner__img
@@ -28,11 +50,11 @@
                     margin-left: 0
                 &::after
                     display: none
-            @media screen and ( min-width: 576px )
+            @media screen and ( min-width: 769px )
                 display: none
 
     .swiper-pagination
-        bottom: 16px
+        bottom: 24px
         left: 50%
         transform: translateX(-50%)
         &-bullet
@@ -43,5 +65,5 @@
             opacity: 0.5
             backdrop-filter: blur(15px)
             &-active
-                background: $white
+                background: $main
                 opacity: 1

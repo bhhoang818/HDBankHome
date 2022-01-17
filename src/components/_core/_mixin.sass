@@ -6,18 +6,12 @@
 	@for $_ from 1 through $exponent
 		$result: $result * $base
 	@return $result + px
-	// ex: pow(2,4) -> 2^4 = 16
 
 =prefix($property, $value, $prefixes)
 	@each $prefix in $prefixes
 		-#{$prefix}-#{$property}: $value
 
 		#{$property}: $value
-	// ex: +prefix(filter, grayscale(50%), moz webkit)
-	// ->
-	// -moz-filter: grayscale(50%)
-	// -webkit-filter: grayscale(50%)
-	// filter: grayscale(50%)
 =rgtext($number)
 	overflow: hidden
 	display: -webkit-box

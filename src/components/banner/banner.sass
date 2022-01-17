@@ -14,7 +14,6 @@
 				background: $white
 	.hero-image
 		+img-ratio(522/1440)
-		aspect-ratio: 8/3
 
 		.product-list-slide
 			position: absolute
@@ -119,25 +118,21 @@
 	@media ( max-width: 1366.98px )
 		.hero-image
 			+img-ratio(552/1366)
-			aspect-ratio: 5/2
 	@media ( max-width: 1199.98px )
 		.hero-image
 			+img-ratio(552/1199)
-			aspect-ratio: 9/4
+
+	@media ( max-width: 1024.98px )
+		.hero-image
+			+img-ratio(600/1024)
+
 	@media ( max-width: 992.98px )
 		.hero-image
 			+img-ratio(552/992)
-			aspect-ratio: 9/5
-	@media ( max-width: 1024.98px )
-		.hero-image
-			+img-ratio(552/1024)
-			aspect-ratio: 2/1
 
 	@media screen and ( max-width: 768.98px )
 		.hero-image
 			+img-ratio(644/768)
-			aspect-ratio: 6/5
 	@media screen and ( max-width: 575.98px )
 		.hero-image
 			+img-ratio(644/375)
-			aspect-ratio: 3/5

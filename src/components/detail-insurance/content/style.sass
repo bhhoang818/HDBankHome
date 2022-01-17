@@ -1,5 +1,21 @@
 .wrapper-insurance
     padding-top: 48px
+    .title
+        padding-bottom: 0 !important
+    .desc-wrap 
+        max-width: 1024px
+        width: 100%
+        margin: 30px auto
+        padding-bottom: 18px
+        p
+            color: #333
+            font-size: 18px
+            text-align: center
+        @media screen and ( max-width: 1024.98px )
+            margin: 16px auto
+            padding-bottom: 0
+            p
+                font-size: 1rem
     .wrapper-container
         max-width: 1280px
         width: 100%
@@ -43,6 +59,43 @@
                             p
                                 font-size: 16px
                                 line-height: 23px
+            &_full
+                padding: 48px 48px 48px 160px
+                flex-direction: row
+                display: flex
+                align-items: flex-start
+                justify-content: flex-start
+                &__img
+                    max-width: 227px
+                    width: 100%
+                    min-height: 100%
+                    margin-bottom: 0
+                &__content
+                    max-width: 515px
+                    width: 100%
+                    margin-left: 96px
+                    &-title 
+                        text-align: left
+                        p
+                            font-weight: bold
+                            font-size: 24px
+                            line-height: 35px
+                    &-desc
+                        ul
+                            padding-left: 0
+                            li
+                                p
+                                    font-size: 16px
+                                    line-height: 23px
+                @media screen and ( max-width: 1199.98px )
+                    padding: 48px
+                @media screen and ( max-width: 768.98px )
+                    flex-direction: column
+                    align-items: center
+                    padding: 0
+                    &__content
+                        margin-left: 0
+                        margin-top: 16px
     @media screen and ( max-width: 1024.98px )
         .wrapper-container
             box-shadow: none
