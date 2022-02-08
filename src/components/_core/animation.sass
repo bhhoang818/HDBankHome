@@ -11,15 +11,19 @@
 	100%
 		opacity: 1
 .animation
+	border-radius: 12px
 	transition: all 1s cubic-bezier(.22, .44, 0, 1)
 	.animation_img
 		position: relative
 		overflow: hidden
 		cursor: pointer
-		a
-			img
-				transition: all 1s cubic-bezier(.22, .44, 0, 1)
-				transform: scale(1)
+		border-top-left-radius: 12px
+		border-top-right-radius: 12px
+		img
+			transition: all 1s cubic-bezier(.22, .44, 0, 1)
+			transform: scale(1)
+			border-top-left-radius: 12px
+			border-top-right-radius: 12px
 		&::before
 			position: absolute
 			top: 0
@@ -35,11 +39,10 @@
 			transform: skewX(-25deg)
 	@media screen and ( min-width: 1025px )
 		&:hover
-			.item-img, .img
+			.animation_img
 				box-shadow: 0 0 20px rgba(33,33,33,.2)
-				a
-					img
-						transform: scale(1.03)
+				img
+					transform: scale(1.03)
 				&::before
 					-webkit-animation: shine .75s
 					animation: shine .75s

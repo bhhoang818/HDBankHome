@@ -1,32 +1,41 @@
-.breadcrumb-wrapper
-	background-color: #F9FAFC
-	padding: 16px 0
-	.breadcrumb
+.menu-product-wrapper
+	background: #F9FAFC
+	box-shadow: 1.5px 1.5px 6px rgba(0, 0, 0, 0.07)
+	.component-slider
 		width: 100%
+		position: relative
+		z-index: 1001
 		display: flex
 		align-items: center
-		background-color: transparent
-		flex-wrap: wrap
-		list-style: none
-		margin-bottom: 0
-		li
-			& + li
-				margin-left: 60px
-			a
+		.caret
+			display: none
+			&-left
+				margin-right: 50px
+			&-right
 				position: relative
-				display: block
-				color: $black
-			&.active
-				a
-					font-weight: 700
-		li+li 
-			a
+				margin-left: auto
 				&::before
+					content: ""
+					width: 80px
+					height: 60px
 					position: absolute
 					top: 50%
-					left: -40px
+					left: -70px
 					transform: translateY(-50%)
-					content: '\e5e1'
-					font-family: Material Icons
-					color: $black
-					font-weight: normal
+					background: linear-gradient(270deg, #fff 9.01%, hsla(0,0%,100%,0))
+		.slider-container
+			.slider-content
+				padding-left: 0
+				margin-bottom: 0
+				&__item
+					a
+						display: block
+						padding: 16px 0
+						p
+							font-weight: bold
+							font-size: 20px
+							color: #333333
+					.menu-product-detail
+						display: none
+				.slider-content__item + .slider-content__item
+					margin-left: 32px
