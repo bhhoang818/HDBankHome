@@ -4,7 +4,7 @@
 	.component-slider
 		width: 100%
 		position: relative
-		z-index: 1001
+		z-index: 10
 		display: flex
 		align-items: center
 		.caret
@@ -28,6 +28,7 @@
 				padding-left: 0
 				margin-bottom: 0
 				&__item
+					position: relative
 					a
 						display: block
 						padding: 16px 0
@@ -35,7 +36,88 @@
 							font-weight: bold
 							font-size: 20px
 							color: #333333
-					.menu-product-detail
-						display: none
+							transition: all ease-in-out .3s
+					&--active
+						&::before
+							position: absolute
+							content: ""
+							width: 0
+							height: 0
+							border-left: 10px solid transparent
+							border-right: 10px solid transparent
+							border-bottom: 10px solid #fff
+							bottom: -2px
+							left: 50%
+							transform: translateX(-50%)
+							z-index: 2
+							-webkit-filter: drop-shadow(0 -2px 1px hsla(0,0%,43.1%,.2))
+							filter: drop-shadow(0 -2px 1px rgba(110,110,110,.2))
+					@media screen and ( min-width: 1025px )
+						&:hover
+							a
+								p
+									color: $main
+									font-weight: 700
 				.slider-content__item + .slider-content__item
 					margin-left: 32px
+		.menu-product-detail
+			position: absolute
+			width: 100%
+			top: 100%
+			left: 0
+			padding: 30px
+			overflow: hidden
+			background-color: #fff
+			border-bottom-left-radius: 20px
+			border-bottom-right-radius: 20px
+			transform: scaleY(0)
+			transform-origin: top
+			transition: .25s ease-in
+			&__categories
+				.menu-category
+					.link-title
+						font-size: 18px
+						color: #333
+						font-weight: 700
+						margin-bottom: 16px
+						display: block
+						transition: all ease-in-out .3s
+						@media screen and ( min-width: 1025px )
+							&:hover
+								color: $main
+								font-weight: 700
+					&__content
+						ul
+							padding-left: 0
+							li
+								padding: 8px 0
+								a
+									color: #333
+									transition: all ease-in-out .3s
+								@media screen and ( min-width: 1025px )
+									&:hover
+										a
+											color: $main
+											font-weight: 700
+					.expand-button
+						p
+							color: #be1128
+			&__featured
+				.item-featured
+					.animation_img
+						+img-ratio(145/370)
+						border-radius: 20px
+						margin-bottom: 16px
+						img
+							border-radius: 20px
+					&_content
+						p
+							color: #333
+							font-size: 1rem
+							font-weight: 700
+						.btn-login
+							margin-top: 16px
+			&.active
+				z-index: -1
+				transform: scaleY(1)
+				box-shadow: 0 4px 39px 0 rgba($color: #000, $alpha: .25)
