@@ -1,8 +1,20 @@
-.maintenance-section 
-    padding-top: 35px
-    padding-bottom: 135px
-    background: url(../../../images/background_maintenance.png)
+.maintenance
+    .nav-top,
+    footer
+        display: none
+    main
+        padding-top: 0
+.maintenance-section
+    width: 100vw
+    height: 100vh
+    background: url(../images/background_maintenance.png)
     background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    display: flex
+    align-items: center
+    justify-content: center
+
     .page-container
         display: flex
         align-items: center
@@ -22,6 +34,7 @@
                 background-size: cover
                 background-blend-mode: multiply
                 mix-blend-mode: multiply
+                background-image: url(../images/maintenance.gif)
             .page-title
                 margin-bottom: 47px
                 h1
@@ -50,7 +63,7 @@
         padding-top: 29px
         padding-left: 37px
         padding-right: 37px
-        background: url(../../../images/background_maintenance_mb.png)
+        background: url(../images/background_maintenance_mb.png)
         background-size: cover
         .page-container
             .logo
